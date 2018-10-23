@@ -11,7 +11,18 @@ export default class Formulas extends Component {
         let arr = []
         for (var i = 0; i < 30; i++) {
             arr.push(
-                <View style={{ backgroundColor: "green", height: height / 15, width, borderBottomColor: "#312e3f", borderBottomWidth: 1 }} ></View>
+                <View style={{
+                    height: height / 13,
+                    width,
+                    borderBottomColor: "#312e3f",
+                    borderBottomWidth: 1,
+                }} >
+
+                    <TouchableOpacity
+                        style={{ flex: 1, justifyContent: "center", padding: 15, }} >
+                        <Text style={{ fontSize: 18, color: "#312e3f" }} >{i + 1} )  Formulas</Text>
+                    </TouchableOpacity>
+                </View>
             )
         }
         return (
@@ -26,7 +37,6 @@ export default class Formulas extends Component {
                 <Content>
                     {arr}
                 </Content>
-
             </Container>
         );
     }
