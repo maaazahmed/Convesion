@@ -17,144 +17,144 @@ export default class Categorry extends Component {
         <View style={[styles.container]}>
           <View style={styles.gategoryContainer}>
             <View style={styles.categorryButn} >
-              <TouchableOpacity activeOpacity={0.7} style={styles.categorryIconView}  >
+              <TouchableOpacity activeOpacity={0.5} style={styles.categorryIconView}  >
                 <Image source={require("./images/measure.png")}
                   style={styles.categorryIcon} resizeMode="contain" />
               </TouchableOpacity>
               <View style={styles.categorryTextView}>
-                <TouchableOpacity activeOpacity={0.7}
+                <TouchableOpacity activeOpacity={0.5}
                   style={styles.categorryButnTouchableOpacity} >
                   <Text style={styles.categorryText} >Length</Text>
                 </TouchableOpacity>
               </View>
             </View>
             <View style={styles.categorryButn} >
-              <TouchableOpacity activeOpacity={0.7} style={styles.categorryIconView}  >
+              <TouchableOpacity activeOpacity={0.5} style={styles.categorryIconView}  >
                 <Image source={require("./images/thermometer.png")}
                   style={styles.categorryIcon} resizeMode="contain" />
               </TouchableOpacity>
               <View style={styles.categorryTextView}  >
-                <TouchableOpacity activeOpacity={0.7}
+                <TouchableOpacity activeOpacity={0.5}
                   style={styles.categorryButnTouchableOpacity} >
                   <Text style={styles.categorryText} >Temperature</Text>
                 </TouchableOpacity>
               </View>
             </View>
             <View style={styles.categorryButn} >
-              <TouchableOpacity activeOpacity={0.7} style={styles.categorryIconView}  >
+              <TouchableOpacity activeOpacity={0.5} style={styles.categorryIconView}  >
                 <Image source={require("./images/balance.png")}
                   style={styles.categorryIcon} resizeMode="contain" />
               </TouchableOpacity>
               <View style={styles.categorryTextView}  >
-                <TouchableOpacity activeOpacity={0.7}
+                <TouchableOpacity activeOpacity={0.5}
                   style={styles.categorryButnTouchableOpacity} >
                   <Text style={styles.categorryText} >Mass</Text>
                 </TouchableOpacity>
               </View>
             </View>
             <View style={styles.categorryButn} >
-              <TouchableOpacity activeOpacity={0.7} style={styles.categorryIconView}  >
+              <TouchableOpacity activeOpacity={0.5} style={styles.categorryIconView}  >
                 <Image source={require("./images/passage-of-time.png")}
                   style={styles.categorryIcon} resizeMode="contain" />
               </TouchableOpacity>
               <View style={styles.categorryTextView}  >
-                <TouchableOpacity activeOpacity={0.7}
+                <TouchableOpacity activeOpacity={0.5}
                   style={styles.categorryButnTouchableOpacity} >
                   <Text style={styles.categorryText} >Time</Text>
                 </TouchableOpacity>
               </View>
             </View>
             <View style={styles.categorryButn} >
-              <TouchableOpacity activeOpacity={0.7} style={styles.categorryIconView}  >
+              <TouchableOpacity activeOpacity={0.5} style={styles.categorryIconView}  >
                 <Image source={require("./images/green-energy.png")}
                   style={styles.categorryIcon} resizeMode="contain" />
               </TouchableOpacity>
               <View style={styles.categorryTextView}  >
-                <TouchableOpacity activeOpacity={0.7}
+                <TouchableOpacity activeOpacity={0.5}
                   style={styles.categorryButnTouchableOpacity} >
                   <Text style={styles.categorryText} >Energy</Text>
                 </TouchableOpacity>
               </View>
             </View>
             <View style={styles.categorryButn} >
-              <TouchableOpacity activeOpacity={0.7} style={styles.categorryIconView}  >
+              <TouchableOpacity activeOpacity={0.5} style={styles.categorryIconView}  >
                 <Image source={require("./images/graduated-cylinder.png")}
                   style={styles.categorryIcon} resizeMode="contain" />
               </TouchableOpacity>
               <View style={styles.categorryTextView}  >
-                <TouchableOpacity activeOpacity={0.7}
+                <TouchableOpacity activeOpacity={0.5}
                   style={styles.categorryButnTouchableOpacity} >
                   <Text style={styles.categorryText} >Volume</Text>
                 </TouchableOpacity>
               </View>
             </View>
             <View style={styles.categorryButn} >
-              <TouchableOpacity activeOpacity={0.7} style={styles.categorryIconView}  >
+              <TouchableOpacity activeOpacity={0.5} style={styles.categorryIconView}  >
                 <Image source={require("./images/innovation.png")}
                   style={styles.categorryIcon} resizeMode="contain" />
               </TouchableOpacity>
               <View style={styles.categorryTextView}  >
-                <TouchableOpacity activeOpacity={0.7}
+                <TouchableOpacity activeOpacity={0.5}
                   style={styles.categorryButnTouchableOpacity} >
                   <Text style={styles.categorryText} >Power</Text>
                 </TouchableOpacity>
               </View>
             </View>
             <View style={styles.categorryButn} >
-              <TouchableOpacity activeOpacity={0.7} style={styles.categorryIconView}  >
+              <TouchableOpacity activeOpacity={0.5} style={styles.categorryIconView}  >
                 <Image source={require("./images/protractor.png")}
                   style={styles.categorryIcon} resizeMode="contain" />
               </TouchableOpacity>
               <View style={styles.categorryTextView}  >
-                <TouchableOpacity activeOpacity={0.7}
+                <TouchableOpacity activeOpacity={0.5}
                   style={styles.categorryButnTouchableOpacity} >
                   <Text style={styles.categorryText} >Angle</Text>
                 </TouchableOpacity>
               </View>
             </View>
             <View style={styles.categorryButn} >
-              <TouchableOpacity activeOpacity={0.7} style={styles.categorryIconView}  >
+              <TouchableOpacity activeOpacity={0.5} style={styles.categorryIconView}  >
                 <Image source={require("./images/speedometer.png")}
                   style={styles.categorryIcon} resizeMode="contain" />
               </TouchableOpacity>
               <View style={styles.categorryTextView}  >
-                <TouchableOpacity activeOpacity={0.7}
+                <TouchableOpacity activeOpacity={0.5}
                   style={styles.categorryButnTouchableOpacity} >
                   <Text style={styles.categorryText} >Velocity</Text>
                 </TouchableOpacity>
               </View>
             </View>
             <View style={styles.categorryButn} >
-              <TouchableOpacity activeOpacity={0.7} style={styles.categorryIconView}  >
+              <TouchableOpacity activeOpacity={0.5} style={styles.categorryIconView}  >
                 <Image source={require("./images/gauge.png")}
                   style={styles.categorryIcon} resizeMode="contain" />
               </TouchableOpacity>
               <View style={styles.categorryTextView}  >
-                <TouchableOpacity activeOpacity={0.7}
+                <TouchableOpacity activeOpacity={0.5}
                   style={styles.categorryButnTouchableOpacity} >
                   <Text style={styles.categorryText} >Pressure</Text>
                 </TouchableOpacity>
               </View>
             </View>
             <View style={styles.categorryButn} >
-              <TouchableOpacity activeOpacity={0.7} style={styles.categorryIconView}  >
+              <TouchableOpacity activeOpacity={0.5} style={styles.categorryIconView}  >
                 <Image source={require("./images/force-meter.png")}
                   style={styles.categorryIcon} resizeMode="contain" />
               </TouchableOpacity>
               <View style={styles.categorryTextView}  >
-                <TouchableOpacity activeOpacity={0.7}
+                <TouchableOpacity activeOpacity={0.5}
                   style={styles.categorryButnTouchableOpacity} >
                   <Text style={styles.categorryText} >Force</Text>
                 </TouchableOpacity>
               </View>
             </View>
             <View style={styles.categorryButn} >
-              <TouchableOpacity activeOpacity={0.7} style={styles.categorryIconView}  >
+              <TouchableOpacity activeOpacity={0.5} style={styles.categorryIconView}  >
                 <Image source={require("./images/measure.png")}
                   style={styles.categorryIcon} resizeMode="contain" />
               </TouchableOpacity>
               <View style={styles.categorryTextView}  >
-                <TouchableOpacity activeOpacity={0.7}
+                <TouchableOpacity activeOpacity={0.5}
                   style={[styles.categorryButnTouchableOpacity, {}]} >
                   <Text style={styles.categorryText} >Length</Text>
                 </TouchableOpacity>
@@ -179,8 +179,8 @@ const styles = StyleSheet.create({
     flexWrap: "wrap",
     alignItems: "center",
     justifyContent: "center",
-    backgroundColor: "#f2f2f2",
-    // backgroundColor: "#312e3f",
+    // backgroundColor: "#f2f2f2",
+    backgroundColor: "#312e3f",
     alignContent: "center"
   },
   categorryButn: {
