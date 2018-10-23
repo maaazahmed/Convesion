@@ -23,7 +23,9 @@ export default class Formulas extends Component {
             <Container style={{ backgroundColor: "#f2f2f2" }} >
                 <Header style={styles.Header} >
                     <View style={styles.heightIconCintainer} >
-                        <TouchableOpacity activeOpacity={0.6} >
+                        <TouchableOpacity
+                            onPress={() => this.props.navigation.navigate("Categorry")}
+                            activeOpacity={0.6} >
                             <Icon style={styles.heightIcon} name='arrow-back' />
                         </TouchableOpacity>
                     </View>
