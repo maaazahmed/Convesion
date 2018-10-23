@@ -6,11 +6,12 @@ import {
   Dimensions,
   Image,
   TouchableOpacity,
-  ScrollView
 } from 'react-native';
 
 
-const { width, height } = Dimensions.get("window")
+
+
+
 export default class Categorry extends Component {
   render() {
     return (
