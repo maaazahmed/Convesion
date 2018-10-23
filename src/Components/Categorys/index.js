@@ -20,8 +20,6 @@ const { width, height } = Dimensions.get("window")
 export default class Categorry extends Component {
   render() {
     return (
-
-      // <ScrollView style={{ flex: 1, backgroundColor: "#312e3f", }}>
         <View style={[styles.container]}>
           <View style={styles.gategoryContainer}>
             <View style={styles.categorryButn} >
@@ -168,23 +166,8 @@ export default class Categorry extends Component {
                 </TouchableOpacity>
               </View>
             </View>
-           
-            {/* <View style={styles.categorryButn} >
-              <TouchableOpacity activeOpacity={0.7} style={styles.categorryIconView}  >
-                <Image source={require("./images/measure.png")}
-                  style={styles.categorryIcon} resizeMode="contain" />
-              </TouchableOpacity>
-              <View style={styles.categorryTextView}  >
-                <TouchableOpacity activeOpacity={0.7}
-                  style={[styles.categorryButnTouchableOpacity, {}]} >
-                  <Text style={styles.categorryText} >Length</Text>
-                </TouchableOpacity>
-              </View>
-            </View> */}
-          
           </View>
         </View>
-      // </ScrollView>
     );
   }
 }
