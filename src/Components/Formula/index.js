@@ -1,27 +1,29 @@
 import React, { Component } from 'react';
-import {
-    StyleSheet,
-    View,
-    Text
-} from 'react-native';
+import { Container, Header, Left, Body, Right, Button, Icon, Title } from 'native-base';
 
 
 
 
-export default class Formulas extends Component {
+export default class HeaderIconExample extends Component {
     render() {
         return (
-            <View style={styles.container}>
-                <Text>Formula</Text>
-            </View >
+            <Container>
+                <Header>
+                    <Left>
+                        <Button transparent>
+                            <Icon name='arrow-back' />
+                        </Button>
+                    </Left>
+                    <Body>
+                        <Title>Header</Title>
+                    </Body>
+                    <Right>
+                        <Button transparent>
+                            <Icon name='menu' />
+                        </Button>
+                    </Right>
+                </Header>
+            </Container>
         );
     }
 }
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        borderTopColor: "#312e3f",
-    },
-});
