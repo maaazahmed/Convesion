@@ -168,18 +168,7 @@ export default class Categorry extends Component {
                 </TouchableOpacity>
               </View>
             </View>
-            {/* <View style={styles.categorryButn} >
-              <TouchableOpacity activeOpacity={0.7} style={styles.categorryIconView}  >
-                <Image source={require("./images/measure.png")}
-                  style={styles.categorryIcon} resizeMode="contain" />
-              </TouchableOpacity>
-              <View style={styles.categorryTextView}  >
-                <TouchableOpacity activeOpacity={0.7}
-                  style={[styles.categorryButnTouchableOpacity, {}]} >
-                  <Text style={styles.categorryText} >Length</Text>
-                </TouchableOpacity>
-              </View>
-            </View> */}
+           
             {/* <View style={styles.categorryButn} >
               <TouchableOpacity activeOpacity={0.7} style={styles.categorryIconView}  >
                 <Image source={require("./images/measure.png")}
