@@ -17,11 +17,6 @@ export default class HeaderIconExample extends Component {
                     <Body>
                         <Title>Header</Title>
                     </Body>
-                    <Right>
-                        <Button transparent>
-                            <Icon name='menu' />
-                        </Button>
-                    </Right>
                 </Header>
             </Container>
         );
