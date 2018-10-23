@@ -11,7 +11,8 @@ import {
   Text,
   View
 } from 'react-native';
-import { Categorry } from "./src/Components"
+import { Categorry } from "./src/Components";
+import Routes  from "./src/index"
 
 
 
@@ -19,7 +20,7 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Categorry />
+        <Routes />
       </View >
     );
   }

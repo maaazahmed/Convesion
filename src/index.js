@@ -6,3 +6,6 @@ import { Categorry } from "./Components"
 const Routes = StackNavigator({
     Categorry: { screen: Categorry }
 })
+
+
+export default Routes
