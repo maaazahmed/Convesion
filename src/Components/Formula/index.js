@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Header, Left, Body, Button, Icon, Title } from 'native-base';
+import { Container, Header, Left, Body, Right, Button, Icon, Title } from 'native-base';
 
 
 
@@ -8,15 +8,20 @@ export default class Formulas extends Component {
     render() {
         return (
             <Container>
-                <Header>
+                <Header style={{backgroundColor:"#312e3f"}} >
                     <Left>
                         <Button transparent>
                             <Icon name='arrow-back' />
                         </Button>
                     </Left>
                     <Body>
-                        <Title>Header</Title>
+                        <Title>Formula</Title>
                     </Body>
+                    <Right>
+                        <Button transparent>
+                            {/* <Icon name='menu' /> */}
+                        </Button>
+                    </Right>
                 </Header>
             </Container>
         );
