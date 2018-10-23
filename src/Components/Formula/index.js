@@ -6,7 +6,6 @@ import { Container, Content, Header, Icon } from 'native-base';
 
 const { width, height } = Dimensions.get("window")
 export default class Formulas extends Component {
-
     render() {
         let arr = []
         for (var i = 0; i < 30; i++) {
@@ -19,6 +18,7 @@ export default class Formulas extends Component {
                 </TouchableOpacity>
             )
         }
+        
         return (
             <Container style={{ backgroundColor: "#f2f2f2" }} >
                 <Header style={styles.Header} >
