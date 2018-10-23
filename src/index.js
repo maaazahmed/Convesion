@@ -19,7 +19,7 @@ const Routes = StackNavigator({
         navigationOptions: {
             header: null
         },
-        initialRouteName:"Formulas"
+        initialRouteName:"Categorry"
     })
 
 
