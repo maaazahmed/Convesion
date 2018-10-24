@@ -14,9 +14,12 @@ import { connect } from "react-redux"
 
 
 class Categorry extends Component {
-  
-  selectConversationn() {
+
+  selectConversationn(key) {
+    console.log(key)
+    const Formulas = []
     this.props.navigation.navigate("Formulas")
+
   }
 
 
@@ -26,12 +29,12 @@ class Categorry extends Component {
       <View style={[styles.container]}>
         <View style={styles.gategoryContainer}>
           <View style={styles.categorryButn} >
-            <TouchableOpacity onPress={this.selectConversationn.bind(this)} activeOpacity={0.5} style={styles.categorryIconView}  >
+            <TouchableOpacity onPress={this.selectConversationn.bind(this, "Length")} activeOpacity={0.5} style={styles.categorryIconView}  >
               <Image source={require("./images/measure.png")}
                 style={styles.categorryIcon} resizeMode="contain" />
             </TouchableOpacity>
             <View style={styles.categorryTextView}>
-              <TouchableOpacity onPress={this.selectConversationn.bind(this)} activeOpacity={0.5}
+              <TouchableOpacity onPress={this.selectConversationn.bind(this, "Length")} activeOpacity={0.5}
                 style={styles.categorryButnTouchableOpacity} >
                 <Text style={styles.categorryText} >Length</Text>
               </TouchableOpacity>
