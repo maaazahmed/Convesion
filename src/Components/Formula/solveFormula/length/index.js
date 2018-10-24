@@ -5,7 +5,7 @@ import { connect } from "react-redux"
 
 
 
-const { width, height } = Dimensions.get("window")
+const { width } = Dimensions.get("window")
 class Lenths extends Component {
     solveEquation(data) {
         this.props.navigation.navigate(this.props.routKey.routeKey)
