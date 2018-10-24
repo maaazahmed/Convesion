@@ -16,7 +16,6 @@ import { connect } from "react-redux"
 class Categorry extends Component {
 
   selectConversationn(key) {
-    console.log(key)
     const Formulas = []
     this.props.navigation.navigate("Formulas")
 
