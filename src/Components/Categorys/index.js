@@ -16,8 +16,26 @@ import { connect } from "react-redux"
 class Categorry extends Component {
 
   selectConversationn(key) {
-    const Formulas = []
-    this.props.navigation.navigate("Formulas")
+    if (key === "Length") {
+      const formulas =
+        [
+          "Centimeter to Milimeter",
+          "Meter to Yard",
+          "Meter to Foot",
+          "Meter to Inch",
+          "Meter to Kilometer",
+          "Meter to Centimeter",
+          "Meter to Milimeter",
+          "Meter to Micrometer",
+          "Meter to Fanometer",
+          "Inch to Foot",
+          "Kilometer to Miles",
+          "Nautical mile to Miles",
+          "Cubic foot to  Cubic inch",
+        ]
+      console.log(formulas)
+      this.props.navigation.navigate("Formulas")
+    }
 
   }
 
