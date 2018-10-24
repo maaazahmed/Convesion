@@ -29,17 +29,18 @@ class Lenths extends Component {
                     <View style={styles.inputCiintainer} >
                         <View>
                             <TextInput
+                                keyboardType="numeric"
                                 underlineColorAndroid="transparent"
                                 placeholderTextColor="#fff"
                                 placeholder="Type Numbe"
                                 style={styles.TextInput} />
                         </View>
-                        <View style={{marginTop:30}} >
+                        <View style={{ marginTop: 30 }} >
                             <TextInput
+                                keyboardType="numeric"
                                 underlineColorAndroid="transparent"
                                 placeholder="Type Numbe"
                                 placeholderTextColor="#fff"
-                                
                                 style={styles.TextInput} />
                         </View>
 
@@ -80,7 +81,7 @@ const styles = StyleSheet.create({
         borderRadius: 5,
         fontSize: 17,
         color: "#fff",
-        elevation:5
+        elevation: 5
     },
     ImageContainer: {
         justifyContent: "center",
