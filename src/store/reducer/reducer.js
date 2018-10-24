@@ -11,7 +11,7 @@ export default (state = INITIAL_STATE, action) => {
 
     switch (action.type) {
 
-        case ActionTypes.REQUEST_LIST:
+        case ActionTypes.FORMULAS_LIST:
             return ({
                 ...state,
                 formulas: action.payload

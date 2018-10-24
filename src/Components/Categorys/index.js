@@ -6,18 +6,19 @@ import {
   Image,
   TouchableOpacity,
 } from 'react-native';
+import { formulaList } from "../../store/action/action"
+import { connect } from "react-redux"
 
 
 
 
 
-export default class Categorry extends Component {
-
-
-
+class Categorry extends Component {
+  
   selectConversationn() {
     this.props.navigation.navigate("Formulas")
   }
+
 
 
   render() {
@@ -225,3 +226,20 @@ const styles = StyleSheet.create({
     alignItems: "center"
   }
 });
+
+
+const mapStateToProp = (state) => {
+  return ({
+  });
+};
+const mapDispatchToProp = (dispatch) => {
+  return {
+    formulaList: (data) => {
+      dispatch(formulaList(data))
+    },
+  };
+};
+
+
+
+export default connect(mapStateToProp, mapDispatchToProp)(Categorry)
