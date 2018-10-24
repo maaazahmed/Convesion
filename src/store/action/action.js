@@ -13,4 +13,14 @@ export const formulaList = (data) => {
     }
 }
 
- 
+
+
+export const routeKey = (data) => {
+    return dispatch => {
+        dispatch({
+            type: ActionTypes.ROUTER_KEY,
+            payload: data
+        })
+    }
+}
+

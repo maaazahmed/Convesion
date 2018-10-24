@@ -6,22 +6,22 @@ import {
   Image,
   TouchableOpacity,
 } from 'react-native';
-import { formulaList } from "../../store/action/action"
 import { connect } from "react-redux"
+import { formulaList, routeKey } from "../../store/action/action"
 
 
 
 
 
 class Categorry extends Component {
-  constructor(){
+  constructor() {
     super()
 
   }
 
 
 
-  
+
   selectConversationn(key) {
     if (key === "Length") {
       const formulas1 = [
@@ -40,6 +40,7 @@ class Categorry extends Component {
         "Cubic foot to  Cubic inch",
       ]
       this.props.formulaList(formulas1)
+      this.props.routeKey("Lenths")
       this.props.navigation.navigate("Formulas")
     }
 
@@ -264,6 +265,9 @@ const mapDispatchToProp = (dispatch) => {
   return {
     formulaList: (data) => {
       dispatch(formulaList(data))
+    },
+    routeKey: (data) => {
+      dispatch(routeKey(data))
     },
   };
 };

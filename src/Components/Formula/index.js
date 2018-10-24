@@ -9,8 +9,7 @@ class Formulas extends Component {
 
 
     solveEquation(data) {
-        const formulaList = this.props.formulaList.formulas;
-        console.log(data, formulaList)
+        this.props.navigation.navigate(this.props.routKey.routeKey)
     }
 
 
@@ -82,7 +81,8 @@ const styles = StyleSheet.create({
 
 const mapStateToProp = (state) => {
     return ({
-        formulaList: state.root
+        formulaList: state.root,
+        routKey: state.root,
     });
 };
 const mapDispatchToProp = (dispatch) => {
