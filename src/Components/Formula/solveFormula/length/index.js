@@ -14,7 +14,7 @@ class Lenths extends Component {
 
     render() {
         return (
-            <Container style={{ backgroundColor: "#f2f2f2" }} >
+            <Container style={{ backgroundColor: "#312e3f" }} >
                 <Header style={styles.Header} >
                     <View style={styles.heightIconCintainer} >
                         <TouchableOpacity
@@ -30,19 +30,16 @@ class Lenths extends Component {
                         <View>
                             <TextInput
                                 underlineColorAndroid="transparent"
-                                placeholderTextColor="#312e3f"
+                                placeholderTextColor="#fff"
                                 placeholder="Type Numbe"
                                 style={styles.TextInput} />
                         </View>
-                        <View style={styles.ImageContainer} >
-                            <Image style={styles.Image}
-                                source={require("../assats/equal.png")} />
-                        </View>
-                        <View>
+                        <View style={{marginTop:30}} >
                             <TextInput
                                 underlineColorAndroid="transparent"
                                 placeholder="Type Numbe"
-                                placeholderTextColor="#312e3f"
+                                placeholderTextColor="#fff"
+                                
                                 style={styles.TextInput} />
                         </View>
 
@@ -78,11 +75,12 @@ const styles = StyleSheet.create({
     },
     TextInput: {
         padding: 15,
-        borderColor: "#312e3f",
+        borderColor: "#fff",
         borderWidth: 2,
         borderRadius: 5,
         fontSize: 17,
-        color: "#312e3f"
+        color: "#fff",
+        elevation:5
     },
     ImageContainer: {
         justifyContent: "center",
