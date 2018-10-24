@@ -24,3 +24,14 @@ export const routeKey = (data) => {
     }
 }
 
+export const conversoinType = (data) => {
+    return dispatch => {
+        dispatch({
+            type: ActionTypes.CONVERSOIN_TYPE,
+            payload: data
+        })
+    }
+}
+
+
+

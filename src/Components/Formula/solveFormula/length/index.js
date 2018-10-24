@@ -7,12 +7,39 @@ import { connect } from "react-redux"
 
 const { width } = Dimensions.get("window")
 class Lenths extends Component {
-    solveEquation(data) {
-        this.props.navigation.navigate(this.props.routKey.routeKey)
+
+    constructor() {
+        super()
+        this.state = {
+            valOne: "",
+            valTwo: "",
+        }
     }
 
 
+    valOneHeandler(ev) {
+        let numbeer = ev * 100
+        numbeer = numbeer.toString()
+        console.log(numbeer)
+        this.setState({
+            valOne: ev,
+            valTwo: numbeer
+        })
+
+
+
+
+
+    }
+    valTwoHeandler(ev) {
+
+    }
+
+
+
+
     render() {
+
         return (
             <Container style={{ backgroundColor: "#373447" }} >
                 <Header style={styles.Header} >
@@ -29,6 +56,8 @@ class Lenths extends Component {
                     <View style={styles.inputCiintainer} >
                         <View>
                             <TextInput
+                                value={this.state.valOne}
+                                onChangeText={(event) => this.valOneHeandler(event)}
                                 keyboardType="numeric"
                                 underlineColorAndroid="transparent"
                                 placeholderTextColor="#fff"
@@ -37,6 +66,7 @@ class Lenths extends Component {
                         </View>
                         <View style={{ marginTop: 30 }} >
                             <TextInput
+                                value={this.state.valTwo}
                                 keyboardType="numeric"
                                 underlineColorAndroid="transparent"
                                 placeholder="Type Numbe"
@@ -99,8 +129,7 @@ const styles = StyleSheet.create({
 
 const mapStateToProp = (state) => {
     return ({
-        formulaList: state.root,
-        routKey: state.root,
+        conversionType: state.root
     });
 };
 const mapDispatchToProp = (dispatch) => {

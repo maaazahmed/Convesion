@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { TouchableOpacity, View, Text, Dimensions, StyleSheet } from "react-native"
 import { Container, Content, Header, Icon } from 'native-base';
-import { connect } from "react-redux"
+import { connect } from "react-redux";
+import { conversoinType } from "../../store/action/action"
 
 
 const { width, height } = Dimensions.get("window")
@@ -9,6 +10,7 @@ class Formulas extends Component {
 
 
     solveEquation(data) {
+        this.props.conversoinType(data)
         this.props.navigation.navigate(this.props.routKey.routeKey)
     }
 
@@ -87,6 +89,9 @@ const mapStateToProp = (state) => {
 };
 const mapDispatchToProp = (dispatch) => {
     return {
+        conversoinType: (data) => {
+            dispatch(conversoinType(data))
+        },
     };
 };
 
