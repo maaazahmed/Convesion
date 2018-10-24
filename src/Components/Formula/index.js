@@ -23,13 +23,13 @@ class Formulas extends Component {
                 <Content>
                     {formulaList.map((val, index) => {
                         return (
-                            <TouchableOpacity key={index} activeOpacity={0.5} key={i} style={styles.listContainer} >
+                            <TouchableOpacity key={index} activeOpacity={0.5} style={styles.listContainer} >
                                 <View
                                     style={styles.listBtn} >
                                     <Text style={styles.listText} >{val}</Text>
                                 </View>
                             </TouchableOpacity>
-                        )
+                        ) 
                     })}
                 </Content>
             </Container>
@@ -70,7 +70,6 @@ const styles = StyleSheet.create({
 
 
 
-
 const mapStateToProp = (state) => {
     return ({
         formulaList: state.root
@@ -78,9 +77,6 @@ const mapStateToProp = (state) => {
 };
 const mapDispatchToProp = (dispatch) => {
     return {
-        //   formulaList: (data) => {
-        //     dispatch(formulaList(data))
-        //   },
     };
 };
 
