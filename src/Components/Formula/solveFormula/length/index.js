@@ -42,7 +42,7 @@ class Lenths extends Component {
                                 }} />
                         </View>
                         <View style={{ justifyContent: "center", alignItems: "center", height: 80, }} >
-                            <Image source={require("../assats/equal.png")} />
+                            <Image style={{height:50, width:50}} source={require("../assats/equal.png")} />
                         </View>
                         <View style={{ borderRadius:5}}>
                             <TextInput
@@ -82,21 +82,6 @@ const styles = StyleSheet.create({
         color: "#fff",
         fontSize: 22
     },
-    listContainer: {
-        height: height / 13,
-        width,
-        borderBottomColor: "#312e3f",
-        borderBottomWidth: 1
-    },
-    listBtn: {
-        flex: 1,
-        justifyContent: "center",
-        padding: 15,
-    },
-    listText: {
-        fontSize: 18,
-        color: "#312e3f"
-    }
 })
 
 
