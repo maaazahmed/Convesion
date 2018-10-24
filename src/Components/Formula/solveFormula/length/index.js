@@ -14,7 +14,7 @@ class Lenths extends Component {
 
     render() {
         return (
-            <Container style={{ backgroundColor: "#312e3f" }} >
+            <Container style={{ backgroundColor: "#373447" }} >
                 <Header style={styles.Header} >
                     <View style={styles.heightIconCintainer} >
                         <TouchableOpacity
@@ -55,7 +55,8 @@ class Lenths extends Component {
 const styles = StyleSheet.create({
     Header: {
         backgroundColor: "#312e3f",
-        alignItems: "center"
+        alignItems: "center",
+
     },
     heightIconCintainer: {
         flex: 1,
