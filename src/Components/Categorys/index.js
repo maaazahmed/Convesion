@@ -187,14 +187,12 @@ const styles = StyleSheet.create({
     flexWrap: "wrap",
     alignItems: "center",
     justifyContent: "center",
-    // backgroundColor: "#f2f2f2",
     backgroundColor: "#312e3f",
     alignContent: "center"
   },
   categorryButn: {
     width: "30%",
     height: "18%",
-    // height: "18%",
     height: 150,
     margin: 6,
     backgroundColor: "#fff",
