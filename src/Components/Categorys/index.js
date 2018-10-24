@@ -17,23 +17,22 @@ class Categorry extends Component {
 
   selectConversationn(key) {
     if (key === "Length") {
-      const formulas =
-        [
-          "Centimeter to Milimeter",
-          "Meter to Yard",
-          "Meter to Foot",
-          "Meter to Inch",
-          "Meter to Kilometer",
-          "Meter to Centimeter",
-          "Meter to Milimeter",
-          "Meter to Micrometer",
-          "Meter to Fanometer",
-          "Inch to Foot",
-          "Kilometer to Miles",
-          "Nautical mile to Miles",
-          "Cubic foot to  Cubic inch",
-        ]
-      console.log(formulas)
+      const formulas1 = [
+        "Centimeter to Milimeter",
+        "Meter to Yard",
+        "Meter to Foot",
+        "Meter to Inch",
+        "Meter to Kilometer",
+        "Meter to Centimeter",
+        "Meter to Milimeter",
+        "Meter to Micrometer",
+        "Meter to Fanometer",
+        "Inch to Foot",
+        "Kilometer to Miles",
+        "Nautical mile to Miles",
+        "Cubic foot to  Cubic inch",
+      ]
+      this.props.formulaList(formulas1)
       this.props.navigation.navigate("Formulas")
     }
 
@@ -58,12 +57,14 @@ class Categorry extends Component {
             </View>
           </View>
           <View style={styles.categorryButn} >
-            <TouchableOpacity activeOpacity={0.5} style={styles.categorryIconView}  >
+            <TouchableOpacity onPress={this.selectConversationn.bind(this, "Temperature")}
+              activeOpacity={0.5} style={styles.categorryIconView}  >
               <Image source={require("./images/thermometer.png")}
                 style={styles.categorryIcon} resizeMode="contain" />
             </TouchableOpacity>
             <View style={styles.categorryTextView}  >
-              <TouchableOpacity activeOpacity={0.5}
+              <TouchableOpacity onPress={this.selectConversationn.bind(this, "Temperature")}
+                activeOpacity={0.5}
                 style={styles.categorryButnTouchableOpacity} >
                 <Text style={styles.categorryText} >Temperature</Text>
               </TouchableOpacity>

@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { TouchableOpacity, View, Text, Dimensions, StyleSheet } from "react-native"
 import { Container, Content, Header, Icon } from 'native-base';
-
+import { connect } from "react-redux"
 
 
 const { width, height } = Dimensions.get("window")
-export default class Formulas extends Component {
+class Formulas extends Component {
     render() {
         let arr = []
         for (var i = 0; i < 30; i++) {
@@ -18,7 +18,10 @@ export default class Formulas extends Component {
                 </TouchableOpacity>
             )
         }
-        
+
+
+        const formulaList = this.props.formulaList.formulas
+
         return (
             <Container style={{ backgroundColor: "#f2f2f2" }} >
                 <Header style={styles.Header} >
@@ -31,7 +34,16 @@ export default class Formulas extends Component {
                     </View>
                 </Header>
                 <Content>
-                    {arr}
+                    {formulaList.map((val, index) => {
+                        return (
+                            <TouchableOpacity key={index} activeOpacity={0.5} key={i} style={styles.listContainer} >
+                                <View
+                                    style={styles.listBtn} >
+                                    <Text style={styles.listText} >{val}</Text>
+                                </View>
+                            </TouchableOpacity>
+                        )
+                    })}
                 </Content>
             </Container>
         );
@@ -67,5 +79,24 @@ const styles = StyleSheet.create({
         fontSize: 18,
         color: "#312e3f"
     }
-
 })
+
+
+
+
+const mapStateToProp = (state) => {
+    return ({
+        formulaList: state.root
+    });
+};
+const mapDispatchToProp = (dispatch) => {
+    return {
+        //   formulaList: (data) => {
+        //     dispatch(formulaList(data))
+        //   },
+    };
+};
+
+
+
+export default connect(mapStateToProp, mapDispatchToProp)(Formulas)

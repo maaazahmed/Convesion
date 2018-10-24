@@ -7,7 +7,7 @@ import ActionTypes from "../constant/constant"
 export const formulaList = (data) => {
     return dispatch => {
         dispatch({
-            type: ActionTypes.REQUEST_LIST,
+            type: ActionTypes.FORMULAS_LIST,
             payload: data
         })
     }
