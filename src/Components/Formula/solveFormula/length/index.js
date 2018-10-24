@@ -30,6 +30,7 @@ class Lenths extends Component {
                         <View style={{ borderRadius:5}}>
                             <TextInput
                                 underlineColorAndroid="transparent"
+                                placeholderTextColor="#312e3f"
                                 placeholder="Type Numbe"
                                 style={{
                                     padding:15,
@@ -37,6 +38,7 @@ class Lenths extends Component {
                                     borderWidth: 2,
                                     borderRadius:5,
                                     fontSize:17,
+                                    color:"#312e3f"
                                 }} />
                         </View>
                         <View style={{ justifyContent: "center", alignItems: "center", height: 80, }} >
@@ -46,12 +48,15 @@ class Lenths extends Component {
                             <TextInput
                                 underlineColorAndroid="transparent"
                                 placeholder="Type Numbe"
+                                placeholderTextColor="#312e3f"
+
                                 style={{
                                     padding:15,
                                     fontSize:17,
                                     borderColor: "#312e3f",
                                     borderWidth: 2,
-                                    borderRadius:5
+                                    borderRadius:5,
+                                    color:"#312e3f"
 
                                 }} />
                         </View>
