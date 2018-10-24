@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { TouchableOpacity, View, Dimensions, StyleSheet, TextInput } from "react-native"
+import { TouchableOpacity, View, Dimensions, StyleSheet, TextInput, Image } from "react-native"
 import { Container, Header, Icon } from 'native-base';
 import { connect } from "react-redux"
 
@@ -26,28 +26,37 @@ class Lenths extends Component {
                 </Header>
                 <View style={{ justifyContent: "center", alignItems: "center", flex: 1 }} >
 
-                    <View style={{ justifyContent: "center", width, paddingLeft:20, paddingRight:20 }} >
-                      
-                        <View>
+                    <View style={{ width, paddingLeft: 20, paddingRight: 20  }} >
+                        <View style={{ borderRadius:5}}>
                             <TextInput
                                 underlineColorAndroid="transparent"
+                                placeholder="Type Numbe"
                                 style={{
-                                    borderBottomColor: "#312e3f",
-                                    borderBottomWidth: 2
+                                    padding:15,
+                                    borderColor: "#312e3f",
+                                    borderWidth: 2,
+                                    borderRadius:5,
+                                    fontSize:17,
                                 }} />
                         </View>
-                        
-                        <View>
+                        <View style={{ justifyContent: "center", alignItems: "center", height: 80, }} >
+                            <Image source={require("../assats/equal.png")} />
+                        </View>
+                        <View style={{ borderRadius:5}}>
                             <TextInput
                                 underlineColorAndroid="transparent"
+                                placeholder="Type Numbe"
                                 style={{
-                                    borderBottomColor: "#312e3f",
-                                    borderBottomWidth: 2
+                                    padding:15,
+                                    fontSize:17,
+                                    borderColor: "#312e3f",
+                                    borderWidth: 2,
+                                    borderRadius:5
+
                                 }} />
                         </View>
 
                     </View>
-
                 </View>
             </Container>
         );
