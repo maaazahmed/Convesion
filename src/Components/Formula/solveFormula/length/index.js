@@ -24,41 +24,26 @@ class Lenths extends Component {
                         </TouchableOpacity>
                     </View>
                 </Header>
-                <View style={{ justifyContent: "center", alignItems: "center", flex: 1 }} >
 
-                    <View style={{ width, paddingLeft: 20, paddingRight: 20  }} >
-                        <View style={{ borderRadius:5}}>
+                <View style={styles.solveContainer} >
+                    <View style={styles.inputCiintainer} >
+                        <View>
                             <TextInput
                                 underlineColorAndroid="transparent"
                                 placeholderTextColor="#312e3f"
                                 placeholder="Type Numbe"
-                                style={{
-                                    padding:15,
-                                    borderColor: "#312e3f",
-                                    borderWidth: 2,
-                                    borderRadius:5,
-                                    fontSize:17,
-                                    color:"#312e3f"
-                                }} />
+                                style={styles.TextInput} />
                         </View>
-                        <View style={{ justifyContent: "center", alignItems: "center", height: 80, }} >
-                            <Image style={{height:50, width:50}} source={require("../assats/equal.png")} />
+                        <View style={styles.ImageContainer} >
+                            <Image style={styles.Image}
+                                source={require("../assats/equal.png")} />
                         </View>
-                        <View style={{ borderRadius:5}}>
+                        <View>
                             <TextInput
                                 underlineColorAndroid="transparent"
                                 placeholder="Type Numbe"
                                 placeholderTextColor="#312e3f"
-
-                                style={{
-                                    padding:15,
-                                    fontSize:17,
-                                    borderColor: "#312e3f",
-                                    borderWidth: 2,
-                                    borderRadius:5,
-                                    color:"#312e3f"
-
-                                }} />
+                                style={styles.TextInput} />
                         </View>
 
                     </View>
@@ -82,6 +67,32 @@ const styles = StyleSheet.create({
         color: "#fff",
         fontSize: 22
     },
+    solveContainer: {
+        justifyContent: "center",
+        alignItems: "center", flex: 1
+    },
+    inputCiintainer: {
+        width,
+        paddingLeft: 20,
+        paddingRight: 20
+    },
+    TextInput: {
+        padding: 15,
+        borderColor: "#312e3f",
+        borderWidth: 2,
+        borderRadius: 5,
+        fontSize: 17,
+        color: "#312e3f"
+    },
+    ImageContainer: {
+        justifyContent: "center",
+        alignItems: "center",
+        height: 80,
+    },
+    Image: {
+        height: 50,
+        width: 50
+    }
 })
 
 
