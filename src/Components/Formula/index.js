@@ -6,9 +6,16 @@ import { connect } from "react-redux"
 
 const { width, height } = Dimensions.get("window")
 class Formulas extends Component {
+
+
+    solveEquation(data) {
+        const formulaList = this.props.formulaList.formulas;
+        console.log(data, formulaList)
+    }
+
+
     render() {
         const formulaList = this.props.formulaList.formulas
-
         return (
             <Container style={{ backgroundColor: "#f2f2f2" }} >
                 <Header style={styles.Header} >
@@ -23,13 +30,16 @@ class Formulas extends Component {
                 <Content>
                     {formulaList.map((val, index) => {
                         return (
-                            <TouchableOpacity key={index} activeOpacity={0.5} style={styles.listContainer} >
+                            <TouchableOpacity
+                                onPress={this.solveEquation.bind(this, val)}
+                                key={index}
+                                activeOpacity={0.5} style={styles.listContainer} >
                                 <View
                                     style={styles.listBtn} >
                                     <Text style={styles.listText} >{val}</Text>
                                 </View>
                             </TouchableOpacity>
-                        ) 
+                        )
                     })}
                 </Content>
             </Container>
