@@ -7,19 +7,6 @@ import { connect } from "react-redux"
 const { width, height } = Dimensions.get("window")
 class Formulas extends Component {
     render() {
-        let arr = []
-        for (var i = 0; i < 30; i++) {
-            arr.push(
-                <TouchableOpacity activeOpacity={0.5} key={i} style={styles.listContainer} >
-                    <View
-                        style={styles.listBtn} >
-                        <Text style={styles.listText} >{i + 1} )  Formulas</Text>
-                    </View>
-                </TouchableOpacity>
-            )
-        }
-
-
         const formulaList = this.props.formulaList.formulas
 
         return (

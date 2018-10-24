@@ -14,7 +14,14 @@ import { connect } from "react-redux"
 
 
 class Categorry extends Component {
+  constructor(){
+    super()
 
+  }
+
+
+
+  
   selectConversationn(key) {
     if (key === "Length") {
       const formulas1 = [
