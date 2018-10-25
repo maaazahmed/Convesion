@@ -60,7 +60,7 @@ class Lenths extends Component {
         else if (conversoinType === "Meter to Inch") {
             this.setState({
                 valOne: ev,
-                valTwo: (numbeer * 3.28084).toString()
+                valTwo: (numbeer * 0.0254).toString()
             })
         }
     }
@@ -87,7 +87,14 @@ class Lenths extends Component {
         else if (conversoinType === "Meter to Foot") {
             this.setState({
                 valOne: (numbeer / 3.28084).toString(),
-                valTwo:ev
+                valTwo: ev
+            })
+        }
+        // Meter to Inch 
+        else if (conversoinType === "Meter to Foot") {
+            this.setState({
+                valOne: (numbeer / 0.0254).toString(),
+                valTwo: ev
             })
         }
 
