@@ -120,7 +120,7 @@ class Lenths extends Component {
             })
         }
         // Cubic foot to  Cubic inch
-        else if (conversoinType === "Cubic foot to  Cubic inch") {
+        else if (conversoinType === "Cubicfoot to Cubicinch") {
             this.setState({
                 valOne: ev,
                 valTwo: (numbeer * 1728).toString()
@@ -217,7 +217,7 @@ class Lenths extends Component {
             })
         }
         // Cubicfoot to  Cubicinch
-        else if (conversoinType === "Cubicfoot to  Cubicinch") {
+        else if (conversoinType === "Cubicfoot to Cubicinch") {
             this.setState({
                 valOne: (numbeer / 1728).toString(),
                 valTwo: ev
