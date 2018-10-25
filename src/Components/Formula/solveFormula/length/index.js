@@ -91,6 +91,13 @@ class Lenths extends Component {
                 valTwo: (numbeer * 1000000).toString()
             })
         }
+        // Meter to Nanometer
+        else if (conversoinType === "Meter to Nanometer") {
+            this.setState({
+                valOne: ev,
+                valTwo: (numbeer * 1000000000).toString()
+            })
+        }
     }
 
 
@@ -150,6 +157,13 @@ class Lenths extends Component {
         else if (conversoinType === "Meter to Micrometer") {
             this.setState({
                 valOne: (numbeer / 1000000).toString(),
+                valTwo: ev
+            })
+        }
+        // Meter to Nanometer
+        else if (conversoinType === "Meter to Nanometer") {
+            this.setState({
+                valOne: (numbeer / 1000000000).toString(),
                 valTwo: ev
             })
         }
