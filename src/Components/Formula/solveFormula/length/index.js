@@ -105,6 +105,13 @@ class Lenths extends Component {
                 valTwo: (numbeer / 12).toString()
             })
         }
+        // Kilometer to Miles
+        else if (conversoinType === "Kilometer to Miles") {
+            this.setState({
+                valOne: ev,
+                valTwo: (numbeer * 0.62137).toString()
+            })
+        }
     }
 
 
@@ -178,6 +185,13 @@ class Lenths extends Component {
         else if (conversoinType === "Inch to Foot") {
             this.setState({
                 valOne: (numbeer * 12).toString(),
+                valTwo: ev
+            })
+        }
+        // Kilometer to Miles
+        else if (conversoinType === "Kilometer to Miles") {
+            this.setState({
+                valOne: (numbeer / 0.62137).toString(),
                 valTwo: ev
             })
         }
