@@ -36,8 +36,8 @@ class Categorry extends Component {
         "Meter to Nanometer",
         "Inch to Foot",
         "Kilometer to Miles",
-        "Nautical mile to Miles",
-        "Cubic foot to  Cubic inch",
+        "Nauticalmile to Miles",
+        "Cubicfoot to  Cubicinch",
       ]
       this.props.formulaList(formulas1)
       this.props.routeKey("Lenths")

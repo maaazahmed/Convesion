@@ -112,14 +112,20 @@ class Lenths extends Component {
                 valTwo: (numbeer * 0.62137).toString()
             })
         }
-        // Nautical mile to Miles
-        else if (conversoinType === "Nautical mile to Miles") {
+        // Nauticalmile to Miles
+        else if (conversoinType === "Nauticalmile to Miles") {
             this.setState({
                 valOne: ev,
                 valTwo: (numbeer / 0.868976).toString()
             })
         }
-
+        // Cubic foot to  Cubic inch
+        else if (conversoinType === "Cubic foot to  Cubic inch") {
+            this.setState({
+                valOne: ev,
+                valTwo: (numbeer * 1728).toString()
+            })
+        }
     }
 
 
@@ -203,15 +209,20 @@ class Lenths extends Component {
                 valTwo: ev
             })
         }
-        // Nautical mile to Miles
-        else if (conversoinType === "Nautical mile to Miles") {
+        // Nauticalmile to Miles
+        else if (conversoinType === "Nauticalmile to Miles") {
             this.setState({
                 valOne: (numbeer * 0.868976).toString(),
                 valTwo: ev
             })
         }
-
-
+        // Cubicfoot to  Cubicinch
+        else if (conversoinType === "Cubicfoot to  Cubicinch") {
+            this.setState({
+                valOne: (numbeer / 1728).toString(),
+                valTwo: ev
+            })
+        }
     }
 
 
