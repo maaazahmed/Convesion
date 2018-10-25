@@ -112,6 +112,14 @@ class Lenths extends Component {
                 valTwo: (numbeer * 0.62137).toString()
             })
         }
+        // Nautical mile to Miles
+        else if (conversoinType === "Nautical mile to Miles") {
+            this.setState({
+                valOne: ev,
+                valTwo: (numbeer * 0.62137).toString()
+            })
+        }
+
     }
 
 
@@ -195,7 +203,13 @@ class Lenths extends Component {
                 valTwo: ev
             })
         }
-
+        // Nautical mile to Miles
+        else if (conversoinType === "Nautical mile to Miles") {
+            this.setState({
+                valOne: (numbeer / 0.62137).toString(),
+                valTwo: ev
+            })
+        }
 
 
     }
