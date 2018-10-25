@@ -63,6 +63,20 @@ class Lenths extends Component {
                 valTwo: (numbeer / 0.0254).toString()
             })
         }
+        // Meter to Kilometer
+        else if (conversoinType === "Meter to Kilometer") {
+            this.setState({
+                valOne: ev,
+                valTwo: (numbeer / 1000).toString()
+            })
+        }
+          // Meter to Centimeter
+          else if (conversoinType === "Meter to Centimeter") {
+            this.setState({
+                valOne: ev,
+                valTwo: (numbeer *100).toString()
+            })
+        }
     }
 
 
@@ -94,6 +108,20 @@ class Lenths extends Component {
         else if (conversoinType === "Meter to Inch") {
             this.setState({
                 valOne: (numbeer * 0.0254).toString(),
+                valTwo: ev
+            })
+        }
+        // Meter to Inch 
+        else if (conversoinType === "Meter to Kilometer") {
+            this.setState({
+                valOne: (numbeer * 1000).toString(),
+                valTwo: ev
+            })
+        }
+          // Meter to Centimeter 
+          else if (conversoinType === "Meter to Centimeter") {
+            this.setState({
+                valOne: (numbeer / 100).toString(),
                 valTwo: ev
             })
         }
