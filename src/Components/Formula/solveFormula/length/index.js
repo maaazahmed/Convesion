@@ -20,6 +20,7 @@ class Lenths extends Component {
 
     componentDidMount() {
         let conversionTypeName = this.props.conversionType.conversoinType;
+        console.log(conversionTypeName)
         let type = conversionTypeName.split(" ")
         this.setState({
             placeholder1: type[0],
@@ -32,30 +33,72 @@ class Lenths extends Component {
 
 
     valOneHeandler(ev) {
-        let numbeer = ev * 10
-        numbeer = numbeer.toString()
-        if (this.props.conversionType.conversoinType === "Centimeter to Milimeter") {
+        let numbeer = ev;
+        const conversoinType = this.props.conversionType.conversoinType;
+        // Centimeter to Milimeter
+        if (conversoinType === "Centimeter to Milimeter") {
             this.setState({
                 valOne: ev,
-                valTwo: numbeer
+                valTwo: (numbeer * 10).toString()
             })
         }
-
-
-
-
-
-    }
-    valTwoHeandler(ev) {
-        let numbeer = ev / 10
-        numbeer = numbeer.toString()
-        if (this.props.conversionType.conversoinType === "Centimeter to Milimeter") {
+        // Meter to Yard 
+        else if (conversoinType === "Meter to Yard") {
             this.setState({
-                valOne: numbeer,
+                valOne: ev,
+                valTwo: (numbeer * 1.09361).toString()
+            })
+        }
+        // Meter to foot 
+        else if (conversoinType === "Meter to Foot") {
+            this.setState({
+                valOne: ev,
+                valTwo: (numbeer * 3.28084).toString()
+            })
+        }
+        // Meter to Inch
+        else if (conversoinType === "Meter to Inch") {
+            this.setState({
+                valOne: ev,
+                valTwo: (numbeer * 3.28084).toString()
+            })
+        }
+    }
+
+
+    valTwoHeandler(ev) {
+        let numbeer = ev;
+        const conversoinType = this.props.conversionType.conversoinType;
+        // Centimeter to Milimeter
+        if (conversoinType === "Centimeter to Milimeter") {
+            this.setState({
+                valOne: (numbeer / 10).toString(),
                 valTwo: ev
             })
         }
+        // Meter to Yard 
+        else if (conversoinType === "Meter to Yard") {
+            this.setState({
+                valOne: (numbeer / 1.09361).toString(),
+                valTwo: ev
+            })
+        }
+        // Meter to foot 
+        else if (conversoinType === "Meter to Foot") {
+            this.setState({
+                valOne: (numbeer / 3.28084).toString(),
+                valTwo:ev
+            })
+        }
+
+
+
     }
+
+
+
+
+
 
 
 
