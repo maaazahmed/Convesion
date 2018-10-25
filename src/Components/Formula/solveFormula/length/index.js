@@ -13,18 +13,33 @@ class Lenths extends Component {
         this.state = {
             valOne: "",
             valTwo: "",
+            placeholder1: "",
+            placeholder1: "",
         }
+    }
+
+    componentDidMount() {
+        let conversionTypeName = this.props.conversionType.conversoinType;
+        let type = conversionTypeName.split(" ")
+        this.setState({
+            placeholder1: type[0],
+            placeholder2: type[2],
+        })
+
+
+
     }
 
 
     valOneHeandler(ev) {
-        let numbeer = ev * 100
+        let numbeer = ev * 10
         numbeer = numbeer.toString()
-        console.log(numbeer)
-        this.setState({
-            valOne: ev,
-            valTwo: numbeer
-        })
+        if (this.props.conversionType.conversoinType === "Centimeter to Milimeter") {
+            this.setState({
+                valOne: ev,
+                valTwo: numbeer
+            })
+        }
 
 
 
@@ -32,14 +47,19 @@ class Lenths extends Component {
 
     }
     valTwoHeandler(ev) {
-
+        let numbeer = ev / 10
+        numbeer = numbeer.toString()
+        if (this.props.conversionType.conversoinType === "Centimeter to Milimeter") {
+            this.setState({
+                valOne: numbeer,
+                valTwo: ev
+            })
+        }
     }
 
 
 
-
     render() {
-
         return (
             <Container style={{ backgroundColor: "#373447" }} >
                 <Header style={styles.Header} >
@@ -61,15 +81,16 @@ class Lenths extends Component {
                                 keyboardType="numeric"
                                 underlineColorAndroid="transparent"
                                 placeholderTextColor="#fff"
-                                placeholder="Type Numbe"
+                                placeholder={this.state.placeholder1}
                                 style={styles.TextInput} />
                         </View>
                         <View style={{ marginTop: 30 }} >
                             <TextInput
+                                onChangeText={(event) => this.valTwoHeandler(event)}
                                 value={this.state.valTwo}
                                 keyboardType="numeric"
                                 underlineColorAndroid="transparent"
-                                placeholder="Type Numbe"
+                                placeholder={this.state.placeholder2}
                                 placeholderTextColor="#fff"
                                 style={styles.TextInput} />
                         </View>
