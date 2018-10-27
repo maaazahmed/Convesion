@@ -44,23 +44,23 @@ class Categorry extends Component {
       this.props.navigation.navigate("Formulas")
     }
    else if (key === "Mass") {
-      const formulas1 = [
-        "Centimeter to Milimeter",
-        "Meter to Yard",
-        "Meter to Foot",
-        "Meter to Inch",
-        "Meter to Kilometer",
-        "Meter to Centimeter",
-        "Meter to Milimeter",
-        "Meter to Micrometer",
-        "Meter to Nanometer",
-        "Inch to Foot",
-        "Kilometer to Miles",
-        "Nauticalmile to Miles",
-        "Cubicfoot to Cubicinch",
+      const formulas2 = [
+        "Gram to Kilogram",
+        "Gram to Miligram",
+        "Gram to Microgram",
+        "Gram to Nanogram",
+        "Gram to Pound",
+        "Gram to Stone",
+        "Gram to Ounce",
+        "Miligram to Microgram",
+        "Kilogram to Tonne",
+        "Kilogram to Imperial",
+        "Kilogram to US Tonne",
+        "Kilogram to Metrictone",
+        "Kilogram to a.m.u",
       ]
-      this.props.formulaList(formulas1)
-      this.props.routeKey("Lenths")
+      this.props.formulaList(formulas2)
+      this.props.routeKey("Mass")
       this.props.navigation.navigate("Formulas")
     }
 
