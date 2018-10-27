@@ -72,7 +72,6 @@ class Mass extends Component {
                 valTwo: (numbeer / 6350.293).toString()
             })
         }
-        // Gram to Ounce
         else if (conversoinType === "Gram to Ounce") {
             this.setState({
                 valOne: ev,
