@@ -66,7 +66,6 @@ class Mass extends Component {
                 valTwo: (numbeer / 453.592).toString()
             })
         }
-        // Gram to Stone
         else if (conversoinType === "Gram to Stone") {
             this.setState({
                 valOne: ev,
