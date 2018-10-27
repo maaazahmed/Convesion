@@ -108,11 +108,11 @@ class Mass extends Component {
                 valTwo: (numbeer / 1016.047).toString()
             })
         }
-        // Kilometer to Miles
-        else if (conversoinType === "Kilometer to Miles") {
+        // Kilogram to US Tonne
+        else if (conversoinType === "Kilogram to US-Tonne") {
             this.setState({
                 valOne: ev,
-                valTwo: (numbeer * 0.62137).toString()
+                valTwo: (numbeer / 907.185).toString()
             })
         }
         // Nauticalmile to Miles
@@ -208,10 +208,10 @@ class Mass extends Component {
                 valTwo: ev
             })
         }
-        // Kilometer to Miles
-        else if (conversoinType === "Kilometer to Miles") {
+        // Kilogram to US Tonne
+        else if (conversoinType === "Kilogram to US-Tonne") {
             this.setState({
-                valOne: (numbeer / 0.62137).toString(),
+                valOne: (numbeer * 907.185).toString(),
                 valTwo: ev
             })
         }
