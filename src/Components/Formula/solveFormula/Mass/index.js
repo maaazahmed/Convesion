@@ -66,11 +66,11 @@ class Mass extends Component {
                 valTwo: (numbeer * 1000000000).toString()
             })
         }
-        // Meter to Kilometer
-        else if (conversoinType === "Meter to Kilometer") {
+        // Gram to Pound
+        else if (conversoinType === "Gram to Pound") {
             this.setState({
                 valOne: ev,
-                valTwo: (numbeer / 1000).toString()
+                valTwo: (numbeer / 453.592).toString()
             })
         }
         // Meter to Centimeter
@@ -166,10 +166,10 @@ class Mass extends Component {
                 valTwo: ev
             })
         }
-        // Meter to Inch 
-        else if (conversoinType === "Meter to Kilometer") {
+        // Gram to Pound
+        else if (conversoinType === "Gram to Pound") {
             this.setState({
-                valOne: (numbeer * 1000).toString(),
+                valOne: (numbeer * 453.592).toString(),
                 valTwo: ev
             })
         }
