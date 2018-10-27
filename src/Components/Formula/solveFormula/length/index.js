@@ -107,7 +107,6 @@ class Lenths extends Component {
                 valTwo: (numbeer / 0.868976).toString()
             })
         }
-        // Cubic foot to  Cubic inch
         else if (conversoinType === "Cubicfoot to Cubicinch") {
             this.setState({
                 valOne: ev,
