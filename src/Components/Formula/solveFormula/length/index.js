@@ -35,7 +35,6 @@ class Lenths extends Component {
     valOneHeandler(ev) {
         let numbeer = ev;
         const conversoinType = this.props.conversionType.conversoinType;
-        // Centimeter to Milimeter
         if (conversoinType === "Centimeter to Milimeter") {
             this.setState({
                 valOne: ev,
