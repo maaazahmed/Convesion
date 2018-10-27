@@ -162,7 +162,6 @@ class Mass extends Component {
                 valTwo: ev
             })
         }
-        // Miligram to Microgram
         else if (conversoinType === "Miligram to Microgram") {
             this.setState({
                 valOne: (numbeer / 1000).toString(),
