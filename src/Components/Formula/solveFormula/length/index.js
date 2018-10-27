@@ -101,7 +101,6 @@ class Lenths extends Component {
                 valTwo: (numbeer * 0.62137).toString()
             })
         }
-        // Nauticalmile to Miles
         else if (conversoinType === "Nauticalmile to Miles") {
             this.setState({
                 valOne: ev,
