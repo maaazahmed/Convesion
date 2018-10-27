@@ -98,14 +98,14 @@ class Mass extends Component {
         else if (conversoinType === "Kilogram to Tonne") {
             this.setState({
                 valOne: ev,
-                valTwo: (numbeer  /1016.047).toString()
+                valTwo: (numbeer / 1016.047).toString()
             })
         }
-        // Inch to Foot
-        else if (conversoinType === "Inch to Foot") {
+        // Kilogram to Imperial-Tonne
+        else if (conversoinType === "Kilogram to Imperial-Tonne") {
             this.setState({
                 valOne: ev,
-                valTwo: (numbeer / 12).toString()
+                valTwo: (numbeer / 907.185).toString()
             })
         }
         // Kilometer to Miles
@@ -197,14 +197,14 @@ class Mass extends Component {
         // Kilogram to Tonne
         else if (conversoinType === "Kilogram to Tonne") {
             this.setState({
-                valOne: (numbeer  *1016.047).toString(),
+                valOne: (numbeer * 1016.047).toString(),
                 valTwo: ev
             })
         }
-        // Inch to Foot
-        else if (conversoinType === "Inch to Foot") {
+        // Kilogram to Imperial-Tonne
+        else if (conversoinType === "Kilogram to Imperial-Tonne") {
             this.setState({
-                valOne: (numbeer * 12).toString(),
+                valOne: (numbeer * 907.185).toString(),
                 valTwo: ev
             })
         }
