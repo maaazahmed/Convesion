@@ -51,21 +51,6 @@ class Categorry extends Component {
         "Kilogram to Metrictone",
         "Kilogram to a.m.u",
       ]
-      const formulas2 = [
-        "Gram to Kilogram",
-        "Gram to Miligram",
-        "Gram to Microgram",
-        "Gram to Nanogram",
-        "Gram to Pound",
-        "Gram to Stone",
-        "Gram to Ounce",
-        "Miligram to Microgram",
-        "Kilogram to Tonne",
-        "Kilogram to Imperial-Tonne",
-        "Kilogram to US-Tonne",
-        "Kilogram to Metrictone",
-        "Kilogram to a.m.u",
-      ]
       this.props.formulaList(formulas2)
       this.props.routeKey("Mass")
       this.props.navigation.navigate("Formulas")
