@@ -43,6 +43,26 @@ class Categorry extends Component {
       this.props.routeKey("Lenths")
       this.props.navigation.navigate("Formulas")
     }
+   else if (key === "Mass") {
+      const formulas1 = [
+        "Centimeter to Milimeter",
+        "Meter to Yard",
+        "Meter to Foot",
+        "Meter to Inch",
+        "Meter to Kilometer",
+        "Meter to Centimeter",
+        "Meter to Milimeter",
+        "Meter to Micrometer",
+        "Meter to Nanometer",
+        "Inch to Foot",
+        "Kilometer to Miles",
+        "Nauticalmile to Miles",
+        "Cubicfoot to Cubicinch",
+      ]
+      this.props.formulaList(formulas1)
+      this.props.routeKey("Lenths")
+      this.props.navigation.navigate("Formulas")
+    }
 
   }
 
@@ -65,6 +85,18 @@ class Categorry extends Component {
             </View>
           </View>
           <View style={styles.categorryButn} >
+            <TouchableOpacity onPress={this.selectConversationn.bind(this, "Mass")} activeOpacity={0.5} style={styles.categorryIconView}  >
+              <Image source={require("./images/balance.png")}
+                style={styles.categorryIcon} resizeMode="contain" />
+            </TouchableOpacity>
+            <View style={styles.categorryTextView}  >
+              <TouchableOpacity onPress={this.selectConversationn.bind(this, "Mass")} activeOpacity={0.5}
+                style={styles.categorryButnTouchableOpacity} >
+                <Text style={styles.categorryText} >Mass</Text>
+              </TouchableOpacity>
+            </View>
+          </View>
+          <View style={styles.categorryButn} >
             <TouchableOpacity onPress={this.selectConversationn.bind(this, "Temperature")}
               activeOpacity={0.5} style={styles.categorryIconView}  >
               <Image source={require("./images/thermometer.png")}
@@ -78,18 +110,7 @@ class Categorry extends Component {
               </TouchableOpacity>
             </View>
           </View>
-          <View style={styles.categorryButn} >
-            <TouchableOpacity activeOpacity={0.5} style={styles.categorryIconView}  >
-              <Image source={require("./images/balance.png")}
-                style={styles.categorryIcon} resizeMode="contain" />
-            </TouchableOpacity>
-            <View style={styles.categorryTextView}  >
-              <TouchableOpacity activeOpacity={0.5}
-                style={styles.categorryButnTouchableOpacity} >
-                <Text style={styles.categorryText} >Mass</Text>
-              </TouchableOpacity>
-            </View>
-          </View>
+
           <View style={styles.categorryButn} >
             <TouchableOpacity activeOpacity={0.5} style={styles.categorryIconView}  >
               <Image source={require("./images/passage-of-time.png")}
