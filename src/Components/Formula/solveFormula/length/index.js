@@ -53,7 +53,6 @@ class Lenths extends Component {
                 valTwo: (numbeer * 3.28084).toString()
             })
         }
-        // Meter to Inch
         else if (conversoinType === "Meter to Inch") {
             this.setState({
                 valOne: ev,
