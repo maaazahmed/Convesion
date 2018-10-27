@@ -200,12 +200,6 @@ class Lenths extends Component {
     }
 
 
-
-
-
-
-
-
     render() {
         return (
             <Container style={{ backgroundColor: "#373447" }} >
