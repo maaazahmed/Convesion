@@ -42,11 +42,11 @@ class Mass extends Component {
                 valTwo: (numbeer / 1000).toString()
             })
         }
-        // Meter to Yard 
-        else if (conversoinType === "Meter to Yard") {
+        // Gram to Miligram
+        else if (conversoinType === "Gram to Miligram") {
             this.setState({
                 valOne: ev,
-                valTwo: (numbeer * 1.09361).toString()
+                valTwo: (numbeer * 1000).toString()
             })
         }
         // Meter to foot 
@@ -142,10 +142,10 @@ class Mass extends Component {
 
 
 
-        // Meter to Yard 
-        else if (conversoinType === "Meter to Yard") {
+        // Gram to Miligram
+        else if (conversoinType === "Gram to Miligram") {
             this.setState({
-                valOne: (numbeer / 1.09361).toString(),
+                valOne: (numbeer / 1000).toString(),
                 valTwo: ev
             })
         }
