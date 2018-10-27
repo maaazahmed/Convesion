@@ -115,11 +115,11 @@ class Mass extends Component {
                 valTwo: (numbeer / 907.185).toString()
             })
         }
-        // Nauticalmile to Miles
-        else if (conversoinType === "Nauticalmile to Miles") {
+        // Kilogram to Metrictone
+        else if (conversoinType === "Kilogram to Metrictone") {
             this.setState({
                 valOne: ev,
-                valTwo: (numbeer / 0.868976).toString()
+                valTwo: (numbeer / 1000).toString()
             })
         }
         // Cubic foot to  Cubic inch
@@ -215,10 +215,10 @@ class Mass extends Component {
                 valTwo: ev
             })
         }
-        // Nauticalmile to Miles
-        else if (conversoinType === "Nauticalmile to Miles") {
+        // Kilogram to Metrictone
+        else if (conversoinType === "Kilogram to Metrictone") {
             this.setState({
-                valOne: (numbeer * 0.868976).toString(),
+                valOne: (numbeer * 10000).toString(),
                 valTwo: ev
             })
         }
