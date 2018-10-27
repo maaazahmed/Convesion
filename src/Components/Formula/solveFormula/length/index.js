@@ -83,7 +83,6 @@ class Lenths extends Component {
                 valTwo: (numbeer * 1000000).toString()
             })
         }
-        // Meter to Nanometer
         else if (conversoinType === "Meter to Nanometer") {
             this.setState({
                 valOne: ev,
