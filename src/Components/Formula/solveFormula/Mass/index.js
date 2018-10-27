@@ -80,11 +80,11 @@ class Mass extends Component {
                 valTwo: (numbeer / 6350.293).toString()
             })
         }
-        // Meter to Milimeter
-        else if (conversoinType === "Meter to Milimeter") {
+        // Gram to Ounce
+        else if (conversoinType === "Gram to Ounce") {
             this.setState({
                 valOne: ev,
-                valTwo: (numbeer * 1000).toString()
+                valTwo: (numbeer / 28.35).toString()
             })
         }
         // Meter to Micrometer
@@ -180,10 +180,10 @@ class Mass extends Component {
                 valTwo: ev
             })
         }
-        // Meter to Milimeter
-        else if (conversoinType === "Meter to Milimeter") {
+        // Gram to Ounce
+        else if (conversoinType === "Gram to Ounce") {
             this.setState({
-                valOne: (numbeer / 1000).toString(),
+                valOne: (numbeer * 28.35).toString(),
                 valTwo: ev
             })
         }
