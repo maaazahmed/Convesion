@@ -2,7 +2,8 @@ import { StackNavigator } from "react-navigation"
 import {
     Categorry,
     Formulas,
-    Lenths
+    Lenths,
+    Mass
 } from "./Components"
 
 
@@ -17,11 +18,14 @@ const Routes = StackNavigator({
     Lenths: {
         screen: Lenths
     },
+    Mass: {
+        screen: Mass
+    },
 }, {
         navigationOptions: {
             header: null
         },
-        initialRouteName:"Categorry"
+        initialRouteName: "Categorry"
     })
 
 

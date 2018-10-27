@@ -6,7 +6,7 @@ import { connect } from "react-redux"
 
 
 const { width } = Dimensions.get("window")
-class Lenths extends Component {
+class Mass extends Component {
 
     constructor() {
         super()
@@ -333,4 +333,4 @@ const mapDispatchToProp = (dispatch) => {
 
 
 
-export default connect(mapStateToProp, mapDispatchToProp)(Lenths)
+export default connect(mapStateToProp, mapDispatchToProp)(Mass)
