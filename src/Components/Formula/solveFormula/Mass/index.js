@@ -35,7 +35,6 @@ class Mass extends Component {
     valOneHeandler(ev) {
         let numbeer = ev;
         const conversoinType = this.props.conversionType.conversoinType;
-        // Gram to Kilogram
         if (conversoinType === "Gram to Kilogram") {
             this.setState({
                 valOne: ev,
@@ -132,7 +131,6 @@ class Mass extends Component {
     valTwoHeandler(ev) {
         let numbeer = ev;
         const conversoinType = this.props.conversionType.conversoinType;
-        // Gram to Kilogram
         if (conversoinType === "Gram to Kilogram") {
             this.setState({
                 valOne: (numbeer * 1000).toString(),
