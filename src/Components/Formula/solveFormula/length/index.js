@@ -59,7 +59,6 @@ class Lenths extends Component {
                 valTwo: (numbeer / 0.0254).toString()
             })
         }
-        // Meter to Kilometer
         else if (conversoinType === "Meter to Kilometer") {
             this.setState({
                 valOne: ev,
