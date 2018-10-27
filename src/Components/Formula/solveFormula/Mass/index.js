@@ -90,7 +90,6 @@ class Mass extends Component {
                 valTwo: (numbeer / 1016.047).toString()
             })
         }
-        // Kilogram to Imperial-Tonne
         else if (conversoinType === "Kilogram to Imperial-Tonne") {
             this.setState({
                 valOne: ev,
