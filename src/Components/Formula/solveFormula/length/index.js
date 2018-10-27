@@ -77,7 +77,6 @@ class Lenths extends Component {
                 valTwo: (numbeer * 1000).toString()
             })
         }
-        // Meter to Micrometer
         else if (conversoinType === "Meter to Micrometer") {
             this.setState({
                 valOne: ev,
