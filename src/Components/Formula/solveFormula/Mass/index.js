@@ -122,11 +122,11 @@ class Mass extends Component {
                 valTwo: (numbeer / 1000).toString()
             })
         }
-        // Cubic foot to  Cubic inch
-        else if (conversoinType === "Cubicfoot to Cubicinch") {
+        // Kilogram to a.m.u
+        else if (conversoinType === "Kilogram to a.m.u") {
             this.setState({
                 valOne: ev,
-                valTwo: (numbeer * 1728).toString()
+                valTwo: (numbeer / 0.00000000000000000000000000166).toString()
             })
         }
     }
@@ -222,10 +222,10 @@ class Mass extends Component {
                 valTwo: ev
             })
         }
-        // Cubicfoot to  Cubicinch
-        else if (conversoinType === "Cubicfoot to Cubicinch") {
+        // Kilogram to a.m.u
+        else if (conversoinType === "Kilogram to a.m.u") {
             this.setState({
-                valOne: (numbeer / 1728).toString(),
+                valOne: (numbeer * 0.00000000000000000000000000166).toString(),
                 valTwo: ev
             })
         }
