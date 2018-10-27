@@ -9,19 +9,11 @@ import {
 import { connect } from "react-redux"
 import { formulaList, routeKey } from "../../store/action/action"
 
-
-
-
-
 class Categorry extends Component {
   constructor() {
     super()
 
   }
-
-
-
-
   selectConversationn(key) {
     if (key === "Length") {
       const formulas1 = [
@@ -44,6 +36,21 @@ class Categorry extends Component {
       this.props.navigation.navigate("Formulas")
     }
     else if (key === "Mass") {
+      const formulas2 = [
+        "Gram to Kilogram",
+        "Gram to Miligram",
+        "Gram to Microgram",
+        "Gram to Nanogram",
+        "Gram to Pound",
+        "Gram to Stone",
+        "Gram to Ounce",
+        "Miligram to Microgram",
+        "Kilogram to Tonne",
+        "Kilogram to Imperial-Tonne",
+        "Kilogram to US-Tonne",
+        "Kilogram to Metrictone",
+        "Kilogram to a.m.u",
+      ]
       const formulas2 = [
         "Gram to Kilogram",
         "Gram to Miligram",
