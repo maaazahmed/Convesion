@@ -173,7 +173,6 @@ class Lenths extends Component {
                 valTwo: ev
             })
         }
-        // Inch to Foot
         else if (conversoinType === "Inch to Foot") {
             this.setState({
                 valOne: (numbeer * 12).toString(),
