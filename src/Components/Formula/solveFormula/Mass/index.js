@@ -168,7 +168,6 @@ class Mass extends Component {
                 valTwo: ev
             })
         }
-        // Kilogram to Tonne
         else if (conversoinType === "Kilogram to Tonne") {
             this.setState({
                 valOne: (numbeer * 1016.047).toString(),
