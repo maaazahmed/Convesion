@@ -94,11 +94,11 @@ class Mass extends Component {
                 valTwo: (numbeer * 1000).toString()
             })
         }
-        // Meter to Nanometer
-        else if (conversoinType === "Meter to Nanometer") {
+        // Kilogram to Tonne
+        else if (conversoinType === "Kilogram to Tonne") {
             this.setState({
                 valOne: ev,
-                valTwo: (numbeer * 1000000000).toString()
+                valTwo: (numbeer  /1016.047).toString()
             })
         }
         // Inch to Foot
@@ -194,10 +194,10 @@ class Mass extends Component {
                 valTwo: ev
             })
         }
-        // Meter to Nanometer
-        else if (conversoinType === "Meter to Nanometer") {
+        // Kilogram to Tonne
+        else if (conversoinType === "Kilogram to Tonne") {
             this.setState({
-                valOne: (numbeer / 1000000000).toString(),
+                valOne: (numbeer  *1016.047).toString(),
                 valTwo: ev
             })
         }

@@ -54,7 +54,7 @@ class Categorry extends Component {
         "Gram to Ounce",
         "Miligram to Microgram",
         "Kilogram to Tonne",
-        "Kilogram to Imperial",
+        "Kilogram to Imperial-Tonne",
         "Kilogram to US Tonne",
         "Kilogram to Metrictone",
         "Kilogram to a.m.u",
