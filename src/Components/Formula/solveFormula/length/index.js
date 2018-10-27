@@ -47,7 +47,6 @@ class Lenths extends Component {
                 valTwo: (numbeer * 1.09361).toString()
             })
         }
-        // Meter to foot 
         else if (conversoinType === "Meter to Foot") {
             this.setState({
                 valOne: ev,
