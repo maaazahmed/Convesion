@@ -144,7 +144,6 @@ class Mass extends Component {
                 valTwo: ev
             })
         }
-        // Gram to Pound
         else if (conversoinType === "Gram to Pound") {
             this.setState({
                 valOne: (numbeer * 453.592).toString(),
