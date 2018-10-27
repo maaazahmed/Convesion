@@ -191,7 +191,6 @@ class Lenths extends Component {
                 valTwo: ev
             })
         }
-        // Cubicfoot to  Cubicinch
         else if (conversoinType === "Cubicfoot to Cubicinch") {
             this.setState({
                 valOne: (numbeer / 1728).toString(),
