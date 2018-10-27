@@ -179,7 +179,6 @@ class Lenths extends Component {
                 valTwo: ev
             })
         }
-        // Kilometer to Miles
         else if (conversoinType === "Kilometer to Miles") {
             this.setState({
                 valOne: (numbeer / 0.62137).toString(),
