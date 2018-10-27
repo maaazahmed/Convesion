@@ -186,7 +186,6 @@ class Mass extends Component {
                 valTwo: ev
             })
         }
-        // Kilogram to Metrictone
         else if (conversoinType === "Kilogram to Metrictone") {
             this.setState({
                 valOne: (numbeer * 10000).toString(),
