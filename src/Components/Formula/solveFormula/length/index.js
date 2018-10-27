@@ -41,7 +41,6 @@ class Lenths extends Component {
                 valTwo: (numbeer * 10).toString()
             })
         }
-        // Meter to Yard 
         else if (conversoinType === "Meter to Yard") {
             this.setState({
                 valOne: ev,
