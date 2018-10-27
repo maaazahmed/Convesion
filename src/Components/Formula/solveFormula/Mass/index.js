@@ -108,7 +108,6 @@ class Mass extends Component {
                 valTwo: (numbeer / 1000).toString()
             })
         }
-        // Kilogram to a.m.u
         else if (conversoinType === "Kilogram to a.m.u") {
             this.setState({
                 valOne: ev,
