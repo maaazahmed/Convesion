@@ -35,11 +35,11 @@ class Mass extends Component {
     valOneHeandler(ev) {
         let numbeer = ev;
         const conversoinType = this.props.conversionType.conversoinType;
-        // Centimeter to Milimeter
-        if (conversoinType === "Centimeter to Milimeter") {
+        // Gram to Kilogram
+        if (conversoinType === "Gram to Kilogram") {
             this.setState({
                 valOne: ev,
-                valTwo: (numbeer * 10).toString()
+                valTwo: (numbeer / 1000).toString()
             })
         }
         // Meter to Yard 
@@ -132,13 +132,16 @@ class Mass extends Component {
     valTwoHeandler(ev) {
         let numbeer = ev;
         const conversoinType = this.props.conversionType.conversoinType;
-        // Centimeter to Milimeter
-        if (conversoinType === "Centimeter to Milimeter") {
+        // Gram to Kilogram
+        if (conversoinType === "Gram to Kilogram") {
             this.setState({
-                valOne: (numbeer / 10).toString(),
+                valOne: (numbeer * 1000).toString(),
                 valTwo: ev
             })
         }
+
+
+
         // Meter to Yard 
         else if (conversoinType === "Meter to Yard") {
             this.setState({

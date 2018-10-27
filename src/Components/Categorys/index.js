@@ -43,7 +43,7 @@ class Categorry extends Component {
       this.props.routeKey("Lenths")
       this.props.navigation.navigate("Formulas")
     }
-   else if (key === "Mass") {
+    else if (key === "Mass") {
       const formulas2 = [
         "Gram to Kilogram",
         "Gram to Miligram",
