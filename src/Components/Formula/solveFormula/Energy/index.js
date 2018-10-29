@@ -136,7 +136,7 @@ class Energy extends Component {
         }
         else if (conversoinType === "Joule to Calorie") {
             this.setState({
-                valOne: (numbeer / 4.2).toString(),
+                valOne: (numbeer * 4.2).toString(),
                 valTwo: ev
             })
         }
