@@ -50,7 +50,7 @@ class Temperature extends Component {
         else if (conversoinType === "Kelvin to Fahrenheit") {
             this.setState({
                 valOne: ev,
-                valTwo: (numbeer * 1000000).toString()
+                valTwo: ((numbeer - 273.15) * 9 / 5 + 32).toString()
             })
         }
     }
@@ -73,7 +73,7 @@ class Temperature extends Component {
         }
         else if (conversoinType === "Kelvin to Fahrenheit") {
             this.setState({
-                valOne: (numbeer / 1000000).toString(),
+                valOne: ((numbeer - 32) * 5 / 9 + 273.15).toString(),
                 valTwo: ev
             })
         }
