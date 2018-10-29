@@ -43,13 +43,13 @@ class Energy extends Component {
                 valTwo: (numbeer * 10000000).toString()
             })
         }
-        else if (conversoinType === "Gram to Microgram") {
+        else if (conversoinType === "Joule to Electronvolt") {
             this.setState({
                 valOne: ev,
-                valTwo: (numbeer * 1000000).toString()
+                valTwo: (numbeer / 0.00000000000000000016021).toString()
             })
         }
-      
+
         else if (conversoinType === "Gram to Nanogram") {
             this.setState({
                 valOne: ev,
@@ -74,7 +74,7 @@ class Energy extends Component {
                 valTwo: (numbeer / 28.35).toString()
             })
         }
-        else if (conversoinType === "Miligram to Microgram") {
+        else if (conversoinType === "MiliJoule to Electronvolt") {
             this.setState({
                 valOne: ev,
                 valTwo: (numbeer * 1000).toString()
@@ -128,9 +128,9 @@ class Energy extends Component {
                 valTwo: ev
             })
         }
-        else if (conversoinType === "Gram to Microgram") {
+        else if (conversoinType === "Joule to Electronvolt") {
             this.setState({
-                valOne: (numbeer / 1000000).toString(),
+                valOne: (numbeer * 0.00000000000000000016021).toString(),
                 valTwo: ev
             })
         }
@@ -158,7 +158,7 @@ class Energy extends Component {
                 valTwo: ev
             })
         }
-        else if (conversoinType === "Miligram to Microgram") {
+        else if (conversoinType === "MiliJoule to Electronvolt") {
             this.setState({
                 valOne: (numbeer / 1000).toString(),
                 valTwo: ev
