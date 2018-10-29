@@ -55,6 +55,26 @@ class Categorry extends Component {
       this.props.routeKey("Mass")
       this.props.navigation.navigate("Formulas")
     }
+    else if (key === "Temperature") {
+      const formulas3 = [
+        "Gram to Kilogram",
+        "Gram to Miligram",
+        "Gram to Microgram",
+        "Gram to Nanogram",
+        "Gram to Pound",
+        "Gram to Stone",
+        "Gram to Ounce",
+        "Miligram to Microgram",
+        "Kilogram to Tonne",
+        "Kilogram to Imperial-Tonne",
+        "Kilogram to US-Tonne",
+        "Kilogram to Metrictone",
+        "Kilogram to a.m.u",
+      ]
+      this.props.formulaList(formulas3)
+      this.props.routeKey("Temperature")
+      this.props.navigation.navigate("Formulas")
+    }
 
   }
 
@@ -95,7 +115,7 @@ class Categorry extends Component {
                 style={styles.categorryIcon} resizeMode="contain" />
             </TouchableOpacity>
             <View style={styles.categorryTextView}  >
-              <TouchableOpacity  onPress={this.selectConversationn.bind(this, "Temperature")}
+              <TouchableOpacity onPress={this.selectConversationn.bind(this, "Temperature")}
                 activeOpacity={0.5}
                 style={styles.categorryButnTouchableOpacity} >
                 <Text style={styles.categorryText} >Temperature</Text>
