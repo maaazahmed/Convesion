@@ -96,24 +96,6 @@ class Time extends Component {
                 valTwo: (numbeer / 1016.047).toString()
             })
         }
-        else if (conversoinType === "Kilogram to US-Tonne") {
-            this.setState({
-                valOne: ev,
-                valTwo: (numbeer / 907.185).toString()
-            })
-        }
-        else if (conversoinType === "Kilogram to Metrictone") {
-            this.setState({
-                valOne: ev,
-                valTwo: (numbeer / 1000).toString()
-            })
-        }
-        else if (conversoinType === "Kilogram to a.m.u") {
-            this.setState({
-                valOne: ev,
-                valTwo: (numbeer / 0.00000000000000000000000000166).toString()
-            })
-        }
     }
 
 
@@ -180,24 +162,7 @@ class Time extends Component {
                 valTwo: ev
             })
         }
-        else if (conversoinType === "Kilogram to US-Tonne") {
-            this.setState({
-                valOne: (numbeer * 907.185).toString(),
-                valTwo: ev
-            })
-        }
-        else if (conversoinType === "Kilogram to Metrictone") {
-            this.setState({
-                valOne: (numbeer * 10000).toString(),
-                valTwo: ev
-            })
-        }
-        else if (conversoinType === "Kilogram to a.m.u") {
-            this.setState({
-                valOne: (numbeer * 0.00000000000000000000000000166).toString(),
-                valTwo: ev
-            })
-        }
+       
     }
 
 
