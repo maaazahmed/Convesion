@@ -153,12 +153,6 @@ class Time extends Component {
     }
 
 
-
-
-
-
-
-
     render() {
         return (
             <Container style={{ backgroundColor: "#373447" }} >
