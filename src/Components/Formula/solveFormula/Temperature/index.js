@@ -38,7 +38,7 @@ class Temperature extends Component {
         if (conversoinType === "Centigrade to Kelvin") {
             this.setState({
                 valOne: ev,
-                valTwo: (numbeer + 273).toString()
+                valTwo: (Number(numbeer) + 273).toString()
             })
         }
         else if (conversoinType === "Centigrade to Fahrenheit") {
