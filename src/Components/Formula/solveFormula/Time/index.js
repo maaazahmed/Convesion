@@ -41,10 +41,10 @@ class Time extends Component {
                 valTwo: (numbeer * 1440).toString()
             })
         }
-        else if (conversoinType === "Gram to Miligram") {
+        else if (conversoinType === "Hour to Minute") {
             this.setState({
                 valOne: ev,
-                valTwo: (numbeer * 1000).toString()
+                valTwo: (numbeer * 60).toString()
             })
         }
         else if (conversoinType === "Gram to Microgram") {
@@ -108,9 +108,9 @@ class Time extends Component {
                 valTwo: ev
             })
         }
-        else if (conversoinType === "Gram to Miligram") {
+        else if (conversoinType === "Hour to Minute") {
             this.setState({
-                valOne: (numbeer / 1000).toString(),
+                valOne: (numbeer / 60).toString(),
                 valTwo: ev
             })
         }
