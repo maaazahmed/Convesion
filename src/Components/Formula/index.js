@@ -7,14 +7,10 @@ import { conversoinType } from "../../store/action/action"
 
 const { width, height } = Dimensions.get("window")
 class Formulas extends Component {
-
-
     solveEquation(data) {
         this.props.conversoinType(data)
         this.props.navigation.navigate(this.props.routKey.routeKey)
     }
-
-
     render() {
         const formulaList = this.props.formulaList.formulas
         return (

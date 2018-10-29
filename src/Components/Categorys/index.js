@@ -57,19 +57,9 @@ class Categorry extends Component {
     }
     else if (key === "Temperature") {
       const formulas3 = [
-        "Gram to Kilogram",
-        "Gram to Miligram",
-        "Gram to Microgram",
-        "Gram to Nanogram",
-        "Gram to Pound",
-        "Gram to Stone",
-        "Gram to Ounce",
-        "Miligram to Microgram",
-        "Kilogram to Tonne",
-        "Kilogram to Imperial-Tonne",
-        "Kilogram to US-Tonne",
-        "Kilogram to Metrictone",
-        "Kilogram to a.m.u",
+        "Centigrade to Kelvin",
+        "Centigrade to Fahrenheit",
+        "Kelvin to Fahrenheit",
       ]
       this.props.formulaList(formulas3)
       this.props.routeKey("Temperature")

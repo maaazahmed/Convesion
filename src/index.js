@@ -3,7 +3,8 @@ import {
     Categorry,
     Formulas,
     Lenths,
-    Mass
+    Mass,
+    Temperature
 } from "./Components"
 
 
@@ -20,6 +21,9 @@ const Routes = StackNavigator({
     },
     Mass: {
         screen: Mass
+    },
+    Temperature: {
+        screen: Temperature
     },
 }, {
         navigationOptions: {
