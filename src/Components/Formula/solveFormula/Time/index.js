@@ -50,7 +50,7 @@ class Time extends Component {
         else if (conversoinType === "Minute to Second") {
             this.setState({
                 valOne: ev,
-                valTwo: (numbeer * 3600).toString()
+                valTwo: (numbeer * 60).toString()
             })
         }
 
@@ -116,7 +116,7 @@ class Time extends Component {
         }
         else if (conversoinType === "Minute to Second") {
             this.setState({
-                valOne: (numbeer / 3600).toString(),
+                valOne: (numbeer / 60).toString(),
                 valTwo: ev
             })
         }
