@@ -35,10 +35,10 @@ class Time extends Component {
     valOneHeandler(ev) {
         let numbeer = ev;
         const conversoinType = this.props.conversionType.conversoinType;
-        if (conversoinType === "Gram to Kilogram") {
+        if (conversoinType === "Day to Minute") {
             this.setState({
                 valOne: ev,
-                valTwo: (numbeer / 1000).toString()
+                valTwo: (numbeer * 1440).toString()
             })
         }
         else if (conversoinType === "Gram to Miligram") {
@@ -53,7 +53,7 @@ class Time extends Component {
                 valTwo: (numbeer * 1000000).toString()
             })
         }
-      
+
         else if (conversoinType === "Gram to Nanogram") {
             this.setState({
                 valOne: ev,
@@ -102,9 +102,9 @@ class Time extends Component {
     valTwoHeandler(ev) {
         let numbeer = ev;
         const conversoinType = this.props.conversionType.conversoinType;
-        if (conversoinType === "Gram to Kilogram") {
+        if (conversoinType === "Day to Minute") {
             this.setState({
-                valOne: (numbeer * 1000).toString(),
+                valOne: (numbeer / 1440).toString(),
                 valTwo: ev
             })
         }
@@ -162,7 +162,7 @@ class Time extends Component {
                 valTwo: ev
             })
         }
-       
+
     }
 
 
