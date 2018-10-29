@@ -35,19 +35,19 @@ class Temperature extends Component {
     valOneHeandler(ev) {
         let numbeer = ev;
         const conversoinType = this.props.conversionType.conversoinType;
-        if (conversoinType === "Gram to Kilogram") {
+        if (conversoinType === "Centigrade to Kelvin") {
             this.setState({
                 valOne: ev,
                 valTwo: (numbeer / 1000).toString()
             })
         }
-        else if (conversoinType === "Gram to Miligram") {
+        else if (conversoinType === "Centigrade to Fahrenheit") {
             this.setState({
                 valOne: ev,
                 valTwo: (numbeer * 1000).toString()
             })
         }
-        else if (conversoinType === "Gram to Microgram") {
+        else if (conversoinType === "Kelvin to Fahrenheit") {
             this.setState({
                 valOne: ev,
                 valTwo: (numbeer * 1000000).toString()
@@ -59,19 +59,19 @@ class Temperature extends Component {
     valTwoHeandler(ev) {
         let numbeer = ev;
         const conversoinType = this.props.conversionType.conversoinType;
-        if (conversoinType === "Gram to Kilogram") {
+        if (conversoinType === "Centigrade to Kelvin") {
             this.setState({
                 valOne: (numbeer * 1000).toString(),
                 valTwo: ev
             })
         }
-        else if (conversoinType === "Gram to Miligram") {
+        else if (conversoinType === "Centigrade to Fahrenheit") {
             this.setState({
                 valOne: (numbeer / 1000).toString(),
                 valTwo: ev
             })
         }
-        else if (conversoinType === "Gram to Microgram") {
+        else if (conversoinType === "Kelvin to Fahrenheit") {
             this.setState({
                 valOne: (numbeer / 1000000).toString(),
                 valTwo: ev
