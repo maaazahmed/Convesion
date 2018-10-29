@@ -81,6 +81,22 @@ class Categorry extends Component {
       this.props.routeKey("Time")
       this.props.navigation.navigate("Formulas")
     }
+    else if (key === "Time") {
+      const formulas4 = [
+        "Day to Minute",
+        "Hour to Minute",
+        "Minute to Second",
+        "Hour to Second",
+        "Year to Second",
+        "Year to Minute",
+        "Year to Hour",
+        "Year to Week",
+        "Century to Day",
+      ]
+      this.props.formulaList(formulas4)
+      this.props.routeKey("Time")
+      this.props.navigation.navigate("Formulas")
+    }
 
   }
 
@@ -144,12 +160,14 @@ class Categorry extends Component {
             </View>
           </View>
           <View style={styles.categorryButn} >
-            <TouchableOpacity activeOpacity={0.5} style={styles.categorryIconView}  >
+            <TouchableOpacity onPress={this.selectConversationn.bind(this, "Energy")}
+              activeOpacity={0.5} style={styles.categorryIconView}  >
               <Image source={require("./images/green-energy.png")}
                 style={styles.categorryIcon} resizeMode="contain" />
             </TouchableOpacity>
             <View style={styles.categorryTextView}  >
-              <TouchableOpacity activeOpacity={0.5}
+              <TouchableOpacity onPress={this.selectConversationn.bind(this, "Energy")}
+                activeOpacity={0.5}
                 style={styles.categorryButnTouchableOpacity} >
                 <Text style={styles.categorryText} >Energy</Text>
               </TouchableOpacity>
