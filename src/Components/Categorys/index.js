@@ -69,10 +69,16 @@ class Categorry extends Component {
       const formulas4 = [
         "Day to Minute",
         "Hour to Minute",
+        "Minute to Second",
         "Hour to Second",
+        "Year to Second",
+        "Year to Minute",
+        "Year to Hour",
+        "Year to Week",
+        "Century to Day",
       ]
       this.props.formulaList(formulas4)
-      this.props.routeKey("Temperature")
+      this.props.routeKey("Time")
       this.props.navigation.navigate("Formulas")
     }
 
