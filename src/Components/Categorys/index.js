@@ -81,8 +81,8 @@ class Categorry extends Component {
       this.props.routeKey("Time")
       this.props.navigation.navigate("Formulas")
     }
-    else if (key === "Time") {
-      const formulas4 = [
+    else if (key === "Energy") {
+      const formulas5 = [
         "Day to Minute",
         "Hour to Minute",
         "Minute to Second",
@@ -93,8 +93,8 @@ class Categorry extends Component {
         "Year to Week",
         "Century to Day",
       ]
-      this.props.formulaList(formulas4)
-      this.props.routeKey("Time")
+      this.props.formulaList(formulas5)
+      this.props.routeKey("Energy")
       this.props.navigation.navigate("Formulas")
     }
 
