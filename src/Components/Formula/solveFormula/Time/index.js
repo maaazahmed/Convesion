@@ -54,10 +54,10 @@ class Time extends Component {
             })
         }
 
-        else if (conversoinType === "Gram to Nanogram") {
+        else if (conversoinType === "Hour to Second") {
             this.setState({
                 valOne: ev,
-                valTwo: (numbeer * 1000000000).toString()
+                valTwo: (numbeer * 3600).toString()
             })
         }
         else if (conversoinType === "Gram to Pound") {
@@ -120,9 +120,9 @@ class Time extends Component {
                 valTwo: ev
             })
         }
-        else if (conversoinType === "Gram to Nanogram") {
+        else if (conversoinType === "Hour to Second") {
             this.setState({
-                valOne: (numbeer / 1000000000).toString(),
+                valOne: (numbeer / 3600).toString(),
                 valTwo: ev
             })
         }
