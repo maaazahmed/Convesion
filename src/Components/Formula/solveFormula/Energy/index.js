@@ -31,7 +31,7 @@ class Energy extends Component {
     valOneHeandler(ev) {
         let numbeer = ev;
         const conversoinType = this.props.conversionType.conversoinType;
-        if (conversoinType === "Gram to Kilogram") {
+        if (conversoinType === "Joule to Kilojoule") {
             this.setState({
                 valOne: ev,
                 valTwo: (numbeer / 1000).toString()
@@ -116,7 +116,7 @@ class Energy extends Component {
     valTwoHeandler(ev) {
         let numbeer = ev;
         const conversoinType = this.props.conversionType.conversoinType;
-        if (conversoinType === "Gram to Kilogram") {
+        if (conversoinType === "Joule to Kilojoule") {
             this.setState({
                 valOne: (numbeer * 1000).toString(),
                 valTwo: ev
