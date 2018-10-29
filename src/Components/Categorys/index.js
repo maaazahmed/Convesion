@@ -90,7 +90,6 @@ class Categorry extends Component {
         "Joule to Kilocalorie",
         "Joule to Watt-Hour",
         "Joule to Kilowatt-Hour",
-        "Joule to Kilowatt",
         "Joule to B.T.U",
         "Joule toFoot-pound",
         "a.m.u to Mev",
