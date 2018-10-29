@@ -65,6 +65,16 @@ class Categorry extends Component {
       this.props.routeKey("Temperature")
       this.props.navigation.navigate("Formulas")
     }
+    else if (key === "Time") {
+      const formulas4 = [
+        "Day to Minute",
+        "Hour to Minute",
+        "Hour to Second",
+      ]
+      this.props.formulaList(formulas4)
+      this.props.routeKey("Temperature")
+      this.props.navigation.navigate("Formulas")
+    }
 
   }
 
@@ -114,12 +124,14 @@ class Categorry extends Component {
           </View>
 
           <View style={styles.categorryButn} >
-            <TouchableOpacity activeOpacity={0.5} style={styles.categorryIconView}  >
+            <TouchableOpacity onPress={this.selectConversationn.bind(this, "Time")}
+              activeOpacity={0.5} style={styles.categorryIconView}  >
               <Image source={require("./images/passage-of-time.png")}
                 style={styles.categorryIcon} resizeMode="contain" />
             </TouchableOpacity>
             <View style={styles.categorryTextView}  >
-              <TouchableOpacity activeOpacity={0.5}
+              <TouchableOpacity onPress={this.selectConversationn.bind(this, "Time")}
+                activeOpacity={0.5}
                 style={styles.categorryButnTouchableOpacity} >
                 <Text style={styles.categorryText} >Time</Text>
               </TouchableOpacity>
