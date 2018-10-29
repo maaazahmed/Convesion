@@ -78,22 +78,16 @@ class Time extends Component {
                 valTwo: (numbeer * (365 * 24)).toString()
             })
         }
-        else if (conversoinType === "MiliMinute to Second") {
+        else if (conversoinType === "Year to Week") {
             this.setState({
                 valOne: ev,
-                valTwo: (numbeer * 1000).toString()
+                valTwo: (numbeer * 52.1429).toString()
             })
         }
-        else if (conversoinType === "Kilogram to Tonne") {
+        else if (conversoinType === "Century to Day") {
             this.setState({
                 valOne: ev,
-                valTwo: (numbeer / 1016.047).toString()
-            })
-        }
-        else if (conversoinType === "Kilogram to Imperial-Tonne") {
-            this.setState({
-                valOne: ev,
-                valTwo: (numbeer / 1016.047).toString()
+                valTwo: (numbeer * 36500).toString()
             })
         }
     }
@@ -144,25 +138,18 @@ class Time extends Component {
                 valTwo: ev
             })
         }
-        else if (conversoinType === "MiliMinute to Second") {
+        else if (conversoinType === "Year to Week") {
             this.setState({
-                valOne: (numbeer / 1000).toString(),
+                valOne: (numbeer / 52.1429).toString(),
                 valTwo: ev
             })
         }
-        else if (conversoinType === "Kilogram to Tonne") {
+        else if (conversoinType === "Century to Day") {
             this.setState({
-                valOne: (numbeer * 1016.047).toString(),
+                valOne: (numbeer / 36500).toString(),
                 valTwo: ev
             })
         }
-        else if (conversoinType === "Kilogram to Imperial-Tonne") {
-            this.setState({
-                valOne: (numbeer * 1016.047).toString(),
-                valTwo: ev
-            })
-        }
-
     }
 
 
