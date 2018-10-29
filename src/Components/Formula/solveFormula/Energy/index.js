@@ -50,10 +50,10 @@ class Energy extends Component {
             })
         }
 
-        else if (conversoinType === "Gram to Nanogram") {
+        else if (conversoinType === "Joule to Calorie") {
             this.setState({
                 valOne: ev,
-                valTwo: (numbeer * 1000000000).toString()
+                valTwo: (numbeer / 4.2).toString()
             })
         }
         else if (conversoinType === "Gram to Pound") {
@@ -134,9 +134,9 @@ class Energy extends Component {
                 valTwo: ev
             })
         }
-        else if (conversoinType === "Gram to Nanogram") {
+        else if (conversoinType === "Joule to Calorie") {
             this.setState({
-                valOne: (numbeer / 1000000000).toString(),
+                valOne: (numbeer / 4.2).toString(),
                 valTwo: ev
             })
         }
