@@ -68,10 +68,10 @@ class Energy extends Component {
                 valTwo: (numbeer / 3600).toString()
             })
         }
-        else if (conversoinType === "Gram to Ounce") {
+        else if (conversoinType === "Joule to Kilowatt-Hour") {
             this.setState({
                 valOne: ev,
-                valTwo: (numbeer / 28.35).toString()
+                valTwo: (numbeer / 3600000).toString()
             })
         }
         else if (conversoinType === "MiliJoule to Electronvolt") {
@@ -152,9 +152,9 @@ class Energy extends Component {
                 valTwo: ev
             })
         }
-        else if (conversoinType === "Gram to Ounce") {
+        else if (conversoinType === "Joule to Kilowatt-Hour") {
             this.setState({
-                valOne: (numbeer * 28.35).toString(),
+                valOne: (numbeer * 3600000).toString(),
                 valTwo: ev
             })
         }
