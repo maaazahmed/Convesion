@@ -128,7 +128,7 @@ class Time extends Component {
         }
         else if (conversoinType === "Year to Second") {
             this.setState({
-                valOne: (numbeer * 453.592).toString(),
+                valOne: (numbeer / (365*24*3600)).toString(),
                 valTwo: ev
             })
         }
