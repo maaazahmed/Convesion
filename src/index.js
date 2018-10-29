@@ -1,9 +1,10 @@
 import { StackNavigator } from "react-navigation"
 import {
-    Categorry,
-    Formulas,
-    Lenths,
+    Time,
     Mass,
+    Lenths,
+    Formulas,
+    Categorry,
     Temperature
 } from "./Components"
 
@@ -24,6 +25,9 @@ const Routes = StackNavigator({
     },
     Temperature: {
         screen: Temperature
+    },
+    Time: {
+        screen: Time
     },
 }, {
         navigationOptions: {
