@@ -98,10 +98,10 @@ class Energy extends Component {
                 valTwo: (numbeer * 931.5).toString()
             })
         }
-        else if (conversoinType === "Kilogram to Metrictone") {
+        else if (conversoinType === "Kilogram to Mev") {
             this.setState({
                 valOne: ev,
-                valTwo: (numbeer / 1000).toString()
+                valTwo: (numbeer * 560843373500000000000000000000).toString()
             })
         }
         else if (conversoinType === "Kilogram to a.m.u") {
@@ -182,9 +182,9 @@ class Energy extends Component {
                 valTwo: ev
             })
         }
-        else if (conversoinType === "Kilogram to Metrictone") {
+        else if (conversoinType === "Kilogram to Mev") {
             this.setState({
-                valOne: (numbeer * 10000).toString(),
+                valOne: (numbeer / 560843373500000000000000000000).toString(),
                 valTwo: ev
             })
         }
