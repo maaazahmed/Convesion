@@ -77,66 +77,6 @@ class Temperature extends Component {
                 valTwo: ev
             })
         }
-        else if (conversoinType === "Gram to Nanogram") {
-            this.setState({
-                valOne: (numbeer / 1000000000).toString(),
-                valTwo: ev
-            })
-        }
-        else if (conversoinType === "Gram to Pound") {
-            this.setState({
-                valOne: (numbeer * 453.592).toString(),
-                valTwo: ev
-            })
-        }
-        else if (conversoinType === "Gram to Stone") {
-            this.setState({
-                valOne: (numbeer * 6350.293).toString(),
-                valTwo: ev
-            })
-        }
-        else if (conversoinType === "Gram to Ounce") {
-            this.setState({
-                valOne: (numbeer * 28.35).toString(),
-                valTwo: ev
-            })
-        }
-        else if (conversoinType === "Miligram to Microgram") {
-            this.setState({
-                valOne: (numbeer / 1000).toString(),
-                valTwo: ev
-            })
-        }
-        else if (conversoinType === "Kilogram to Tonne") {
-            this.setState({
-                valOne: (numbeer * 1016.047).toString(),
-                valTwo: ev
-            })
-        }
-        else if (conversoinType === "Kilogram to Imperial-Tonne") {
-            this.setState({
-                valOne: (numbeer * 1016.047).toString(),
-                valTwo: ev
-            })
-        }
-        else if (conversoinType === "Kilogram to US-Tonne") {
-            this.setState({
-                valOne: (numbeer * 907.185).toString(),
-                valTwo: ev
-            })
-        }
-        else if (conversoinType === "Kilogram to Metrictone") {
-            this.setState({
-                valOne: (numbeer * 10000).toString(),
-                valTwo: ev
-            })
-        }
-        else if (conversoinType === "Kilogram to a.m.u") {
-            this.setState({
-                valOne: (numbeer * 0.00000000000000000000000000166).toString(),
-                valTwo: ev
-            })
-        }
     }
 
 
