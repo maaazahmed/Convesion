@@ -66,10 +66,10 @@ class Time extends Component {
                 valTwo: (numbeer * (365 * 24 * 3600)).toString()
             })
         }
-        else if (conversoinType === "Gram to Stone") {
+        else if (conversoinType === "Year to Minute") {
             this.setState({
                 valOne: ev,
-                valTwo: (numbeer / 6350.293).toString()
+                valTwo: (numbeer * (365 * 24 * 60)).toString()
             })
         }
         else if (conversoinType === "Gram to Ounce") {
@@ -128,13 +128,13 @@ class Time extends Component {
         }
         else if (conversoinType === "Year to Second") {
             this.setState({
-                valOne: (numbeer / (365*24*3600)).toString(),
+                valOne: (numbeer / (365 * 24 * 3600)).toString(),
                 valTwo: ev
             })
         }
-        else if (conversoinType === "Gram to Stone") {
+        else if (conversoinType === "Year to Minute") {
             this.setState({
-                valOne: (numbeer * 6350.293).toString(),
+                valOne: (numbeer / (365 * 24 * 60)).toString(),
                 valTwo: ev
             })
         }
