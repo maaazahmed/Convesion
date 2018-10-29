@@ -44,7 +44,7 @@ class Temperature extends Component {
         else if (conversoinType === "Centigrade to Fahrenheit") {
             this.setState({
                 valOne: ev,
-                valTwo: ((numbeer  * 9/5)+32).toString()
+                valTwo: ((numbeer * 9 / 5) + 32).toString()
             })
         }
         else if (conversoinType === "Kelvin to Fahrenheit") {
@@ -67,7 +67,7 @@ class Temperature extends Component {
         }
         else if (conversoinType === "Centigrade to Fahrenheit") {
             this.setState({
-                valOne: (numbeer / 1000).toString(),
+                valOne: ((numbeer - 32) * 5 / 9).toString(),
                 valTwo: ev
             })
         }
