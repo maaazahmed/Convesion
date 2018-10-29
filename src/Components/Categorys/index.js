@@ -83,15 +83,18 @@ class Categorry extends Component {
     }
     else if (key === "Energy") {
       const formulas5 = [
-        "Day to Minute",
-        "Hour to Minute",
-        "Minute to Second",
-        "Hour to Second",
-        "Year to Second",
-        "Year to Minute",
-        "Year to Hour",
-        "Year to Week",
-        "Century to Day",
+        "Joule to Kilojoule",
+        "Joule to Erg",
+        "Joule to Electronvolt",
+        "Joule to Calorie",
+        "Joule to Kilocalorie",
+        "Joule to Watt-Hour",
+        "Joule to Kilowatt",
+        "Joule to B.T.U",
+        "Joule toFoot-pound",
+        "a.m.u to Mev",
+        "Kilogram to Mev",
+        "Electronvolt to Mev",
       ]
       this.props.formulaList(formulas5)
       this.props.routeKey("Energy")
