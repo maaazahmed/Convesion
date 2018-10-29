@@ -74,10 +74,10 @@ class Energy extends Component {
                 valTwo: (numbeer / 3600000).toString()
             })
         }
-        else if (conversoinType === "MiliJoule to Electronvolt") {
+        else if (conversoinType === "Joule to B.T.U") {
             this.setState({
                 valOne: ev,
-                valTwo: (numbeer * 1000).toString()
+                valTwo: (numbeer / 1055).toString()
             })
         }
         else if (conversoinType === "Kilogram to Tonne") {
@@ -158,9 +158,9 @@ class Energy extends Component {
                 valTwo: ev
             })
         }
-        else if (conversoinType === "MiliJoule to Electronvolt") {
+        else if (conversoinType === "Joule to B.T.U") {
             this.setState({
-                valOne: (numbeer / 1000).toString(),
+                valOne: (numbeer * 1055).toString(),
                 valTwo: ev
             })
         }
