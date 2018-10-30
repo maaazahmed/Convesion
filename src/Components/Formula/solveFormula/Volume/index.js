@@ -47,10 +47,10 @@ class Volume extends Component {
                 valTwo: (numbeer * 1000).toString()
             })
         }
-        else if (conversoinType === "Meter to Foot") {
+        else if (conversoinType === "Metercube to Centimetercube") {
             this.setState({
                 valOne: ev,
-                valTwo: (numbeer * 3.28084).toString()
+                valTwo: (numbeer * 1000000).toString()
             })
         }
         else if (conversoinType === "Meter to Inch") {
@@ -131,9 +131,9 @@ class Volume extends Component {
                 valTwo: ev
             })
         }
-        else if (conversoinType === "Meter to Foot") {
+        else if (conversoinType === "Metercube to Centimetercube") {
             this.setState({
-                valOne: (numbeer / 3.28084).toString(),
+                valOne: (numbeer / 1000000).toString(),
                 valTwo: ev
             })
         }
