@@ -7,7 +7,6 @@ import { connect } from "react-redux"
 
 const { width } = Dimensions.get("window")
 class Volume extends Component {
-
     constructor() {
         super()
         this.state = {
@@ -20,18 +19,12 @@ class Volume extends Component {
 
     componentDidMount() {
         let conversionTypeName = this.props.conversionType.conversoinType;
-        console.log(conversionTypeName)
         let type = conversionTypeName.split(" ")
         this.setState({
             placeholder1: type[0],
             placeholder2: type[2],
         })
-
-
-
     }
-
-
     valOneHeandler(ev) {
         let numbeer = ev;
         const conversoinType = this.props.conversionType.conversoinType;
@@ -164,7 +157,6 @@ class Volume extends Component {
                         </TouchableOpacity>
                     </View>
                 </Header>
-
                 <View style={styles.solveContainer} >
                     <View style={styles.inputCiintainer} >
                         <View>
