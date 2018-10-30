@@ -9,11 +9,11 @@ import {
 
 export default class ResponsiveTest extends React.Component {
     componentDidMount() {
-        // loc(this);
+        loc(this);
     }
 
     componentWillUnMount() {
-        // rol();
+        rol();
     }
     render() {
 

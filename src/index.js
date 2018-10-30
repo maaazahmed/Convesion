@@ -49,7 +49,7 @@ const Routes = StackNavigator({
         navigationOptions: {
             header: null
         },
-        initialRouteName: "ResponsiveTest"
+        initialRouteName: "Categorry"
     })
 
 
