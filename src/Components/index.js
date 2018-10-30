@@ -8,13 +8,15 @@ import Energy from "./Formula/solveFormula/Energy/index"
 import Volume from "./Formula/solveFormula/Volume/index"
 import Power from "./Formula/solveFormula/Power"
 import ResponsiveTest from "./Test/index"
+import Angle from "./Formula/solveFormula/Angle/index"
 export {
     Time,
     Mass,
     Power,
+    Angle,
     Lenths,
     Energy,
-    Volume, 
+    Volume,
     Formulas,
     Categorry,
     Temperature,

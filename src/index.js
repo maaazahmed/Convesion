@@ -3,6 +3,7 @@ import {
     Time,
     Mass,
     Power,
+    Angle,
     Energy,
     Lenths,
     Volume,
@@ -15,11 +16,14 @@ import {
 
 
 const Routes = StackNavigator({
-    ResponsiveTest: {
-        screen: ResponsiveTest
-    },
     Categorry: {
         screen: Categorry
+    },
+    Angle: {
+        screen: Angle
+    },
+    ResponsiveTest: {
+        screen: ResponsiveTest
     },
     Formulas: {
         screen: Formulas
