@@ -41,10 +41,10 @@ class Power extends Component {
                 valTwo: (numbeer * 1.341).toString()
             })
         }
-        else if (conversoinType === "Metercube to Centimetercube") {
+        else if (conversoinType === "Kwh to Megajoule") {
             this.setState({
                 valOne: ev,
-                valTwo: (numbeer * 1000000).toString()
+                valTwo: (numbeer * 3.6).toString()
             })
         }
         else if (conversoinType === "US-tablespoon to US-teaspoon") {
@@ -101,9 +101,9 @@ class Power extends Component {
                 valTwo: ev
             })
         }
-        else if (conversoinType === "Metercube to Centimetercube") {
+        else if (conversoinType === "Kwh to Megajoule") {
             this.setState({
-                valOne: (numbeer / 1000000).toString(),
+                valOne: (numbeer / 3.6).toString(),
                 valTwo: ev
             })
         }
