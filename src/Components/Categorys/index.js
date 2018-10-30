@@ -118,14 +118,14 @@ class Categorry extends Component {
       this.props.navigation.navigate("Formulas")
     }
     else if (key === "Power") {
-      const formulas6 = [
+      const formulas7 = [
         "Watt to Horsepower",
         "Kilowatt to Horsepower",
         "Kwh to Megajoule",
         "(ft*lb)/sec to Horsepower",
         "Watt to Joule",
       ]
-      this.props.formulaList(formulas6)
+      this.props.formulaList(formulas7)
       this.props.routeKey("Volume")
       this.props.navigation.navigate("Formulas")
     }
