@@ -53,10 +53,10 @@ class Power extends Component {
                 valTwo: (numbeer / 550).toString()
             })
         }
-        else if (conversoinType === "Imperial-tablespoon to Imperial-teaspoon") {
+        else if (conversoinType === "Watt to Joule") {
             this.setState({
                 valOne: ev,
-                valTwo: (numbeer * 3).toString()
+                valTwo: (numbeer * 3600).toString()
             })
         }
         else if (conversoinType === "US-Liquid-Lallon to US-Liquid-Quart") {
@@ -113,9 +113,9 @@ class Power extends Component {
                 valTwo: ev
             })
         }
-        else if (conversoinType === "Imperial-tablespoon to Imperial-teaspoon") {
+        else if (conversoinType === "Watt to Joule") {
             this.setState({
-                valOne: (numbeer / 3).toString(),
+                valOne: (numbeer / 3600).toString(),
                 valTwo: ev
             })
         }
