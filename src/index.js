@@ -3,6 +3,7 @@ import {
     Time,
     Mass,
     Energy,
+    Volume,
     Lenths,
     Formulas,
     Categorry,
@@ -32,6 +33,9 @@ const Routes = StackNavigator({
     },
     Energy: {
         screen: Energy
+    },
+    Volume: {
+        screen: Volume
     },
 }, {
         navigationOptions: {

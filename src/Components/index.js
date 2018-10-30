@@ -5,12 +5,14 @@ import Mass from "./Formula/solveFormula/Mass"
 import Temperature from "./Formula/solveFormula/Temperature"
 import Time from "./Formula/solveFormula/Time/index"
 import Energy from "./Formula/solveFormula/Energy/index"
+import Volume from "./Formula/solveFormula/Volume/index"
 export {
     Time,
     Mass,
-    Energy,
     Lenths,
+    Energy,
+    Volume,
     Formulas,
     Categorry,
-    Temperature
+    Temperature,
 }
