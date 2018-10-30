@@ -129,6 +129,18 @@ class Categorry extends Component {
       this.props.routeKey("Power")
       this.props.navigation.navigate("Formulas")
     }
+    else if (key === "Angle") {
+      const formulas7 = [
+        "Watt to Horsepower",
+        "Kilowatt to Horsepower",
+        "Kwh to Megajoule",
+        "(ft*lb)/sec to Horsepower",
+        "Watt to Joule",
+      ];
+      this.props.formulaList(formulas7)
+      this.props.routeKey("Angle")
+      this.props.navigation.navigate("Formulas")
+    }
 
 
   }
@@ -235,13 +247,13 @@ class Categorry extends Component {
             </View>
           </View>
           <View style={styles.categorryButn} >
-            <TouchableOpacity onPress={this.selectConversationn.bind(this, "Power")}
+            <TouchableOpacity onPress={this.selectConversationn.bind(this, "Angle")}
               activeOpacity={0.5} style={styles.categorryIconView}  >
               <Image source={require("./images/protractor.png")}
                 style={styles.categorryIcon} resizeMode="contain" />
             </TouchableOpacity>
             <View style={styles.categorryTextView}   >
-              <TouchableOpacity onPress={this.selectConversationn.bind(this, "Power")}
+              <TouchableOpacity onPress={this.selectConversationn.bind(this, "Angle")}
                 activeOpacity={0.5}
                 style={styles.categorryButnTouchableOpacity} >
                 <Text style={styles.categorryText} >Angle</Text>
