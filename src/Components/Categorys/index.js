@@ -235,12 +235,14 @@ class Categorry extends Component {
             </View>
           </View>
           <View style={styles.categorryButn} >
-            <TouchableOpacity activeOpacity={0.5} style={styles.categorryIconView}  >
+            <TouchableOpacity onPress={this.selectConversationn.bind(this, "Power")}
+              activeOpacity={0.5} style={styles.categorryIconView}  >
               <Image source={require("./images/protractor.png")}
                 style={styles.categorryIcon} resizeMode="contain" />
             </TouchableOpacity>
-            <View style={styles.categorryTextView}  >
-              <TouchableOpacity activeOpacity={0.5}
+            <View style={styles.categorryTextView}   >
+              <TouchableOpacity onPress={this.selectConversationn.bind(this, "Power")}
+                activeOpacity={0.5}
                 style={styles.categorryButnTouchableOpacity} >
                 <Text style={styles.categorryText} >Angle</Text>
               </TouchableOpacity>
