@@ -19,7 +19,7 @@ class Power extends Component {
 
     componentDidMount() {
         let conversionTypeName = this.props.conversionType.conversoinType;
-        console.log("===============",conversionTypeName)
+        console.log(conversionTypeName)
         let type = conversionTypeName.split(" ")
         this.setState({
             placeholder1: type[0],
@@ -29,10 +29,10 @@ class Power extends Component {
     valOneHeandler(ev) {
         let numbeer = ev;
         const conversoinType = this.props.conversionType.conversoinType;
-        if (conversoinType === "Liter to Mili-liter") {
+        if (conversoinType === "Watt to Horsepower") {
             this.setState({
                 valOne: ev,
-                valTwo: (numbeer * 1000).toString()
+                valTwo: (numbeer / 746).toString()
             })
         }
         else if (conversoinType === "Decimetercube to Centimetercube") {
@@ -89,9 +89,9 @@ class Power extends Component {
     valTwoHeandler(ev) {
         let numbeer = ev;
         const conversoinType = this.props.conversionType.conversoinType;
-        if (conversoinType === "Liter to Mili-liter") {
+        if (conversoinType === "Watt to Horsepower") {
             this.setState({
-                valOne: (numbeer / 1000).toString(),
+                valOne: (numbeer * 746).toString(),
                 valTwo: ev
             })
         }

@@ -126,7 +126,7 @@ class Categorry extends Component {
         "Watt to Joule",
       ];
       this.props.formulaList(formulas7)
-      this.props.routeKey("Volume")
+      this.props.routeKey("Power")
       this.props.navigation.navigate("Formulas")
     }
 
