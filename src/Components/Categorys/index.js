@@ -156,8 +156,6 @@ class Categorry extends Component {
       this.props.routeKey("Velocity")
       this.props.navigation.navigate("Formulas")
     }
-
-
   }
 
 
