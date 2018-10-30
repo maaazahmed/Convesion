@@ -9,11 +9,15 @@ import {
     Formulas,
     Categorry,
     Temperature,
+    ResponsiveTest
 } from "./Components"
 
 
 
 const Routes = StackNavigator({
+    ResponsiveTest: {
+        screen: ResponsiveTest
+    },
     Categorry: {
         screen: Categorry
     },
@@ -45,7 +49,7 @@ const Routes = StackNavigator({
         navigationOptions: {
             header: null
         },
-        initialRouteName: "Categorry"
+        initialRouteName: "ResponsiveTest"
     })
 
 

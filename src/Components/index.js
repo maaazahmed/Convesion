@@ -7,6 +7,7 @@ import Time from "./Formula/solveFormula/Time/index"
 import Energy from "./Formula/solveFormula/Energy/index"
 import Volume from "./Formula/solveFormula/Volume/index"
 import Power from "./Formula/solveFormula/Power"
+import ResponsiveTest from "./Test/index"
 export {
     Time,
     Mass,
@@ -17,4 +18,5 @@ export {
     Formulas,
     Categorry,
     Temperature,
+    ResponsiveTest
 }
