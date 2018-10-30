@@ -124,7 +124,7 @@ class Categorry extends Component {
         "Kwh to Megajoule",
         "(ft*lb)/sec to Horsepower",
         "Watt to Joule",
-      ]
+      ];
       this.props.formulaList(formulas7)
       this.props.routeKey("Volume")
       this.props.navigation.navigate("Formulas")
