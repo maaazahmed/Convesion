@@ -77,7 +77,7 @@ class Volume extends Component {
                 valTwo: (numbeer * 4.546).toString()
             })
         }
-        else if (conversoinType === "Imperial to Liter") {
+        else if (conversoinType === "Imperial-fluid-ounce to Liter") {
             this.setState({
                 valOne: ev,
                 valTwo: (numbeer / 35.195).toString()
@@ -161,7 +161,7 @@ class Volume extends Component {
                 valTwo: ev
             })
         }
-        else if (conversoinType === "Imperial to Liter") {
+        else if (conversoinType === "Imperial-fluid-ounce to Liter") {
             this.setState({
                 valOne: (numbeer * 35.195).toString(),
                 valTwo: ev
