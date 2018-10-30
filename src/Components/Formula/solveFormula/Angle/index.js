@@ -38,13 +38,13 @@ class Angle extends Component {
         if (conversoinType === "Degree to Radian") {
             this.setState({
                 valOne: ev,
-                valTwo: (numbeer * 3.142/180).toString()
+                valTwo: (numbeer * 3.142 / 180).toString()
             })
         }
-        else if (conversoinType === "Centigrade to Fahrenheit") {
+        else if (conversoinType === "Degree to Gradian") {
             this.setState({
                 valOne: ev,
-                valTwo: ((numbeer * 9 / 5) + 32).toString()
+                valTwo: (numbeer * 1.11111).toString()
             })
         }
         else if (conversoinType === "Kelvin to Fahrenheit") {
@@ -61,13 +61,13 @@ class Angle extends Component {
         const conversoinType = this.props.conversionType.conversoinType;
         if (conversoinType === "Degree to Radian") {
             this.setState({
-                valOne: (numbeer * 180/3.142).toString(),
+                valOne: (numbeer * 180 / 3.142).toString(),
                 valTwo: ev
             })
         }
-        else if (conversoinType === "Centigrade to Fahrenheit") {
+        else if (conversoinType === "Degree to Gradian") {
             this.setState({
-                valOne: ((numbeer - 32) * 5 / 9).toString(),
+                valOne: (numbeer / 1.11111).toString(),
                 valTwo: ev
             })
         }
