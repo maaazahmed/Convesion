@@ -68,7 +68,7 @@ class Angle extends Component {
         else if (conversoinType === "Radian to Gradian") {
             this.setState({
                 valOne: ev,
-                valTwo: (numbeer * 3600).toString()
+                valTwo: (numbeer * 63.662).toString()
             })
         }
     }
@@ -109,7 +109,7 @@ class Angle extends Component {
         }
         else if (conversoinType === "Radian to Gradian") {
             this.setState({
-                valOne: (numbeer / 3600).toString(),
+                valOne: (numbeer / 63.662).toString(),
                 valTwo: ev
             })
         }
