@@ -71,10 +71,10 @@ class Volume extends Component {
                 valTwo: (numbeer * 4).toString()
             })
         }
-        else if (conversoinType === "Meter to Milimeter") {
+        else if (conversoinType === "Imperial-Gallon to Liter") {
             this.setState({
                 valOne: ev,
-                valTwo: (numbeer * 1000).toString()
+                valTwo: (numbeer * 4.546).toString()
             })
         }
         else if (conversoinType === "Meter to Micrometer") {
@@ -155,9 +155,9 @@ class Volume extends Component {
                 valTwo: ev
             })
         }
-        else if (conversoinType === "Meter to Milimeter") {
+        else if (conversoinType === "Imperial-Gallon to Liter") {
             this.setState({
-                valOne: (numbeer / 1000).toString(),
+                valOne: (numbeer / 4.546).toString(),
                 valTwo: ev
             })
         }
