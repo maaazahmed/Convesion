@@ -7,7 +7,6 @@ import { connect } from "react-redux"
 
 const { width } = Dimensions.get("window")
 class Angle extends Component {
-
     constructor() {
         super()
         this.state = {
@@ -26,9 +25,6 @@ class Angle extends Component {
             placeholder1: type[0],
             placeholder2: type[2],
         })
-
-
-
     }
 
 
@@ -112,17 +108,8 @@ class Angle extends Component {
                 valOne: (numbeer / 63.662).toString(),
                 valTwo: ev
             })
-        }
-        
+        }   
     }
-
-
-
-
-
-
-
-
     render() {
         return (
             <Container style={{ backgroundColor: "#373447" }} >
