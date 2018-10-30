@@ -47,10 +47,10 @@ class Angle extends Component {
                 valTwo: (numbeer * 1.11111).toString()
             })
         }
-        else if (conversoinType === "Kelvin to Fahrenheit") {
+        else if (conversoinType === "Degree to Miliradian") {
             this.setState({
                 valOne: ev,
-                valTwo: ((numbeer - 273.15) * 9 / 5 + 32).toString()
+                valTwo: (numbeer * 17.4533).toString()
             })
         }
     }
@@ -71,9 +71,9 @@ class Angle extends Component {
                 valTwo: ev
             })
         }
-        else if (conversoinType === "Kelvin to Fahrenheit") {
+        else if (conversoinType === "Degree to Miliradian") {
             this.setState({
-                valOne: ((numbeer - 32) * 5 / 9 + 273.15).toString(),
+                valOne: (numbeer * 17.4533).toString(),
                 valTwo: ev
             })
         }
