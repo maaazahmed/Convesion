@@ -110,7 +110,7 @@ class Categorry extends Component {
         "Imperial-tablespoon to Imperial-teaspoon",
         "US-Liquid-Lallon to US-Liquid-Quart",
         "Imperial-Gallon to Liter",
-        "Imperial to Liter",
+        "Imperial-fluid-ounce to Liter",
         "US-Legal-Cup to Litre"
       ]
       this.props.formulaList(formulas6)
