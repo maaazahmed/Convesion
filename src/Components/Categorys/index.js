@@ -131,11 +131,12 @@ class Categorry extends Component {
     }
     else if (key === "Angle") {
       const formulas7 = [
-        "Watt to Horsepower",
-        "Kilowatt to Horsepower",
-        "Kwh to Megajoule",
-        "(ft*lb)/sec to Horsepower",
-        "Watt to Joule",
+        "Degree to Radian",
+        "Degree to Gradian",
+        "Degree to Miliradian",
+        "Degree to Minute",
+        "Degree to Second",
+        "Radian to Gradian",
       ];
       this.props.formulaList(formulas7)
       this.props.routeKey("Angle")

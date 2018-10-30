@@ -35,10 +35,10 @@ class Angle extends Component {
     valOneHeandler(ev) {
         let numbeer = ev;
         const conversoinType = this.props.conversionType.conversoinType;
-        if (conversoinType === "Centigrade to Kelvin") {
+        if (conversoinType === "Degree to Radian") {
             this.setState({
                 valOne: ev,
-                valTwo: (Number(numbeer) + 273).toString()
+                valTwo: (numbeer * 3.142/180).toString()
             })
         }
         else if (conversoinType === "Centigrade to Fahrenheit") {
@@ -59,9 +59,9 @@ class Angle extends Component {
     valTwoHeandler(ev) {
         let numbeer = ev;
         const conversoinType = this.props.conversionType.conversoinType;
-        if (conversoinType === "Centigrade to Kelvin") {
+        if (conversoinType === "Degree to Radian") {
             this.setState({
-                valOne: (numbeer - 273).toString(),
+                valOne: (numbeer * 180/3.142).toString(),
                 valTwo: ev
             })
         }
