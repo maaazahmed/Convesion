@@ -105,7 +105,13 @@ class Categorry extends Component {
       const formulas6 = [
         "Liter to Mili-liter",
         "Decimetercube to Centimetercube",
-        "Metercube to Centimetercube"
+        "Metercube to Centimetercube",
+        "US-tablespoon to US-teaspoon",
+        "Imperial-tablespoon to Imperial-teaspoon",
+        "US-Liquid-Lallon to US-Liquid-Quart",
+        "Imperial-Gallon to Liter",
+        "Imperial to Liter",
+        "US-Legal-Cup to Litre"
       ]
       this.props.formulaList(formulas6)
       this.props.routeKey("Volume")
