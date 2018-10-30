@@ -35,10 +35,10 @@ class Power extends Component {
                 valTwo: (numbeer / 746).toString()
             })
         }
-        else if (conversoinType === "Decimetercube to Centimetercube") {
+        else if (conversoinType === "Kilowatt to Horsepower") {
             this.setState({
                 valOne: ev,
-                valTwo: (numbeer * 1000).toString()
+                valTwo: (numbeer * 1.341).toString()
             })
         }
         else if (conversoinType === "Metercube to Centimetercube") {
@@ -95,9 +95,9 @@ class Power extends Component {
                 valTwo: ev
             })
         }
-        else if (conversoinType === "Decimetercube to Centimetercube") {
+        else if (conversoinType === "Kilowatt to Horsepower") {
             this.setState({
-                valOne: (numbeer / 1000).toString(),
+                valOne: (numbeer / 1.341).toString(),
                 valTwo: ev
             })
         }
