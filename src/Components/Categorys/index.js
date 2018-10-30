@@ -117,6 +117,18 @@ class Categorry extends Component {
       this.props.routeKey("Volume")
       this.props.navigation.navigate("Formulas")
     }
+    else if (key === "Power") {
+      const formulas6 = [
+        "Watt to Horsepower",
+        "Kilowatt to Horsepower",
+        "Kwh to Megajoule",
+        "(ft*lb)/sec to Horsepower",
+        "Watt to Joule",
+      ]
+      this.props.formulaList(formulas6)
+      this.props.routeKey("Volume")
+      this.props.navigation.navigate("Formulas")
+    }
 
 
   }
@@ -209,12 +221,14 @@ class Categorry extends Component {
             </View>
           </View>
           <View style={styles.categorryButn} >
-            <TouchableOpacity activeOpacity={0.5} style={styles.categorryIconView}  >
+            <TouchableOpacity onPress={this.selectConversationn.bind(this, "Power")}
+              activeOpacity={0.5} style={styles.categorryIconView}  >
               <Image source={require("./images/innovation.png")}
                 style={styles.categorryIcon} resizeMode="contain" />
             </TouchableOpacity>
             <View style={styles.categorryTextView}  >
-              <TouchableOpacity activeOpacity={0.5}
+              <TouchableOpacity onPress={this.selectConversationn.bind(this, "Power")}
+                activeOpacity={0.5}
                 style={styles.categorryButnTouchableOpacity} >
                 <Text style={styles.categorryText} >Power</Text>
               </TouchableOpacity>
@@ -265,18 +279,6 @@ class Categorry extends Component {
               <TouchableOpacity activeOpacity={0.5}
                 style={styles.categorryButnTouchableOpacity} >
                 <Text style={styles.categorryText} >Force</Text>
-              </TouchableOpacity>
-            </View>
-          </View>
-          <View style={styles.categorryButn} >
-            <TouchableOpacity activeOpacity={0.5} style={styles.categorryIconView}  >
-              <Image source={require("./images/measure.png")}
-                style={styles.categorryIcon} resizeMode="contain" />
-            </TouchableOpacity>
-            <View style={styles.categorryTextView}  >
-              <TouchableOpacity activeOpacity={0.5}
-                style={[styles.categorryButnTouchableOpacity, {}]} >
-                <Text style={styles.categorryText} >Length</Text>
               </TouchableOpacity>
             </View>
           </View>
