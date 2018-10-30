@@ -35,10 +35,10 @@ class Volume extends Component {
     valOneHeandler(ev) {
         let numbeer = ev;
         const conversoinType = this.props.conversionType.conversoinType;
-        if (conversoinType === "Centimeter to Milimeter") {
+        if (conversoinType === "Liter to Mili-liter") {
             this.setState({
                 valOne: ev,
-                valTwo: (numbeer * 10).toString()
+                valTwo: (numbeer * 1000).toString()
             })
         }
         else if (conversoinType === "Meter to Yard") {
@@ -119,9 +119,9 @@ class Volume extends Component {
     valTwoHeandler(ev) {
         let numbeer = ev;
         const conversoinType = this.props.conversionType.conversoinType;
-        if (conversoinType === "Centimeter to Milimeter") {
+        if (conversoinType === "Liter to Mili-liter") {
             this.setState({
-                valOne: (numbeer / 10).toString(),
+                valOne: (numbeer / 1000).toString(),
                 valTwo: ev
             })
         }
