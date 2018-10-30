@@ -143,6 +143,20 @@ class Categorry extends Component {
       this.props.navigation.navigate("Formulas")
     }
 
+    else if (key === "Velocity") {
+      const formulas7 = [
+        "Kilometer/Hour to Kilometer/Minute",
+        "Degree to Gradian",
+        "Degree to Miliradian",
+        "Degree to Minute",
+        "Degree to Second",
+        "Radian to Gradian",
+      ];
+      this.props.formulaList(formulas7)
+      this.props.routeKey("Velocity")
+      this.props.navigation.navigate("Formulas")
+    }
+
 
   }
 
@@ -262,12 +276,14 @@ class Categorry extends Component {
             </View>
           </View>
           <View style={styles.categorryButn} >
-            <TouchableOpacity activeOpacity={0.5} style={styles.categorryIconView}  >
+            <TouchableOpacity onPress={this.selectConversationn.bind(this, "Velocity")}
+              activeOpacity={0.5} style={styles.categorryIconView}  >
               <Image source={require("./images/speedometer.png")}
                 style={styles.categorryIcon} resizeMode="contain" />
             </TouchableOpacity>
             <View style={styles.categorryTextView}  >
-              <TouchableOpacity activeOpacity={0.5}
+              <TouchableOpacity onPress={this.selectConversationn.bind(this, "Velocity")}
+                activeOpacity={0.5}
                 style={styles.categorryButnTouchableOpacity} >
                 <Text style={styles.categorryText} >Velocity</Text>
               </TouchableOpacity>
