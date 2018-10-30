@@ -100,7 +100,27 @@ class Categorry extends Component {
       this.props.formulaList(formulas5)
       this.props.routeKey("Energy")
       this.props.navigation.navigate("Formulas")
+    } else if (key === "Volume") {
+      const formulas6 = [
+        "Joule to Kilojoule",
+        "Joule to Erg",
+        "Joule to Electronvolt",
+        "Joule to Calorie",
+        "Joule to Kilocalorie",
+        "Joule to Watt-Hour",
+        "Joule to Kilowatt-Hour",
+        "Joule to B.T.U",
+        "Joule to U.S-Therm",
+        "Joule to Foot-pound",
+        "a.m.u to Mev",
+        "Kilogram to Mev",
+        "Electronvolt to Mev",
+      ]
+      this.props.formulaList(formulas6)
+      this.props.routeKey("Volume")
+      this.props.navigation.navigate("Formulas")
     }
+
 
   }
 
