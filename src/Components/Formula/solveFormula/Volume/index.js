@@ -59,10 +59,10 @@ class Volume extends Component {
                 valTwo: (numbeer * 3).toString()
             })
         }
-        else if (conversoinType === "Meter to Kilometer") {
+        else if (conversoinType === "Imperial-tablespoon to Imperial-teaspoon") {
             this.setState({
                 valOne: ev,
-                valTwo: (numbeer / 1000).toString()
+                valTwo: (numbeer *3).toString()
             })
         }
         else if (conversoinType === "Meter to Centimeter") {
@@ -143,9 +143,9 @@ class Volume extends Component {
                 valTwo: ev
             })
         }
-        else if (conversoinType === "Meter to Kilometer") {
+        else if (conversoinType === "Imperial-tablespoon to Imperial-teaspoon") {
             this.setState({
-                valOne: (numbeer * 1000).toString(),
+                valOne: (numbeer / 3).toString(),
                 valTwo: ev
             })
         }
