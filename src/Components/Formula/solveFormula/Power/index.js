@@ -59,30 +59,6 @@ class Power extends Component {
                 valTwo: (numbeer * 3600).toString()
             })
         }
-        else if (conversoinType === "US-Liquid-Lallon to US-Liquid-Quart") {
-            this.setState({
-                valOne: ev,
-                valTwo: (numbeer * 4).toString()
-            })
-        }
-        else if (conversoinType === "Imperial-Gallon to Liter") {
-            this.setState({
-                valOne: ev,
-                valTwo: (numbeer * 4.546).toString()
-            })
-        }
-        else if (conversoinType === "Imperial-fluid-ounce to Liter") {
-            this.setState({
-                valOne: ev,
-                valTwo: (numbeer / 35.195).toString()
-            })
-        }
-        else if (conversoinType === "US-Legal-Cup to Litre") {
-            this.setState({
-                valOne: ev,
-                valTwo: (numbeer * 0.24).toString()
-            })
-        }
     }
 
 
@@ -116,30 +92,6 @@ class Power extends Component {
         else if (conversoinType === "Watt to Joule") {
             this.setState({
                 valOne: (numbeer / 3600).toString(),
-                valTwo: ev
-            })
-        }
-        else if (conversoinType === "US-Liquid-Lallon to US-Liquid-Quart") {
-            this.setState({
-                valOne: (numbeer / 4).toString(),
-                valTwo: ev
-            })
-        }
-        else if (conversoinType === "Imperial-Gallon to Liter") {
-            this.setState({
-                valOne: (numbeer / 4.546).toString(),
-                valTwo: ev
-            })
-        }
-        else if (conversoinType === "Imperial-fluid-ounce to Liter") {
-            this.setState({
-                valOne: (numbeer * 35.195).toString(),
-                valTwo: ev
-            })
-        }
-        else if (conversoinType === "US-Legal-Cup to Litre") {
-            this.setState({
-                valOne: (numbeer / 0.24).toString(),
                 valTwo: ev
             })
         }
