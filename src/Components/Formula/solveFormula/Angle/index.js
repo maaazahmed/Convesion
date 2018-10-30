@@ -59,6 +59,12 @@ class Angle extends Component {
                 valTwo: (numbeer * 60).toString()
             })
         }
+        else if (conversoinType === "Degree to Second") {
+            this.setState({
+                valOne: ev,
+                valTwo: (numbeer * 3600).toString()
+            })
+        }
     }
 
 
@@ -86,6 +92,12 @@ class Angle extends Component {
         else if (conversoinType === "Degree to Minute") {
             this.setState({
                 valOne: (numbeer / 60).toString(),
+                valTwo: ev
+            })
+        }
+        else if (conversoinType === "Degree to Second") {
+            this.setState({
+                valOne: (numbeer / 3600).toString(),
                 valTwo: ev
             })
         }
