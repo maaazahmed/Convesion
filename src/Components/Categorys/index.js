@@ -102,19 +102,19 @@ class Categorry extends Component {
       this.props.navigation.navigate("Formulas")
     } else if (key === "Volume") {
       const formulas6 = [
-        "Joule to Kilojoule",
-        "Joule to Erg",
-        "Joule to Electronvolt",
-        "Joule to Calorie",
-        "Joule to Kilocalorie",
-        "Joule to Watt-Hour",
-        "Joule to Kilowatt-Hour",
-        "Joule to B.T.U",
-        "Joule to U.S-Therm",
-        "Joule to Foot-pound",
-        "a.m.u to Mev",
-        "Kilogram to Mev",
-        "Electronvolt to Mev",
+        // "Joule to Kilojoule",
+        // "Joule to Erg",
+        // "Joule to Electronvolt",
+        // "Joule to Calorie",
+        // "Joule to Kilocalorie",
+        // "Joule to Watt-Hour",
+        // "Joule to Kilowatt-Hour",
+        // "Joule to B.T.U",
+        // "Joule to U.S-Therm",
+        // "Joule to Foot-pound",
+        // "a.m.u to Mev",
+        // "Kilogram to Mev",
+        // "Electronvolt to Mev",
       ]
       this.props.formulaList(formulas6)
       this.props.routeKey("Volume")
@@ -198,12 +198,14 @@ class Categorry extends Component {
             </View>
           </View>
           <View style={styles.categorryButn} >
-            <TouchableOpacity activeOpacity={0.5} style={styles.categorryIconView}  >
+            <TouchableOpacity onPress={this.selectConversationn.bind(this, "Volume")}
+              activeOpacity={0.5} style={styles.categorryIconView}  >
               <Image source={require("./images/graduated-cylinder.png")}
                 style={styles.categorryIcon} resizeMode="contain" />
             </TouchableOpacity>
             <View style={styles.categorryTextView}  >
-              <TouchableOpacity activeOpacity={0.5}
+              <TouchableOpacity onPress={this.selectConversationn.bind(this, "Volume")}
+                activeOpacity={0.5}
                 style={styles.categorryButnTouchableOpacity} >
                 <Text style={styles.categorryText} >Volume</Text>
               </TouchableOpacity>
