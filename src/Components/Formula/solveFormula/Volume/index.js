@@ -62,7 +62,7 @@ class Volume extends Component {
         else if (conversoinType === "Imperial-tablespoon to Imperial-teaspoon") {
             this.setState({
                 valOne: ev,
-                valTwo: (numbeer *3).toString()
+                valTwo: (numbeer * 3).toString()
             })
         }
         else if (conversoinType === "US-Liquid-Lallon to US-Liquid-Quart") {
@@ -83,10 +83,10 @@ class Volume extends Component {
                 valTwo: (numbeer / 35.195).toString()
             })
         }
-        else if (conversoinType === "Meter to Nanometer") {
+        else if (conversoinType === "US-Legal-Cup to Litre") {
             this.setState({
                 valOne: ev,
-                valTwo: (numbeer * 1000000000).toString()
+                valTwo: (numbeer * 0.24).toString()
             })
         }
         else if (conversoinType === "Inch to Foot") {
@@ -167,9 +167,9 @@ class Volume extends Component {
                 valTwo: ev
             })
         }
-        else if (conversoinType === "Meter to Nanometer") {
+        else if (conversoinType === "US-Legal-Cup to Litre") {
             this.setState({
-                valOne: (numbeer / 1000000000).toString(),
+                valOne: (numbeer / 0.24).toString(),
                 valTwo: ev
             })
         }
