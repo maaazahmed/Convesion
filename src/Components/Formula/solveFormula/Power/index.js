@@ -47,10 +47,10 @@ class Power extends Component {
                 valTwo: (numbeer * 3.6).toString()
             })
         }
-        else if (conversoinType === "US-tablespoon to US-teaspoon") {
+        else if (conversoinType === "(ft*lb)/sec to Horsepower") {
             this.setState({
                 valOne: ev,
-                valTwo: (numbeer * 3).toString()
+                valTwo: (numbeer / 550).toString()
             })
         }
         else if (conversoinType === "Imperial-tablespoon to Imperial-teaspoon") {
@@ -107,9 +107,9 @@ class Power extends Component {
                 valTwo: ev
             })
         }
-        else if (conversoinType === "US-tablespoon to US-teaspoon") {
+        else if (conversoinType === "(ft*lb)/sec to Horsepower") {
             this.setState({
-                valOne: (numbeer / 3).toString(),
+                valOne: (numbeer * 550).toString(),
                 valTwo: ev
             })
         }
