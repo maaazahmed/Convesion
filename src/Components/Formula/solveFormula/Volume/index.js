@@ -65,10 +65,10 @@ class Volume extends Component {
                 valTwo: (numbeer *3).toString()
             })
         }
-        else if (conversoinType === "Meter to Centimeter") {
+        else if (conversoinType === "US-Liquid-Lallon to US-Liquid-Quart") {
             this.setState({
                 valOne: ev,
-                valTwo: (numbeer * 100).toString()
+                valTwo: (numbeer * 4).toString()
             })
         }
         else if (conversoinType === "Meter to Milimeter") {
@@ -149,9 +149,9 @@ class Volume extends Component {
                 valTwo: ev
             })
         }
-        else if (conversoinType === "Meter to Centimeter") {
+        else if (conversoinType === "US-Liquid-Lallon to US-Liquid-Quart") {
             this.setState({
-                valOne: (numbeer / 100).toString(),
+                valOne: (numbeer / 4).toString(),
                 valTwo: ev
             })
         }
