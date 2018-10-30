@@ -73,7 +73,7 @@ class Angle extends Component {
         }
         else if (conversoinType === "Degree to Miliradian") {
             this.setState({
-                valOne: (numbeer * 17.4533).toString(),
+                valOne: (numbeer / 17.4533).toString(),
                 valTwo: ev
             })
         }
