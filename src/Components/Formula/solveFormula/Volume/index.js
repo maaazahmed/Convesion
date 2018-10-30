@@ -89,30 +89,6 @@ class Volume extends Component {
                 valTwo: (numbeer * 0.24).toString()
             })
         }
-        else if (conversoinType === "Inch to Foot") {
-            this.setState({
-                valOne: ev,
-                valTwo: (numbeer / 12).toString()
-            })
-        }
-        else if (conversoinType === "Kilometer to Miles") {
-            this.setState({
-                valOne: ev,
-                valTwo: (numbeer * 0.62137).toString()
-            })
-        }
-        else if (conversoinType === "Nauticalmile to Miles") {
-            this.setState({
-                valOne: ev,
-                valTwo: (numbeer / 0.868976).toString()
-            })
-        }
-        else if (conversoinType === "Cubicfoot to Cubicinch") {
-            this.setState({
-                valOne: ev,
-                valTwo: (numbeer * 1728).toString()
-            })
-        }
     }
 
 
@@ -170,30 +146,6 @@ class Volume extends Component {
         else if (conversoinType === "US-Legal-Cup to Litre") {
             this.setState({
                 valOne: (numbeer / 0.24).toString(),
-                valTwo: ev
-            })
-        }
-        else if (conversoinType === "Inch to Foot") {
-            this.setState({
-                valOne: (numbeer * 12).toString(),
-                valTwo: ev
-            })
-        }
-        else if (conversoinType === "Kilometer to Miles") {
-            this.setState({
-                valOne: (numbeer / 0.62137).toString(),
-                valTwo: ev
-            })
-        }
-        else if (conversoinType === "Nauticalmile to Miles") {
-            this.setState({
-                valOne: (numbeer * 0.868976).toString(),
-                valTwo: ev
-            })
-        }
-        else if (conversoinType === "Cubicfoot to Cubicinch") {
-            this.setState({
-                valOne: (numbeer / 1728).toString(),
                 valTwo: ev
             })
         }
