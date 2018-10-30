@@ -2,9 +2,10 @@ import { StackNavigator } from "react-navigation"
 import {
     Time,
     Mass,
+    Power,
     Energy,
-    Volume,
     Lenths,
+    Volume,
     Formulas,
     Categorry,
     Temperature,
@@ -36,6 +37,9 @@ const Routes = StackNavigator({
     },
     Volume: {
         screen: Volume
+    },
+    Power: {
+        screen: Power
     },
 }, {
         navigationOptions: {
