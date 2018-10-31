@@ -44,10 +44,10 @@ class Velocity extends Component {
                 valTwo: (numbeer / 3600).toString()
             })
         }
-        else if (conversoinType === "Degree to Miliradian") {
+        else if (conversoinType === "Kilometer/Minute to Kilometer/Second") {
             this.setState({
                 valOne: ev,
-                valTwo: (numbeer * 17.4533).toString()
+                valTwo: (numbeer / 60).toString()
             })
         }
         else if (conversoinType === "Degree to Minute") {
@@ -86,9 +86,9 @@ class Velocity extends Component {
                 valTwo: ev
             })
         }
-        else if (conversoinType === "Degree to Miliradian") {
+        else if (conversoinType === "Kilometer/Minute to Kilometer/Second") {
             this.setState({
-                valOne: (numbeer / 17.4533).toString(),
+                valOne: (numbeer * 60).toString(),
                 valTwo: ev
             })
         }
