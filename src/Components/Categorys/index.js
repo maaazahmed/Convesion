@@ -173,11 +173,11 @@ class Categorry extends Component {
       const formulas8 = [
         "Newton to Kilo-Newton",
         "Newton to Poundals",
-        "Pascal to Torr",
-        "Pascal to Pound-force-per-quare-inch",
-        "Atmosphere to Bar",
-        "Torr to Atmosphere",
-        "Torr to Atmosphere",
+        "Newton to Torr",
+        "Newton to Pound-force-per-quare-inch",
+        "Newton to Bar",
+        "Newton to Atmosphere",
+        "Newton to Atmosphere",
       ];
       this.props.formulaList(formulas8)
       this.props.routeKey("Force")
