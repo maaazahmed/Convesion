@@ -173,7 +173,7 @@ class Categorry extends Component {
       const formulas8 = [
         "Newton to Kilo-Newton",
         "Newton to Poundals",
-        "Newton to Torr",
+        "Newton to Ounces",
         "Newton to Pound-force-per-quare-inch",
         "Newton to Bar",
         "Newton to Atmosphere",
