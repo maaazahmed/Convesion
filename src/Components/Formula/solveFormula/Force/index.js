@@ -67,6 +67,12 @@ class Force extends Component {
                 valTwo: (numbeer / 9.807).toString()
             })
         }
+        else if (conversoinType === "Newton to Ton-force") {
+            this.setState({
+                valOne: ev,
+                valTwo: (numbeer / 8896.443).toString()
+            })
+        }
     }
 
 
@@ -109,6 +115,13 @@ class Force extends Component {
                 valTwo: ev
             })
         }
+        else if (conversoinType === "Newton to Ton-force") {
+            this.setState({
+                valOne: (numbeer * 8896.443).toString(),
+                valTwo: ev
+            })
+        }
+
     }
 
     render() {
