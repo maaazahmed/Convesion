@@ -172,7 +172,7 @@ class Categorry extends Component {
     else if (key === "Force") {
       const formulas8 = [
         "Newton to Kilo-Newton",
-        "Pascal to Bar",
+        "Newton to Poundals",
         "Pascal to Torr",
         "Pascal to Pound-force-per-quare-inch",
         "Atmosphere to Bar",
