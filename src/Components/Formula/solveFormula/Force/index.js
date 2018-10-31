@@ -121,7 +121,6 @@ class Force extends Component {
                 valTwo: ev
             })
         }
-
     }
 
     render() {
