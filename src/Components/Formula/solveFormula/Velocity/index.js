@@ -53,13 +53,13 @@ class Velocity extends Component {
         else if (conversoinType === "Kilometer/Hour to Meter/Minute") {
             this.setState({
                 valOne: ev,
-                valTwo: (numbeer * 1000/60).toString()
+                valTwo: (numbeer * 1000 / 60).toString()
             })
         }
-        else if (conversoinType === "Degree to Second") {
+        else if (conversoinType === "Kilometer/Hour to Meter/Second") {
             this.setState({
                 valOne: ev,
-                valTwo: (numbeer * 3600).toString()
+                valTwo: (numbeer * 1000 / 3600).toString()
             })
         }
         else if (conversoinType === "Radian to Gradian") {
@@ -94,13 +94,13 @@ class Velocity extends Component {
         }
         else if (conversoinType === "Kilometer/Hour to Meter/Minute") {
             this.setState({
-                valOne: (numbeer / 1000*60).toString(),
+                valOne: (numbeer / 1000 * 60).toString(),
                 valTwo: ev
             })
         }
-        else if (conversoinType === "Degree to Second") {
+        else if (conversoinType === "Kilometer/Hour to Meter/Second") {
             this.setState({
-                valOne: (numbeer / 3600).toString(),
+                valOne: (numbeer / 1000 * 3600).toString(),
                 valTwo: ev
             })
         }
@@ -109,7 +109,7 @@ class Velocity extends Component {
                 valOne: (numbeer / 63.662).toString(),
                 valTwo: ev
             })
-        }   
+        }
     }
     render() {
         return (
