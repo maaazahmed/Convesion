@@ -32,10 +32,10 @@ class Pressure extends Component {
     valOneHeandler(ev) {
         let numbeer = ev;
         const conversoinType = this.props.conversionType.conversoinType;
-        if (conversoinType === "Kilometer/Hour to Kilometer/Minute") {
+        if (conversoinType === "Pascal to Atmosphere") {
             this.setState({
                 valOne: ev,
-                valTwo: (numbeer / 60).toString()
+                valTwo: (numbeer / 101325).toString()
             })
         }
         else if (conversoinType === "Kilometer/Hour to Kilometer/Second") {
@@ -74,9 +74,9 @@ class Pressure extends Component {
     valTwoHeandler(ev) {
         let numbeer = ev;
         const conversoinType = this.props.conversionType.conversoinType;
-        if (conversoinType === "Kilometer/Hour to Kilometer/Minute") {
+        if (conversoinType === "Pascal to Atmosphere") {
             this.setState({
-                valOne: (numbeer * 60).toString(),
+                valOne: (numbeer * 101325).toString(),
                 valTwo: ev
             })
         }
