@@ -170,7 +170,7 @@ class Categorry extends Component {
       this.props.navigation.navigate("Formulas")
     }
     else if (key === "Force") {
-      const formulas8 = [
+      const formulas9 = [
         "Newton to Kilo-Newton",
         "Newton to Poundals",
         "Newton to Ounces",
@@ -179,7 +179,7 @@ class Categorry extends Component {
         "Newton to Kilogram-force(Kilo Pond)",
         "Newton to Ton-force",
       ];
-      this.props.formulaList(formulas8)
+      this.props.formulaList(formulas9)
       this.props.routeKey("Force")
       this.props.navigation.navigate("Formulas")
     }
