@@ -38,10 +38,10 @@ class Pressure extends Component {
                 valTwo: (numbeer / 101325).toString()
             })
         }
-        else if (conversoinType === "Kilometer/Hour to Kilometer/Second") {
+        else if (conversoinType === "Pascal to Bar") {
             this.setState({
                 valOne: ev,
-                valTwo: (numbeer / 3600).toString()
+                valTwo: (numbeer / 100000).toString()
             })
         }
         else if (conversoinType === "Kilometer/Minute to Kilometer/Second") {
@@ -80,9 +80,9 @@ class Pressure extends Component {
                 valTwo: ev
             })
         }
-        else if (conversoinType === "Kilometer/Hour to Kilometer/Second") {
+        else if (conversoinType === "Pascal to Bar") {
             this.setState({
-                valOne: (numbeer * 3600).toString(),
+                valOne: (numbeer * 100000).toString(),
                 valTwo: ev
             })
         }
