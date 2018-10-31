@@ -32,10 +32,10 @@ class Velocity extends Component {
     valOneHeandler(ev) {
         let numbeer = ev;
         const conversoinType = this.props.conversionType.conversoinType;
-        if (conversoinType === "Degree to Radian") {
+        if (conversoinType === "Kilometer/Hour to Kilometer/Minute") {
             this.setState({
                 valOne: ev,
-                valTwo: (numbeer * 3.142 / 180).toString()
+                valTwo: (numbeer / 60).toString()
             })
         }
         else if (conversoinType === "Degree to Gradian") {
@@ -74,9 +74,9 @@ class Velocity extends Component {
     valTwoHeandler(ev) {
         let numbeer = ev;
         const conversoinType = this.props.conversionType.conversoinType;
-        if (conversoinType === "Degree to Radian") {
+        if (conversoinType === "Kilometer/Hour to Kilometer/Minute") {
             this.setState({
-                valOne: (numbeer * 180 / 3.142).toString(),
+                valOne: (numbeer * 60).toString(),
                 valTwo: ev
             })
         }
