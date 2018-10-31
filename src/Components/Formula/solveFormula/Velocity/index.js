@@ -111,6 +111,11 @@ class Velocity extends Component {
             })
         }
     }
+
+
+
+
+    
     render() {
         return (
             <Container style={{ backgroundColor: "#373447" }} >
