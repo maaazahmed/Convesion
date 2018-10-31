@@ -111,10 +111,6 @@ class Velocity extends Component {
             })
         }
     }
-
-
-
-
     
     render() {
         return (
