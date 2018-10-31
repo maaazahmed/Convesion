@@ -37,10 +37,10 @@ class Force extends Component {
                 valTwo: (numbeer / 1000).toString()
             })
         }
-        else if (conversoinType === "Pascal to Bar") {
+        else if (conversoinType === "Newton to Poundals") {
             this.setState({
                 valOne: ev,
-                valTwo: (numbeer / 100000).toString()
+                valTwo: (numbeer * 7.23301).toString()
             })
         }
         else if (conversoinType === "Pascal to Torr") {
@@ -79,9 +79,9 @@ class Force extends Component {
                 valTwo: ev
             })
         }
-        else if (conversoinType === "Pascal to Bar") {
+        else if (conversoinType === "Newton to Poundals") {
             this.setState({
-                valOne: (numbeer * 100000).toString(),
+                valOne: (numbeer / 7.23301).toString(),
                 valTwo: ev
             })
         }
