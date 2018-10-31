@@ -175,7 +175,7 @@ class Categorry extends Component {
         "Newton to Poundals",
         "Newton to Ounces",
         "Newton to Dyne",
-        "Newton to Bar",
+        "Newton to Gram-force(Pond)",
         "Newton to Atmosphere",
         "Newton to Atmosphere",
       ];
