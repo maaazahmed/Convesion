@@ -31,10 +31,10 @@ class Force extends Component {
     valOneHeandler(ev) {
         let numbeer = ev;
         const conversoinType = this.props.conversionType.conversoinType;
-        if (conversoinType === "Pascal to Atmosphere") {
+        if (conversoinType === "Newton to Kilo-Newton") {
             this.setState({
                 valOne: ev,
-                valTwo: (numbeer / 101325).toString()
+                valTwo: (numbeer / 1000).toString()
             })
         }
         else if (conversoinType === "Pascal to Bar") {
@@ -73,9 +73,9 @@ class Force extends Component {
     valTwoHeandler(ev) {
         let numbeer = ev;
         const conversoinType = this.props.conversionType.conversoinType;
-        if (conversoinType === "Pascal to Atmosphere") {
+        if (conversoinType === "Newton to Kilo-Newton") {
             this.setState({
-                valOne: (numbeer * 101325).toString(),
+                valOne: (numbeer * 1000).toString(),
                 valTwo: ev
             })
         }
