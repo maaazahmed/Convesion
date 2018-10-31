@@ -177,7 +177,7 @@ class Categorry extends Component {
         "Newton to Dyne",
         "Newton to Gram-force(Pond)",
         "Newton to Kilogram-force(Kilo Pond)",
-        "Newton to Atmosphere",
+        "Newton to Ton-force",
       ];
       this.props.formulaList(formulas8)
       this.props.routeKey("Force")
