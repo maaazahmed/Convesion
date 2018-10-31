@@ -55,7 +55,7 @@ class Force extends Component {
                 valTwo: (numbeer / 100000).toString()
             })
         }
-        else if (conversoinType === "Gram-force(Pond)") {
+        else if (conversoinType === "Newton to Gram-force(Pond)") {
             this.setState({
                 valOne: ev,
                 valTwo: (numbeer / 0.00980665).toString()
@@ -97,7 +97,7 @@ class Force extends Component {
                 valTwo: ev
             })
         }
-        else if (conversoinType === "Gram-force(Pond)") {
+        else if (conversoinType === "Newton to Gram-force(Pond)") {
             this.setState({
                 valOne: (numbeer * 0.00980665).toString(),
                 valTwo: ev
