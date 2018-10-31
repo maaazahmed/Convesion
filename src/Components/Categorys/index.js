@@ -145,6 +145,19 @@ class Categorry extends Component {
 
     else if (key === "Velocity") {
       const formulas7 = [
+        "Kilometer/Hour to Kilometer/Minute",
+        "Kilometer/Hour to Kilometer/Second",
+        "Kilometer/Minute to Kilometer/Second",
+        "Kilometer/Hour to Meter/Minute",
+        "Kilometer/Hour to Meter/Second",
+        "Kilometer/Minute to Meter/Second",
+      ];
+      this.props.formulaList(formulas7)
+      this.props.routeKey("Velocity")
+      this.props.navigation.navigate("Formulas")
+    }
+    else if (key === "Pressure") {
+      const formulas8 = [
         "Pascal to Atmosphere",
         "Pascal to Bar",
         "Pascal to Torr",
@@ -152,10 +165,11 @@ class Categorry extends Component {
         "Atmosphere to Bar",
         "Torr to Atmosphere",
       ];
-      this.props.formulaList(formulas7)
-      this.props.routeKey("Velocity")
+      this.props.formulaList(formulas8)
+      this.props.routeKey("Pressure")
       this.props.navigation.navigate("Formulas")
     }
+   
   }
 
 
