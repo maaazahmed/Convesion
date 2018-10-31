@@ -50,10 +50,10 @@ class Pressure extends Component {
                 valTwo: (numbeer / 133.322).toString()
             })
         }
-        else if (conversoinType === "Kilometer/Hour to Meter/Minute") {
+        else if (conversoinType === "Pascal to Pound-force-per-quare-inch") {
             this.setState({
                 valOne: ev,
-                valTwo: (numbeer * 1000 / 60).toString()
+                valTwo: (numbeer / 6894.757).toString()
             })
         }
         else if (conversoinType === "Kilometer/Hour to Meter/Second") {
@@ -92,7 +92,7 @@ class Pressure extends Component {
                 valTwo: ev
             })
         }
-        else if (conversoinType === "Kilometer/Hour to Meter/Minute") {
+        else if (conversoinType === "Pascal to Pound-force-per-quare-inch") {
             this.setState({
                 valOne: (numbeer / 1000 * 60).toString(),
                 valTwo: ev
