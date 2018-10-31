@@ -174,7 +174,7 @@ class Categorry extends Component {
         "Newton to Kilo-Newton",
         "Newton to Poundals",
         "Newton to Ounces",
-        "Newton to Pound-force-per-quare-inch",
+        "Newton to Dyne",
         "Newton to Bar",
         "Newton to Atmosphere",
         "Newton to Atmosphere",
