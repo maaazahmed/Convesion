@@ -55,10 +55,10 @@ class Force extends Component {
                 valTwo: (numbeer / 100000).toString()
             })
         }
-        else if (conversoinType === "Atmosphere to Bar") {
+        else if (conversoinType === "Gram-force(Pond)") {
             this.setState({
                 valOne: ev,
-                valTwo: (numbeer * 1.013).toString()
+                valTwo: (numbeer / 0.00980665).toString()
             })
         }
         else if (conversoinType === "Torr to Atmosphere") {
@@ -97,9 +97,9 @@ class Force extends Component {
                 valTwo: ev
             })
         }
-        else if (conversoinType === "Atmosphere to Bar") {
+        else if (conversoinType === "Gram-force(Pond)") {
             this.setState({
-                valOne: (numbeer / 1.013).toString(),
+                valOne: (numbeer * 0.00980665).toString(),
                 valTwo: ev
             })
         }
@@ -110,7 +110,7 @@ class Force extends Component {
             })
         }
     }
-    
+
     render() {
         return (
             <Container style={{ backgroundColor: "#373447" }} >
