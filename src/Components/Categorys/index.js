@@ -145,12 +145,12 @@ class Categorry extends Component {
 
     else if (key === "Velocity") {
       const formulas7 = [
-        "Kilometer/Hour to Kilometer/Minute",
-        "Kilometer/Hour to Kilometer/Second",
-        "Kilometer/Minute to Kilometer/Second",
-        "Kilometer/Hour to Meter/Minute",
-        "Kilometer/Hour to Meter/Second",
-        "Kilometer/Minute to Meter/Second",
+        "Pascal to Atmosphere",
+        "Pascal to Bar",
+        "Pascal to Torr",
+        "Pascal to Pound-force-per-quare-inch",
+        "Atmosphere to Bar",
+        "Torr to Atmosphere",
       ];
       this.props.formulaList(formulas7)
       this.props.routeKey("Velocity")
