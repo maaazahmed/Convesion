@@ -94,7 +94,7 @@ class Pressure extends Component {
         }
         else if (conversoinType === "Pascal to Pound-force-per-quare-inch") {
             this.setState({
-                valOne: (numbeer / 1000 * 60).toString(),
+                valOne: (numbeer * 6894.757).toString(),
                 valTwo: ev
             })
         }
