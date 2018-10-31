@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { TouchableOpacity, View, Dimensions, StyleSheet, TextInput, Image } from "react-native"
-import { Container, Header, Icon } from 'native-base';
+import { TouchableOpacity, View, Dimensions, StyleSheet, TextInput, } from "react-native"
+import { Container, Header, Icon, Drawer } from 'native-base';
 import { connect } from "react-redux"
+import Categorry from "../../../Categorys/index"
 
 
 
@@ -26,6 +27,12 @@ class Force extends Component {
             placeholder2: type[2],
         })
     }
+    closeDrawer = () => {
+        this.drawer._root.close()
+    };
+    openDrawer = () => {
+        this.drawer._root.open()
+    };
 
 
     valOneHeandler(ev) {
@@ -125,43 +132,50 @@ class Force extends Component {
 
     render() {
         return (
-            <Container style={{ backgroundColor: "#373447" }} >
-                <Header style={styles.Header} >
-                    <View style={styles.heightIconCintainer} >
-                        <TouchableOpacity
-                            onPress={() => this.props.navigation.navigate("Categorry")}
-                            activeOpacity={0.6} >
-                            <Icon style={styles.heightIcon} name='arrow-back' />
-                        </TouchableOpacity>
-                    </View>
-                </Header>
-
-                <View style={styles.solveContainer} >
-                    <View style={styles.inputCiintainer} >
-                        <View>
-                            <TextInput
-                                value={this.state.valOne}
-                                onChangeText={(event) => this.valOneHeandler(event)}
-                                keyboardType="numeric"
-                                underlineColorAndroid="transparent"
-                                placeholderTextColor="#fff"
-                                placeholder={this.state.placeholder1}
-                                style={styles.TextInput} />
+            <Drawer
+                ref={(ref) => { this.drawer = ref; }}
+                content={<Categorry navigation={this.props.navigation} />}
+                onClose={() => this.closeDrawer()} >
+                <Container style={{ backgroundColor: "#373447" }} >
+                    <Header style={styles.Header} >
+                        <View style={styles.heightIconCintainer} >
+                            <TouchableOpacity
+                                onPress={() => this.openDrawer()}
+                                // onPress={() => this.props.navigation.navigate("Categorry")}
+                                activeOpacity={0.6} >
+                                <Icon style={styles.heightIcon} name='menu' />
+                            </TouchableOpacity>
                         </View>
-                        <View style={{ marginTop: 30 }} >
-                            <TextInput
-                                onChangeText={(event) => this.valTwoHeandler(event)}
-                                value={this.state.valTwo}
-                                keyboardType="numeric"
-                                underlineColorAndroid="transparent"
-                                placeholder={this.state.placeholder2}
-                                placeholderTextColor="#fff"
-                                style={styles.TextInput} />
-                        </View>
+                    </Header>
 
+                    <View style={styles.solveContainer} >
+                        <View style={styles.inputCiintainer} >
+                            <View>
+                                <TextInput
+                                    value={this.state.valOne}
+                                    onChangeText={(event) => this.valOneHeandler(event)}
+                                    keyboardType="numeric"
+                                    underlineColorAndroid="transparent"
+                                    placeholderTextColor="#fff"
+                                    placeholder={this.state.placeholder1}
+                                    style={styles.TextInput} />
+                            </View>
+                            <View style={{ marginTop: 30 }} >
+                                <TextInput
+                                    onChangeText={(event) => this.valTwoHeandler(event)}
+                                    value={this.state.valTwo}
+                                    keyboardType="numeric"
+                                    underlineColorAndroid="transparent"
+                                    placeholder={this.state.placeholder2}
+                                    placeholderTextColor="#fff"
+                                    style={styles.TextInput} />
+                            </View>
+
+                        </View>
                     </View>
-                </View>
-            </Container>
+                </Container>
+            </Drawer>
+
         );
     }
 }
