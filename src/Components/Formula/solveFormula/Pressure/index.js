@@ -7,7 +7,7 @@ import { connect } from "react-redux"
 
 
 const { width } = Dimensions.get("window")
-class Velocity extends Component {
+class Pressure extends Component {
     constructor() {
         super()
         this.state = {
@@ -213,4 +213,4 @@ const mapDispatchToProp = (dispatch) => {
 
 
 
-export default connect(mapStateToProp, mapDispatchToProp)(Velocity)
+export default connect(mapStateToProp, mapDispatchToProp)(Pressure)

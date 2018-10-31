@@ -8,6 +8,7 @@ import {
     Lenths,
     Volume,
     Velocity,
+    Pressure,
     Formulas,
     Categorry,
     Temperature,
@@ -19,6 +20,9 @@ import {
 const Routes = StackNavigator({
     Categorry: {
         screen: Categorry
+    },
+    Pressure: {
+        screen: Pressure
     },
     Velocity: {
         screen: Velocity
