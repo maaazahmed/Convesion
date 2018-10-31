@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react';
 import { TouchableOpacity, View, Dimensions, StyleSheet, TextInput, Image } from "react-native"
 import { Container, Header, Icon } from 'native-base';

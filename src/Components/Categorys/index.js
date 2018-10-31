@@ -169,6 +169,19 @@ class Categorry extends Component {
       this.props.routeKey("Pressure")
       this.props.navigation.navigate("Formulas")
     }
+    else if (key === "Force") {
+      const formulas8 = [
+        "Pascal to Atmosphere",
+        "Pascal to Bar",
+        "Pascal to Torr",
+        "Pascal to Pound-force-per-quare-inch",
+        "Atmosphere to Bar",
+        "Torr to Atmosphere",
+      ];
+      this.props.formulaList(formulas8)
+      this.props.routeKey("Force")
+      this.props.navigation.navigate("Formulas")
+    }
    
   }
 
