@@ -61,10 +61,10 @@ class Force extends Component {
                 valTwo: (numbeer / 0.00980665).toString()
             })
         }
-        else if (conversoinType === "Torr to Atmosphere") {
+        else if (conversoinType === "Newton to Kilogram-force(Kilo Pond)") {
             this.setState({
                 valOne: ev,
-                valTwo: (numbeer / 760).toString()
+                valTwo: (numbeer / 9.807).toString()
             })
         }
     }
@@ -103,9 +103,9 @@ class Force extends Component {
                 valTwo: ev
             })
         }
-        else if (conversoinType === "Torr to Atmosphere") {
+        else if (conversoinType === "Newton to Kilogram-force(Kilo Pond)") {
             this.setState({
-                valOne: (numbeer * 760).toString(),
+                valOne: (numbeer * 9.807).toString(),
                 valTwo: ev
             })
         }
