@@ -4,6 +4,7 @@ import {
     Mass,
     Power,
     Angle,
+    Force,
     Energy,
     Lenths,
     Volume,
@@ -20,6 +21,9 @@ import {
 const Routes = StackNavigator({
     Categorry: {
         screen: Categorry
+    },
+    Force: {
+        screen: Force
     },
     Pressure: {
         screen: Pressure

@@ -183,10 +183,7 @@ class Categorry extends Component {
       this.props.routeKey("Force")
       this.props.navigation.navigate("Formulas")
     }
-   
   }
-
-
 
   render() {
     return (
