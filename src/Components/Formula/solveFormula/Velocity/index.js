@@ -94,7 +94,7 @@ class Velocity extends Component {
         }
         else if (conversoinType === "Kilometer/Hour to Meter/Minute") {
             this.setState({
-                valOne: (numbeer / 1000/60).toString(),
+                valOne: (numbeer / 1000*60).toString(),
                 valTwo: ev
             })
         }
