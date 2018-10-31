@@ -288,25 +288,27 @@ class Categorry extends Component {
             </View>
           </View>
           <View style={styles.categorryButn} >
-            <TouchableOpacity activeOpacity={0.5} style={styles.categorryIconView}  >
+            <TouchableOpacity onPress={this.selectConversationn.bind(this, "Pressure")}
+              activeOpacity={0.5} style={styles.categorryIconView}  >
               <Image source={require("./images/gauge.png")}
                 style={styles.categorryIcon} resizeMode="contain" />
             </TouchableOpacity>
             <View style={styles.categorryTextView}  >
-              <TouchableOpacity activeOpacity={0.5}
+              <TouchableOpacity onPress={this.selectConversationn.bind(this, "Pressure")}
+                activeOpacity={0.5}
                 style={styles.categorryButnTouchableOpacity} >
                 <Text style={styles.categorryText} >Pressure</Text>
               </TouchableOpacity>
             </View>
           </View>
           <View style={styles.categorryButn} >
-            <TouchableOpacity onPress={this.selectConversationn.bind(this, "Velocity")}
+            <TouchableOpacity onPress={this.selectConversationn.bind(this, "Force")}
               activeOpacity={0.5} style={styles.categorryIconView}  >
               <Image source={require("./images/force-meter.png")}
                 style={styles.categorryIcon} resizeMode="contain" />
             </TouchableOpacity>
             <View style={styles.categorryTextView}  >
-              <TouchableOpacity onPress={this.selectConversationn.bind(this, "Velocity")}
+              <TouchableOpacity onPress={this.selectConversationn.bind(this, "Force")}
                 activeOpacity={0.5}
                 style={styles.categorryButnTouchableOpacity} >
                 <Text style={styles.categorryText} >Force</Text>
