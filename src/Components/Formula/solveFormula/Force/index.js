@@ -49,10 +49,10 @@ class Force extends Component {
                 valTwo: (numbeer * 3.59694).toString()
             })
         }
-        else if (conversoinType === "Pascal to Pound-force-per-quare-inch") {
+        else if (conversoinType === "Newton to Dyne") {
             this.setState({
                 valOne: ev,
-                valTwo: (numbeer / 6894.757).toString()
+                valTwo: (numbeer / 100000).toString()
             })
         }
         else if (conversoinType === "Atmosphere to Bar") {
@@ -91,9 +91,9 @@ class Force extends Component {
                 valTwo: ev
             })
         }
-        else if (conversoinType === "Pascal to Pound-force-per-quare-inch") {
+        else if (conversoinType === "Newton to Dyne") {
             this.setState({
-                valOne: (numbeer * 6894.757).toString(),
+                valOne: (numbeer * 100000).toString(),
                 valTwo: ev
             })
         }
