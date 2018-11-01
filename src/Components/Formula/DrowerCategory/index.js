@@ -196,16 +196,16 @@ class DrowerCategory extends Component {
 
                     <TouchableOpacity onPress={this.selectConversationn.bind(this, "Length")}
                         activeOpacity={0.5}
-                        style={[{ justifyContent: "space-around", backgroundColor: "#fff", flexDirection: "row", width, height: height / 15 }]}  >
-                        <View style={{ flex: 1, height: "100%", justifyContent: "center", paddingLeft: 10 }} >
+                        style={styles.categorryButn}  >
+                        <View style={styles.TextView} >
                             <Text style={styles.categorryText} >Length</Text>
                         </View>
-                        <View style={{ width: "20%", height: "100%", justifyContent: "center", paddingRight: 10, alignItems: "flex-end" }} >
+                        <View style={styles.ImageView} >
                             <Image source={require("./images/measure.png")}
                                 style={styles.categorryIcon} resizeMode="contain" />
                         </View>
                     </TouchableOpacity>
-                    
+
 
 
 
@@ -374,15 +374,27 @@ const styles = StyleSheet.create({
         width
     },
     categorryButn: {
-        width,
-        height: "10%",
-        // // height: 150,
-        // margin: 6,
+        justifyContent: "space-around",
         backgroundColor: "#fff",
-        // elevation: 5,
-        // borderRadius: 2,
-
+        flexDirection: "row",
+        width,
+        height: height / 15
     },
+
+    TextView: {
+        flex: 1,
+        height: "100%",
+        justifyContent: "center",
+        paddingLeft: 10
+    },
+    ImageView: {
+        width: "20%",
+        height: "100%",
+        justifyContent: "center",
+        paddingRight: 10,
+        alignItems: "flex-end"
+    },
+
     categorryIconView: {
         height: "100%",
         width,
