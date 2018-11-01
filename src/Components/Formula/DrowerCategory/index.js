@@ -324,20 +324,7 @@ class DrowerCategory extends Component {
                    
                 
                    
-                    <View style={styles.categorryButn} >
-                        <TouchableOpacity onPress={this.selectConversationn.bind(this, "Power")}
-                            activeOpacity={0.5} style={styles.categorryIconView}  >
-                            <Image source={require("./images/innovation.png")}
-                                style={styles.categorryIcon} resizeMode="contain" />
-                        </TouchableOpacity>
-                        <View style={styles.categorryTextView}  >
-                            <TouchableOpacity onPress={this.selectConversationn.bind(this, "Power")}
-                                activeOpacity={0.5}
-                                style={styles.categorryButnTouchableOpacity} >
-                                <Text style={styles.categorryText} >Power</Text>
-                            </TouchableOpacity>
-                        </View>
-                    </View> */}
+                   
                     {/* <View style={styles.categorryButn} >
                         <TouchableOpacity onPress={this.selectConversationn.bind(this, "Angle")}
                             activeOpacity={0.5} style={styles.categorryIconView}  >
