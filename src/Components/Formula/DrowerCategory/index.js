@@ -352,7 +352,7 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         width: wp('100%'),
         paddingRight:wp('31%'),
-        height: height / 10,
+        height: height / 11.5,
         borderBottomColor: "#e0e0e0",
         borderBottomWidth: 2
     },
