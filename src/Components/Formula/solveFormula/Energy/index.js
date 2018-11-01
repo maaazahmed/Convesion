@@ -203,13 +203,6 @@ class Energy extends Component {
         }
     }
 
-
-
-
-
-
-
-
     render() {
         return (
             <Drawer
