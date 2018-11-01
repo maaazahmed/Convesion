@@ -17,10 +17,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: 'green',
-        alignItems: 'center',
-        justifyContent: 'center',
-        flexDirection:"row",
-        flexWrap:"wrap",
+        aap:"wrap",
     },
     responsiveBox: {
         width: wp('16%'),
