@@ -57,7 +57,7 @@ class Mass extends Component {
                 valTwo: (numbeer * 1000000).toString()
             })
         }
-      
+
         else if (conversoinType === "Gram to Nanogram") {
             this.setState({
                 valOne: ev,
@@ -213,12 +213,18 @@ class Mass extends Component {
 
     render() {
         return (
-            <Container style={{ backgroundColor: "#373447" }} >
-                <Header style={styles.Header} >
+            <Drawer
+                ref={(ref) => { this.drawer = ref; }}
+                closedDrawerOffset={0}
+                openDrawerOffset={0.3}
+                content={<DrowerCategory navigation={this.props.navigation} />}
+                onClose={() => this.closeDrawer()} >
+                <Container style={{ backgroundColor: "#373447" }} >
+                    <Header style={styles.Header} >
                         <View style={styles.heightIconCintainer} >
                             <TouchableOpacity
                                 onPress={() => this.openDrawer()}
-                                style={{alignSelf:"flex-start"}}
+                                style={{ alignSelf: "flex-start" }}
                                 activeOpacity={0.6} >
                                 <Icon style={styles.heightIcon} name='menu' />
                             </TouchableOpacity>
@@ -226,7 +232,7 @@ class Mass extends Component {
                         <View style={styles.heightIconCintainer} >
                             <TouchableOpacity
                                 onPress={() => this.openDrawer()}
-                                style={{alignSelf:"flex-end"}}
+                                style={{ alignSelf: "flex-end" }}
                                 onPress={() => this.props.navigation.navigate("Categorry")}
                                 activeOpacity={0.6} >
                                 <Icon style={styles.heightIcon} name='home' />
@@ -234,32 +240,33 @@ class Mass extends Component {
                         </View>
                     </Header>
 
-                <View style={styles.solveContainer} >
-                    <View style={styles.inputCiintainer} >
-                        <View>
-                            <TextInput
-                                value={this.state.valOne}
-                                onChangeText={(event) => this.valOneHeandler(event)}
-                                keyboardType="numeric"
-                                underlineColorAndroid="transparent"
-                                placeholderTextColor="#fff"
-                                placeholder={this.state.placeholder1}
-                                style={styles.TextInput} />
-                        </View>
-                        <View style={{ marginTop: 30 }} >
-                            <TextInput
-                                onChangeText={(event) => this.valTwoHeandler(event)}
-                                value={this.state.valTwo}
-                                keyboardType="numeric"
-                                underlineColorAndroid="transparent"
-                                placeholder={this.state.placeholder2}
-                                placeholderTextColor="#fff"
-                                style={styles.TextInput} />
-                        </View>
+                    <View style={styles.solveContainer} >
+                        <View style={styles.inputCiintainer} >
+                            <View>
+                                <TextInput
+                                    value={this.state.valOne}
+                                    onChangeText={(event) => this.valOneHeandler(event)}
+                                    keyboardType="numeric"
+                                    underlineColorAndroid="transparent"
+                                    placeholderTextColor="#fff"
+                                    placeholder={this.state.placeholder1}
+                                    style={styles.TextInput} />
+                            </View>
+                            <View style={{ marginTop: 30 }} >
+                                <TextInput
+                                    onChangeText={(event) => this.valTwoHeandler(event)}
+                                    value={this.state.valTwo}
+                                    keyboardType="numeric"
+                                    underlineColorAndroid="transparent"
+                                    placeholder={this.state.placeholder2}
+                                    placeholderTextColor="#fff"
+                                    style={styles.TextInput} />
+                            </View>
 
+                        </View>
                     </View>
-                </View>
-            </Container>
+                </Container>
+            </Drawer>
         );
     }
 }
