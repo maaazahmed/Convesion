@@ -317,6 +317,17 @@ class DrowerCategory extends Component {
                                     style={styles.categorryIcon} resizeMode="contain" />
                             </View>
                         </TouchableOpacity>
+                        <TouchableOpacity onPress={this.selectConversationn.bind(this, "Area")}
+                            activeOpacity={0.5}
+                            style={styles.categorryButn}  >
+                            <View style={styles.TextView} >
+                                <Text style={styles.categorryText} >Area</Text>
+                            </View>
+                            <View style={styles.ImageView} >
+                                <Image source={require("./images/shape.png")}
+                                    style={styles.categorryIcon} resizeMode="contain" />
+                            </View>
+                        </TouchableOpacity>
                     </ScrollView>
                 </View>
             </View>
@@ -344,7 +355,7 @@ const styles = StyleSheet.create({
         backgroundColor: "#fff",
         flexDirection: "row",
         width: wp('100%'),
-        paddingRight:wp('31%'),
+        paddingRight: wp('31%'),
         height: height / 11.5,
         borderBottomColor: "#e0e0e0",
         borderBottomWidth: 2
@@ -383,7 +394,7 @@ const styles = StyleSheet.create({
     categorryText: {
         color: "#312e3f",
         fontSize: 18,
-        fontWeight:"400"
+        fontWeight: "400"
     },
 });
 
