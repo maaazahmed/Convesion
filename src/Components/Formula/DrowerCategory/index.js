@@ -10,8 +10,6 @@ import {
 } from 'react-native';
 import { connect } from "react-redux"
 import { formulaList, routeKey } from "../../../store/action/action"
-import { Icon } from "native-base"
-
 import {
     widthPercentageToDP as wp,
 } from 'react-native-responsive-screen';
