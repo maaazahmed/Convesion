@@ -1,14 +1,4 @@
 
-} from 'react-native-responsive-screen';
-
-export default class ResponsiveTest extends React.Component {
-    componentDidMount() {
-        loc(this);
-    }
-
-    componentWillUnMount() {
-        rol();
-    }
     render() {
 
 
