@@ -101,15 +101,25 @@ class Power extends Component {
     render() {
         return (
             <Container style={{ backgroundColor: "#373447" }} >
-                <Header style={styles.Header} >
-                    <View style={styles.heightIconCintainer} >
-                        <TouchableOpacity
-                            onPress={() => this.props.navigation.navigate("Categorry")}
-                            activeOpacity={0.6} >
-                            <Icon style={styles.heightIcon} name='arrow-back' />
-                        </TouchableOpacity>
-                    </View>
-                </Header>
+                 <Header style={styles.Header} >
+                        <View style={styles.heightIconCintainer} >
+                            <TouchableOpacity
+                                onPress={() => this.openDrawer()}
+                                style={{alignSelf:"flex-start"}}
+                                activeOpacity={0.6} >
+                                <Icon style={styles.heightIcon} name='menu' />
+                            </TouchableOpacity>
+                        </View>
+                        <View style={styles.heightIconCintainer} >
+                            <TouchableOpacity
+                                onPress={() => this.openDrawer()}
+                                style={{alignSelf:"flex-end"}}
+                                onPress={() => this.props.navigation.navigate("Categorry")}
+                                activeOpacity={0.6} >
+                                <Icon style={styles.heightIcon} name='home' />
+                            </TouchableOpacity>
+                        </View>
+                    </Header>
                 <View style={styles.solveContainer} >
                     <View style={styles.inputCiintainer} >
                         <View>
