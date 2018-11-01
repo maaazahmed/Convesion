@@ -376,7 +376,7 @@ const styles = StyleSheet.create({
   },
   categorryButn: {
     width: wp('30%'),
-    height: hp('109%'),
+    height: hp('17%'),
     margin: 6,
     backgroundColor: "#fff",
     elevation: 2,
