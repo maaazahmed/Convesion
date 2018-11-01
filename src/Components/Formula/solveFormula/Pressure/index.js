@@ -27,6 +27,12 @@ class Pressure extends Component {
             placeholder2: type[2],
         })
     }
+    closeDrawer = () => {
+        this.drawer._root.close()
+    };
+    openDrawer = () => {
+        this.drawer._root.open()
+    };
 
 
     valOneHeandler(ev) {
