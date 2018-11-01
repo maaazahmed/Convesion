@@ -289,7 +289,7 @@ class DrowerCategory extends Component {
                             <Text style={styles.categorryText} >Velocity</Text>
                         </View>
                         <View style={styles.ImageView} >
-                            <Image source={require("./images/protractor.png")}
+                            <Image source={require("./images/speedometer.png")}
                                 style={styles.categorryIcon} resizeMode="contain" />
                         </View>
                     </TouchableOpacity>
