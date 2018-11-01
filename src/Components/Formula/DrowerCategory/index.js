@@ -5,11 +5,12 @@ import {
     View,
     Image,
     TouchableOpacity,
-    Dimensions
+    Dimensions,
+    ScrollView
 } from 'react-native';
 import { connect } from "react-redux"
 import { formulaList, routeKey } from "../../../store/action/action"
-
+import { Icon } from "native-base"
 
 const { width, height } = Dimensions.get("window")
 class DrowerCategory extends Component {
@@ -191,127 +192,129 @@ class DrowerCategory extends Component {
         return (
             <View style={[styles.container]}>
                 <View style={styles.gategoryContainer}>
-                    <TouchableOpacity onPress={this.selectConversationn.bind(this, "Length")}
-                        activeOpacity={0.5}
-                        style={styles.categorryButn}  >
-                        <View style={styles.TextView} >
-                            <Text style={styles.categorryText} >Length</Text>
-                        </View>
-                        <View style={styles.ImageView} >
-                            <Image source={require("./images/measure.png")}
-                                style={styles.categorryIcon} resizeMode="contain" />
-                        </View>
-                    </TouchableOpacity>
-                    <TouchableOpacity onPress={this.selectConversationn.bind(this, "Mass")}
-                        activeOpacity={0.5}
-                        style={styles.categorryButn}  >
-                        <View style={styles.TextView} >
-                            <Text style={styles.categorryText} >Mass</Text>
-                        </View>
-                        <View style={styles.ImageView} >
-                            <Image source={require("./images/balance.png")}
-                                style={styles.categorryIcon} resizeMode="contain" />
-                        </View>
-                    </TouchableOpacity>
-                    <TouchableOpacity onPress={this.selectConversationn.bind(this, "Temperature")}
-                        activeOpacity={0.5}
-                        style={styles.categorryButn}  >
-                        <View style={styles.TextView} >
-                            <Text style={styles.categorryText} >Temperature</Text>
-                        </View>
-                        <View style={styles.ImageView} >
-                            <Image source={require("./images/thermometer.png")}
-                                style={styles.categorryIcon} resizeMode="contain" />
-                        </View>
-                    </TouchableOpacity>
-                    <TouchableOpacity onPress={this.selectConversationn.bind(this, "Time")}
-                        activeOpacity={0.5}
-                        style={styles.categorryButn}  >
-                        <View style={styles.TextView} >
-                            <Text style={styles.categorryText} >Time</Text>
-                        </View>
-                        <View style={styles.ImageView} >
-                            <Image source={require("./images/passage-of-time.png")}
-                                style={styles.categorryIcon} resizeMode="contain" />
-                        </View>
-                    </TouchableOpacity>
-                    <TouchableOpacity onPress={this.selectConversationn.bind(this, "Energy")}
-                        activeOpacity={0.5}
-                        style={styles.categorryButn}  >
-                        <View style={styles.TextView} >
-                            <Text style={styles.categorryText} >Energy</Text>
-                        </View>
-                        <View style={styles.ImageView} >
-                            <Image source={require("./images/green-energy.png")}
-                                style={styles.categorryIcon} resizeMode="contain" />
-                        </View>
-                    </TouchableOpacity>
-                    <TouchableOpacity onPress={this.selectConversationn.bind(this, "Volume")}
-                        activeOpacity={0.5}
-                        style={styles.categorryButn}  >
-                        <View style={styles.TextView} >
-                            <Text style={styles.categorryText} >Volume</Text>
-                        </View>
-                        <View style={styles.ImageView} >
-                            <Image source={require("./images/graduated-cylinder.png")}
-                                style={styles.categorryIcon} resizeMode="contain" />
-                        </View>
-                    </TouchableOpacity>
-                    <TouchableOpacity onPress={this.selectConversationn.bind(this, "Power")}
-                        activeOpacity={0.5}
-                        style={styles.categorryButn}  >
-                        <View style={styles.TextView} >
-                            <Text style={styles.categorryText} >Power</Text>
-                        </View>
-                        <View style={styles.ImageView} >
-                            <Image source={require("./images/innovation.png")}
-                                style={styles.categorryIcon} resizeMode="contain" />
-                        </View>
-                    </TouchableOpacity>
-                    <TouchableOpacity onPress={this.selectConversationn.bind(this, "Angle")}
-                        activeOpacity={0.5}
-                        style={styles.categorryButn}  >
-                        <View style={styles.TextView} >
-                            <Text style={styles.categorryText} >Angle</Text>
-                        </View>
-                        <View style={styles.ImageView} >
-                            <Image source={require("./images/protractor.png")}
-                                style={styles.categorryIcon} resizeMode="contain" />
-                        </View>
-                    </TouchableOpacity>
-                    <TouchableOpacity onPress={this.selectConversationn.bind(this, "Velocity")}
-                        activeOpacity={0.5}
-                        style={styles.categorryButn}  >
-                        <View style={styles.TextView} >
-                            <Text style={styles.categorryText} >Velocity</Text>
-                        </View>
-                        <View style={styles.ImageView} >
-                            <Image source={require("./images/speedometer.png")}
-                                style={styles.categorryIcon} resizeMode="contain" />
-                        </View>
-                    </TouchableOpacity>
-                    <TouchableOpacity onPress={this.selectConversationn.bind(this, "Pressure")}
-                        activeOpacity={0.5}
-                        style={styles.categorryButn}  >
-                        <View style={styles.TextView} >
-                            <Text style={styles.categorryText} >Pressure</Text>
-                        </View>
-                        <View style={styles.ImageView} >
-                            <Image source={require("./images/gauge.png")}
-                                style={styles.categorryIcon} resizeMode="contain" />
-                        </View>
-                    </TouchableOpacity>
-                    <TouchableOpacity onPress={this.selectConversationn.bind(this, "Force")}
-                        activeOpacity={0.5}
-                        style={styles.categorryButn}  >
-                        <View style={styles.TextView} >
-                            <Text style={styles.categorryText} >Force</Text>
-                        </View>
-                        <View style={styles.ImageView} >
-                            <Image source={require("./images/force-meter.png")}
-                                style={styles.categorryIcon} resizeMode="contain" />
-                        </View>
-                    </TouchableOpacity>
+                    <ScrollView>
+                        <TouchableOpacity onPress={this.selectConversationn.bind(this, "Length")}
+                            activeOpacity={0.5}
+                            style={styles.categorryButn}  >
+                            <View style={styles.TextView} >
+                                <Text style={styles.categorryText} >Length</Text>
+                            </View>
+                            <View style={styles.ImageView} >
+                                <Image source={require("./images/measure.png")}
+                                    style={styles.categorryIcon} resizeMode="contain" />
+                            </View>
+                        </TouchableOpacity>
+                        <TouchableOpacity onPress={this.selectConversationn.bind(this, "Mass")}
+                            activeOpacity={0.5}
+                            style={styles.categorryButn}  >
+                            <View style={styles.TextView} >
+                                <Text style={styles.categorryText} >Mass</Text>
+                            </View>
+                            <View style={styles.ImageView} >
+                                <Image source={require("./images/balance.png")}
+                                    style={styles.categorryIcon} resizeMode="contain" />
+                            </View>
+                        </TouchableOpacity>
+                        <TouchableOpacity onPress={this.selectConversationn.bind(this, "Temperature")}
+                            activeOpacity={0.5}
+                            style={styles.categorryButn}  >
+                            <View style={styles.TextView} >
+                                <Text style={styles.categorryText} >Temperature</Text>
+                            </View>
+                            <View style={styles.ImageView} >
+                                <Image source={require("./images/thermometer.png")}
+                                    style={styles.categorryIcon} resizeMode="contain" />
+                            </View>
+                        </TouchableOpacity>
+                        <TouchableOpacity onPress={this.selectConversationn.bind(this, "Time")}
+                            activeOpacity={0.5}
+                            style={styles.categorryButn}  >
+                            <View style={styles.TextView} >
+                                <Text style={styles.categorryText} >Time</Text>
+                            </View>
+                            <View style={styles.ImageView} >
+                                <Image source={require("./images/passage-of-time.png")}
+                                    style={styles.categorryIcon} resizeMode="contain" />
+                            </View>
+                        </TouchableOpacity>
+                        <TouchableOpacity onPress={this.selectConversationn.bind(this, "Energy")}
+                            activeOpacity={0.5}
+                            style={styles.categorryButn}  >
+                            <View style={styles.TextView} >
+                                <Text style={styles.categorryText} >Energy</Text>
+                            </View>
+                            <View style={styles.ImageView} >
+                                <Image source={require("./images/green-energy.png")}
+                                    style={styles.categorryIcon} resizeMode="contain" />
+                            </View>
+                        </TouchableOpacity>
+                        <TouchableOpacity onPress={this.selectConversationn.bind(this, "Volume")}
+                            activeOpacity={0.5}
+                            style={styles.categorryButn}  >
+                            <View style={styles.TextView} >
+                                <Text style={styles.categorryText} >Volume</Text>
+                            </View>
+                            <View style={styles.ImageView} >
+                                <Image source={require("./images/graduated-cylinder.png")}
+                                    style={styles.categorryIcon} resizeMode="contain" />
+                            </View>
+                        </TouchableOpacity>
+                        <TouchableOpacity onPress={this.selectConversationn.bind(this, "Power")}
+                            activeOpacity={0.5}
+                            style={styles.categorryButn}  >
+                            <View style={styles.TextView} >
+                                <Text style={styles.categorryText} >Power</Text>
+                            </View>
+                            <View style={styles.ImageView} >
+                                <Image source={require("./images/innovation.png")}
+                                    style={styles.categorryIcon} resizeMode="contain" />
+                            </View>
+                        </TouchableOpacity>
+                        <TouchableOpacity onPress={this.selectConversationn.bind(this, "Angle")}
+                            activeOpacity={0.5}
+                            style={styles.categorryButn}  >
+                            <View style={styles.TextView} >
+                                <Text style={styles.categorryText} >Angle</Text>
+                            </View>
+                            <View style={styles.ImageView} >
+                                <Image source={require("./images/protractor.png")}
+                                    style={styles.categorryIcon} resizeMode="contain" />
+                            </View>
+                        </TouchableOpacity>
+                        <TouchableOpacity onPress={this.selectConversationn.bind(this, "Velocity")}
+                            activeOpacity={0.5}
+                            style={styles.categorryButn}  >
+                            <View style={styles.TextView} >
+                                <Text style={styles.categorryText} >Velocity</Text>
+                            </View>
+                            <View style={styles.ImageView} >
+                                <Image source={require("./images/speedometer.png")}
+                                    style={styles.categorryIcon} resizeMode="contain" />
+                            </View>
+                        </TouchableOpacity>
+                        <TouchableOpacity onPress={this.selectConversationn.bind(this, "Pressure")}
+                            activeOpacity={0.5}
+                            style={styles.categorryButn}  >
+                            <View style={styles.TextView} >
+                                <Text style={styles.categorryText} >Pressure</Text>
+                            </View>
+                            <View style={styles.ImageView} >
+                                <Image source={require("./images/gauge.png")}
+                                    style={styles.categorryIcon} resizeMode="contain" />
+                            </View>
+                        </TouchableOpacity>
+                        <TouchableOpacity onPress={this.selectConversationn.bind(this, "Force")}
+                            activeOpacity={0.5}
+                            style={styles.categorryButn}  >
+                            <View style={styles.TextView} >
+                                <Text style={styles.categorryText} >Force</Text>
+                            </View>
+                            <View style={styles.ImageView} >
+                                <Image source={require("./images/force-meter.png")}
+                                    style={styles.categorryIcon} resizeMode="contain" />
+                            </View>
+                        </TouchableOpacity>
+                    </ScrollView>
                 </View>
             </View>
         );
@@ -322,14 +325,14 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         justifyContent: 'center',
-        borderTopColor: "#312e3f",
+        borderTopColor: "#fff",
 
     },
     gategoryContainer: {
         flex: 1,
         alignItems: "center",
         justifyContent: "center",
-        backgroundColor: "#312e3f",
+        backgroundColor: "#fff",
         alignContent: "center",
         width
     },
@@ -338,7 +341,9 @@ const styles = StyleSheet.create({
         backgroundColor: "#fff",
         flexDirection: "row",
         width,
-        height: height / 15
+        height: height / 11.5,
+        borderBottomColor:"#f2f2f2",
+        borderBottomWidth:2
     },
 
     TextView: {
