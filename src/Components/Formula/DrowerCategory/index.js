@@ -191,18 +191,18 @@ class DrowerCategory extends Component {
         return (
             <View style={[styles.container]}>
                 <View style={styles.gategoryContainer}>
+                 
+                 
                     <View style={styles.categorryButn} >
                         <TouchableOpacity onPress={this.selectConversationn.bind(this, "Length")} activeOpacity={0.5} style={styles.categorryIconView}  >
                             <Image source={require("./images/measure.png")}
                                 style={styles.categorryIcon} resizeMode="contain" />
+                            <Text style={styles.categorryText} >Length</Text>
                         </TouchableOpacity>
-                        <View style={styles.categorryTextView}>
-                            <TouchableOpacity onPress={this.selectConversationn.bind(this, "Length")} activeOpacity={0.5}
-                                style={styles.categorryButnTouchableOpacity} >
-                                <Text style={styles.categorryText} >Length</Text>
-                            </TouchableOpacity>
-                        </View>
                     </View>
+
+
+
                     <View style={styles.categorryButn} >
                         <TouchableOpacity onPress={this.selectConversationn.bind(this, "Mass")} activeOpacity={0.5} style={styles.categorryIconView}  >
                             <Image source={require("./images/balance.png")}
@@ -362,16 +362,19 @@ const styles = StyleSheet.create({
         alignItems: "center",
         justifyContent: "center",
         backgroundColor: "#312e3f",
-        alignContent: "center"
+        alignContent: "center",
+        width
     },
     categorryButn: {
-        width: "30%",
-        height: "18%",
-        height: 150,
-        margin: 6,
-        backgroundColor: "#fff",
-        elevation: 5,
-        borderRadius: 2
+        width,
+        height: "10%",
+        // // height: 150,
+        // margin: 6,
+        // backgroundColor: "#fff",
+        // elevation: 5,
+        // borderRadius: 2,
+        flexDirection: "row",
+
     },
     categorryIconView: {
         height: "75%",
@@ -379,8 +382,8 @@ const styles = StyleSheet.create({
         alignItems: "center",
     },
     categorryIcon: {
-        height: "70%",
-        width: "70%"
+        height: "30%",
+        width: "30%"
     },
     categorryTextView: {
         height: "25%",
