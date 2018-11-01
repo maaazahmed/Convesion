@@ -381,11 +381,10 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     elevation: 2,
     borderRadius: 2,
-    justifyContent:"center"
+    justifyContent: "center"
   },
   categorryIconView: {
-    // height: hp('12%'),
-    height:"70%",
+    height: "70%",
     justifyContent: "center",
     alignItems: "center",
   },
@@ -404,11 +403,10 @@ const styles = StyleSheet.create({
     fontSize: 16
   },
   categorryButnTouchableOpacity: {
-   width:"100%",
-    height:"100%",
+    width: "100%",
+    height: "100%",
     justifyContent: "center",
     alignItems: "center",
-    // backgroundColor:"green",  
   }
 });
 
