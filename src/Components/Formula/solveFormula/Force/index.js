@@ -3,6 +3,7 @@ import { TouchableOpacity, View, Dimensions, StyleSheet, TextInput, } from "reac
 import { Container, Header, Icon, Drawer } from 'native-base';
 import { connect } from "react-redux"
 import Categorry from "../../../Categorys/index"
+import DrowerCategory from "../../DrowerCategory/index"
 
 
 
@@ -136,7 +137,7 @@ class Force extends Component {
                 ref={(ref) => { this.drawer = ref; }}
                 closedDrawerOffset={0}
                 openDrawerOffset={.3}
-                content={<Categorry navigation={this.props.navigation} />}
+                content={<DrowerCategory navigation={this.props.navigation} />}
                 onClose={() => this.closeDrawer()} >
                 <Container style={{ backgroundColor: "#373447" }} >
                     <Header style={styles.Header} >

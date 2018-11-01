@@ -14,7 +14,7 @@ import {
     Categorry,
     Temperature,
     ResponsiveTest,
-    DrowerCategory
+    // DrowerCategory
 } from "./Components"
 
 
@@ -23,9 +23,9 @@ const Routes = StackNavigator({
     Categorry: {
         screen: Categorry
     },
-    DrowerCategory: {
-        screen: DrowerCategory
-    },
+    // DrowerCategory: {
+    //     screen: DrowerCategory
+    // },
     Force: {
         screen: Force
     },
@@ -69,7 +69,7 @@ const Routes = StackNavigator({
         navigationOptions: {
             header: null
         },
-        initialRouteName: "DrowerCategory"
+        initialRouteName: "Categorry"
     })
 
 

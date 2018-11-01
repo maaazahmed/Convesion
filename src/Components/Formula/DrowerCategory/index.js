@@ -342,7 +342,7 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         width,
         height: height / 11.5,
-        borderBottomColor:"#f2f2f2",
+        borderBottomColor:"#e0e0e0",
         borderBottomWidth:2
     },
 

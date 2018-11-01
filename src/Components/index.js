@@ -12,7 +12,7 @@ import Angle from "./Formula/solveFormula/Angle/index";
 import Velocity from ".//Formula/solveFormula/Velocity";
 import Pressure from "./Formula/solveFormula/Pressure/index";
 import Force from "./Formula/solveFormula/Force/index";
-import DrowerCategory from ".//Formula/DrowerCategory/index"
+// import DrowerCategory from ".//Formula/DrowerCategory/index"
 
 
 export {
@@ -30,5 +30,5 @@ export {
     Categorry,
     Temperature,
     ResponsiveTest,
-    DrowerCategory
+    // DrowerCategory
 }
