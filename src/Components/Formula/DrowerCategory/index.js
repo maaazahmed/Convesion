@@ -212,7 +212,7 @@ class DrowerCategory extends Component {
                             <Text style={styles.categorryText} >Mass</Text>
                         </View>
                         <View style={styles.ImageView} >
-                        <Image source={require("./images/balance.png")}
+                            <Image source={require("./images/balance.png")}
                                 style={styles.categorryIcon} resizeMode="contain" />
                         </View>
                     </TouchableOpacity>
@@ -223,7 +223,7 @@ class DrowerCategory extends Component {
                             <Text style={styles.categorryText} >Temperature</Text>
                         </View>
                         <View style={styles.ImageView} >
-                        <Image source={require("./images/thermometer.png")}
+                            <Image source={require("./images/thermometer.png")}
                                 style={styles.categorryIcon} resizeMode="contain" />
                         </View>
                     </TouchableOpacity>
@@ -234,7 +234,18 @@ class DrowerCategory extends Component {
                             <Text style={styles.categorryText} >Time</Text>
                         </View>
                         <View style={styles.ImageView} >
-                        <Image source={require("./images/passage-of-time.png")}
+                            <Image source={require("./images/passage-of-time.png")}
+                                style={styles.categorryIcon} resizeMode="contain" />
+                        </View>
+                    </TouchableOpacity>
+                    <TouchableOpacity onPress={this.selectConversationn.bind(this, "Energy")}
+                        activeOpacity={0.5}
+                        style={styles.categorryButn}  >
+                        <View style={styles.TextView} >
+                            <Text style={styles.categorryText} >Energy</Text>
+                        </View>
+                        <View style={styles.ImageView} >
+                            <Image source={require("./images/green-energy.png")}
                                 style={styles.categorryIcon} resizeMode="contain" />
                         </View>
                     </TouchableOpacity>
