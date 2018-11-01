@@ -331,8 +331,8 @@ class DrowerCategory extends Component {
 
 const styles = StyleSheet.create({
     container: {
-        height:"100%",
-        width:"100%",
+        width: wp('100%'),
+        width: "100%",
         flex: 1,
         justifyContent: 'center',
         borderTopColor: "#fff",
@@ -343,17 +343,18 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         backgroundColor: "#fff",
         alignContent: "center",
-        width:"100%",        
+        width: wp('100%'),
+
     },
     categorryButn: {
-        // justifyContent: "space-around",
+        justifyContent: "space-around",
         backgroundColor: "#fff",
         flexDirection: "row",
         // width:"100%",
         width: wp('100%'),
         height: height / 11.5,
-        borderBottomColor:"#e0e0e0",
-        borderBottomWidth:2
+        borderBottomColor: "#e0e0e0",
+        borderBottomWidth: 2
     },
 
     TextView: {
@@ -363,7 +364,7 @@ const styles = StyleSheet.create({
         paddingLeft: 10
     },
     ImageView: {
-        width:"20%",
+        width: "20%",
         height: "100%",
         justifyContent: "center",
         paddingRight: 10,
