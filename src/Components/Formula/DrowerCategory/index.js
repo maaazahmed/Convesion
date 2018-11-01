@@ -191,9 +191,6 @@ class DrowerCategory extends Component {
         return (
             <View style={[styles.container]}>
                 <View style={styles.gategoryContainer}>
-
-
-
                     <TouchableOpacity onPress={this.selectConversationn.bind(this, "Length")}
                         activeOpacity={0.5}
                         style={styles.categorryButn}  >
@@ -330,8 +327,6 @@ const styles = StyleSheet.create({
     },
     gategoryContainer: {
         flex: 1,
-        // flexDirection: "row",
-        // flexWrap: "wrap",
         alignItems: "center",
         justifyContent: "center",
         backgroundColor: "#312e3f",
@@ -363,8 +358,6 @@ const styles = StyleSheet.create({
     categorryIconView: {
         height: "100%",
         width,
-        // justifyContent: "center",
-        // alignItems: "center",
         flexDirection: "row",
     },
     categorryIcon: {
@@ -382,11 +375,6 @@ const styles = StyleSheet.create({
         color: "#312e3f",
         fontSize: 15
     },
-    categorryButnTouchableOpacity: {
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center"
-    }
 });
 
 
