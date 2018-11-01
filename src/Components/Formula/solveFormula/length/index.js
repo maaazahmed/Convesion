@@ -222,6 +222,7 @@ class Lenths extends Component {
                             </TouchableOpacity>
                         </View>
                     </Header>
+
                 <View style={styles.solveContainer} >
                     <View style={styles.inputCiintainer} >
                         <View>
