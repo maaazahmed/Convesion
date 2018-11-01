@@ -193,19 +193,21 @@ class DrowerCategory extends Component {
                 <View style={styles.gategoryContainer}>
 
 
-                
-                        <TouchableOpacity onPress={this.selectConversationn.bind(this, "Length")}
-                            activeOpacity={0.5}
-                            style={[{ justifyContent: "space-around", backgroundColor:"red" ,flexDirection:"row",width:"100%", height:height/12}]}  >
-                            <View style={{flex:1, height:"100%", backgroundColor:"blue", justifyContent:"center", paddingLeft:10}} >
-                                <Text style={styles.categorryText} >Length</Text>
-                            </View>
-                            <View style={{width:"20%",  height:"100%", backgroundColor:"yellwo", justifyContent:"center",alignItems:"center"}} >
-                                <Image source={require("./images/measure.png")}
-                                    style={styles.categorryIcon} resizeMode="contain" />
-                            </View>
-                        </TouchableOpacity>
+
+                    <TouchableOpacity onPress={this.selectConversationn.bind(this, "Length")}
+                        activeOpacity={0.5}
+                        style={[{ justifyContent: "space-around", backgroundColor: "#fff", flexDirection: "row", width, height: height / 15 }]}  >
+                        <View style={{ flex: 1, height: "100%", justifyContent: "center", paddingLeft: 10 }} >
+                            <Text style={styles.categorryText} >Length</Text>
+                        </View>
+                        <View style={{ width: "20%", height: "100%", justifyContent: "center", paddingRight: 10, alignItems: "flex-end" }} >
+                            <Image source={require("./images/measure.png")}
+                                style={styles.categorryIcon} resizeMode="contain" />
+                        </View>
+                    </TouchableOpacity>
                     
+
+
 
 
 
