@@ -205,6 +205,28 @@ class DrowerCategory extends Component {
                                 style={styles.categorryIcon} resizeMode="contain" />
                         </View>
                     </TouchableOpacity>
+                    <TouchableOpacity onPress={this.selectConversationn.bind(this, "Mass")}
+                        activeOpacity={0.5}
+                        style={styles.categorryButn}  >
+                        <View style={styles.TextView} >
+                            <Text style={styles.categorryText} >Mass</Text>
+                        </View>
+                        <View style={styles.ImageView} >
+                        <Image source={require("./images/balance.png")}
+                                style={styles.categorryIcon} resizeMode="contain" />
+                        </View>
+                    </TouchableOpacity>
+                    <TouchableOpacity onPress={this.selectConversationn.bind(this, "Temperature")}
+                        activeOpacity={0.5}
+                        style={styles.categorryButn}  >
+                        <View style={styles.TextView} >
+                            <Text style={styles.categorryText} >Temperature</Text>
+                        </View>
+                        <View style={styles.ImageView} >
+                        <Image source={require("./images/thermometer.png")}
+                                style={styles.categorryIcon} resizeMode="contain" />
+                        </View>
+                    </TouchableOpacity>
 
 
 
@@ -212,7 +234,8 @@ class DrowerCategory extends Component {
 
 
                     {/* <View style={styles.categorryButn} >
-                        <TouchableOpacity onPress={this.selectConversationn.bind(this, "Mass")} activeOpacity={0.5} style={styles.categorryIconView}  >
+                        <TouchableOpacity onPress={this.selectConversationn.bind(this, "Mass")} 
+                        activeOpacity={0.5} style={styles.categorryIconView}  >
                             <Image source={require("./images/balance.png")}
                                 style={styles.categorryIcon} resizeMode="contain" />
                         </TouchableOpacity>
