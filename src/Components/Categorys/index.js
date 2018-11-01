@@ -16,10 +16,6 @@ import {
 
 
 class Categorry extends Component {
-  constructor() {
-    super()
-
-  }
   selectConversationn(key) {
     if (key === "Length") {
       const formulas1 = [
