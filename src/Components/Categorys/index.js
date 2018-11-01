@@ -390,9 +390,7 @@ const styles = StyleSheet.create({
     width: wp('32.5%'),
     height: hp('20%'),
     margin: 1,
-    // margin: 6,
     backgroundColor: "#fff",
-    // borderRadius: 2,
     justifyContent: "center"
   },
   categorryIconView: {
