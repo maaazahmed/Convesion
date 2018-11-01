@@ -196,8 +196,8 @@ class DrowerCategory extends Component {
                 
                         <TouchableOpacity onPress={this.selectConversationn.bind(this, "Length")}
                             activeOpacity={0.5}
-                            style={[{ justifyContent: "space-around", backgroundColor:"red" ,flexDirection:"row",width:"100%", height:height/10}]}  >
-                            <View style={{flex:1, height:"100%", backgroundColor:"blue", justifyContent:"center"}} >
+                            style={[{ justifyContent: "space-around", backgroundColor:"red" ,flexDirection:"row",width:"100%", height:height/12}]}  >
+                            <View style={{flex:1, height:"100%", backgroundColor:"blue", justifyContent:"center", paddingLeft:10}} >
                                 <Text style={styles.categorryText} >Length</Text>
                             </View>
                             <View style={{width:"20%",  height:"100%", backgroundColor:"yellwo", justifyContent:"center",alignItems:"center"}} >
