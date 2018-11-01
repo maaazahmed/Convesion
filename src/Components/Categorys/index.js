@@ -395,7 +395,7 @@ const styles = StyleSheet.create({
   },
   categorryTextView: {
     // height: "25%",
-    height: hp('1%'),
+    height: hp('4%'),
     // borderTopColor: "red",
     borderTopWidth: 1,
     justifyContent: "center",
@@ -403,7 +403,7 @@ const styles = StyleSheet.create({
   },
   categorryText: {
     color: "#312e3f",
-    fontSize: 15
+    fontSize: 16
   },
   categorryButnTouchableOpacity: {
    width:"100%",
