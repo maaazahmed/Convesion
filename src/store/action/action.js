@@ -1,9 +1,6 @@
 import ActionTypes from "../constant/constant"
 
 
-
-
-
 export const formulaList = (data) => {
     return dispatch => {
         dispatch({
@@ -12,8 +9,6 @@ export const formulaList = (data) => {
         })
     }
 }
-
-
 
 export const routeKey = (data) => {
     return dispatch => {

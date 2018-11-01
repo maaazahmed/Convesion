@@ -21,7 +21,7 @@ class Angle extends Component {
 
     componentDidMount() {
         let conversionTypeName = this.props.conversionType.conversoinType;
-        "Angle"
+        this.props.backtoSoveKey("Angle")
         let type = conversionTypeName.split(" ")
         this.setState({
             placeholder1: type[0],
