@@ -322,21 +322,7 @@ class DrowerCategory extends Component {
 
 
                    
-                    {/* <View style={styles.categorryButn} >
-                        <TouchableOpacity onPress={this.selectConversationn.bind(this, "Time")}
-                            activeOpacity={0.5} style={styles.categorryIconView}  >
-                            <Image source={require("./images/passage-of-time.png")}
-                                style={styles.categorryIcon} resizeMode="contain" />
-                        </TouchableOpacity>
-                        <View style={styles.categorryTextView}  >
-                            <TouchableOpacity onPress={this.selectConversationn.bind(this, "Time")}
-                                activeOpacity={0.5}
-                                style={styles.categorryButnTouchableOpacity} >
-                                <Text style={styles.categorryText} >Time</Text>
-                            </TouchableOpacity>
-                        </View>
-                    </View>
-                    <View style={styles.categorryButn} >
+                   yles.categorryButn} >
                         <TouchableOpacity onPress={this.selectConversationn.bind(this, "Energy")}
                             activeOpacity={0.5} style={styles.categorryIconView}  >
                             <Image source={require("./images/green-energy.png")}
