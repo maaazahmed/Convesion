@@ -195,7 +195,6 @@ class Categorry extends Component {
   render() {
     return (
       <View style={[styles.container]}>
-        <Header />
         <View style={styles.gategoryContainer}>
           <View style={styles.categorryButn} >
             <TouchableOpacity onPress={this.selectConversationn.bind(this, "Length")}
