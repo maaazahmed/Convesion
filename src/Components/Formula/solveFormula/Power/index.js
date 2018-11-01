@@ -20,7 +20,7 @@ class Power extends Component {
 
     componentDidMount() {
         let conversionTypeName = this.props.conversionType.conversoinType;
-        console.log(conversionTypeName)
+        this.props.backtoSoveKey("Power")
         let type = conversionTypeName.split(" ")
         this.setState({
             placeholder1: type[0],
