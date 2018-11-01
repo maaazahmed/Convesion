@@ -144,9 +144,18 @@ class Force extends Component {
                         <View style={styles.heightIconCintainer} >
                             <TouchableOpacity
                                 onPress={() => this.openDrawer()}
-                                // onPress={() => this.props.navigation.navigate("Categorry")}
+                                style={{alignSelf:"flex-start"}}
                                 activeOpacity={0.6} >
                                 <Icon style={styles.heightIcon} name='menu' />
+                            </TouchableOpacity>
+                        </View>
+                        <View style={styles.heightIconCintainer} >
+                            <TouchableOpacity
+                                onPress={() => this.openDrawer()}
+                                style={{alignSelf:"flex-end"}}
+                                onPress={() => this.props.navigation.navigate("Categorry")}
+                                activeOpacity={0.6} >
+                                <Icon style={styles.heightIcon} name='home' />
                             </TouchableOpacity>
                         </View>
                     </Header>
