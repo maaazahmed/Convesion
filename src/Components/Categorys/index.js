@@ -12,6 +12,7 @@ import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
+import { Header } from "native-base"
 
 
 class Categorry extends Component {
@@ -194,6 +195,7 @@ class Categorry extends Component {
   render() {
     return (
       <View style={[styles.container]}>
+        <Header />
         <View style={styles.gategoryContainer}>
           <View style={styles.categorryButn} >
             <TouchableOpacity onPress={this.selectConversationn.bind(this, "Length")}
@@ -406,7 +408,7 @@ const styles = StyleSheet.create({
   categorryTextView: {
     height: hp('5%'),
     borderTopWidth: 1,
-    borderTopColor:"#312e3f",
+    borderTopColor: "#312e3f",
     justifyContent: "center",
     alignItems: "center",
   },
