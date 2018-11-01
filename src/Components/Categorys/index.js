@@ -7,7 +7,7 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import { connect } from "react-redux"
-import { formulaList, routeKey } from "../../store/action/action"
+import { formulaList, routeKey, backtoSoveKey } from "../../store/action/action"
 
 class Categorry extends Component {
   constructor() {
@@ -183,6 +183,7 @@ class Categorry extends Component {
       this.props.routeKey("Force")
       this.props.navigation.navigate("Formulas")
     }
+    this.props.backtoSoveKey("Categorry")
   }
 
   render() {
@@ -410,6 +411,9 @@ const mapDispatchToProp = (dispatch) => {
     },
     routeKey: (data) => {
       dispatch(routeKey(data))
+    },
+    backtoSoveKey: (data) => {
+      dispatch(backtoSoveKey(data))
     },
   };
 };
