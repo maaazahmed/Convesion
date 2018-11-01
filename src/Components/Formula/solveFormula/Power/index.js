@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { TouchableOpacity, View, Dimensions, StyleSheet, TextInput, Image } from "react-native"
-import { Container, Header, Icon } from 'native-base';
+import { Container, Header, Icon, Drawer } from 'native-base';
 import { connect } from "react-redux"
 import DrowerCategory from "../../DrowerCategory/index"
 
@@ -27,6 +27,12 @@ class Power extends Component {
             placeholder2: type[2],
         })
     }
+    closeDrawer = () => {
+        this.drawer._root.close()
+    };
+    openDrawer = () => {
+        this.drawer._root.open()
+    };
     valOneHeandler(ev) {
         let numbeer = ev;
         const conversoinType = this.props.conversionType.conversoinType;
