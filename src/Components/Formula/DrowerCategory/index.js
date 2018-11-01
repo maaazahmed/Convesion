@@ -12,6 +12,14 @@ import { connect } from "react-redux"
 import { formulaList, routeKey } from "../../../store/action/action"
 import { Icon } from "native-base"
 
+import {
+    widthPercentageToDP as wp,
+    heightPercentageToDP as hp,
+    listenOrientationChange as loc,
+    removeOrientationListener as rol
+} from 'react-native-responsive-screen';
+
+
 const { width, height } = Dimensions.get("window")
 class DrowerCategory extends Component {
     constructor() {
@@ -323,10 +331,11 @@ class DrowerCategory extends Component {
 
 const styles = StyleSheet.create({
     container: {
+        height:"100%",
+        width:"100%",
         flex: 1,
         justifyContent: 'center',
         borderTopColor: "#fff",
-
     },
     gategoryContainer: {
         flex: 1,
@@ -337,10 +346,11 @@ const styles = StyleSheet.create({
         width:"100%",        
     },
     categorryButn: {
-        justifyContent: "space-around",
+        // justifyContent: "space-around",
         backgroundColor: "#fff",
         flexDirection: "row",
-        width,
+        // width:"100%",
+        width: wp('100%'),
         height: height / 11.5,
         borderBottomColor:"#e0e0e0",
         borderBottomWidth:2
@@ -353,7 +363,7 @@ const styles = StyleSheet.create({
         paddingLeft: 10
     },
     ImageView: {
-        width: "20%",
+        width:"20%",
         height: "100%",
         justifyContent: "center",
         paddingRight: 10,
