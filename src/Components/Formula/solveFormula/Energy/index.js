@@ -20,7 +20,7 @@ class Energy extends Component {
 
     componentDidMount() {
         let conversionTypeName = this.props.conversionType.conversoinType;
-        console.log(conversionTypeName)
+        this.props.backtoSoveKey("Energy")
         let type = conversionTypeName.split(" ")
         this.setState({
             placeholder1: type[0],
