@@ -316,6 +316,9 @@ const mapStateToProp = (state) => {
 };
 const mapDispatchToProp = (dispatch) => {
     return {
+        backtoSoveKey: (data) => {
+            dispatch(backtoSoveKey(data))
+        }
     };
 };
 
