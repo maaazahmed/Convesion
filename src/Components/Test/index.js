@@ -18,17 +18,7 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: 'green',
         aap:"wrap",
-    },
-    responsiveBox: {
-        width: wp('16%'),
-        height: hp('10%'),
-        borderWidth: 2,
-        borderColor: 'orange',
-        flexDirection: 'column',
-        justifyContent: 'space-around',
-        margin:5
-    },
-    text: {
+
         color: 'white'
     }
 });
