@@ -326,20 +326,7 @@ class DrowerCategory extends Component {
                    
                    
                    
-                    <View style={styles.categorryButn} >
-                        <TouchableOpacity onPress={this.selectConversationn.bind(this, "Velocity")}
-                            activeOpacity={0.5} style={styles.categorryIconView}  >
-                            <Image source={require("./images/speedometer.png")}
-                                style={styles.categorryIcon} resizeMode="contain" />
-                        </TouchableOpacity>
-                        <View style={styles.categorryTextView}  >
-                            <TouchableOpacity onPress={this.selectConversationn.bind(this, "Velocity")}
-                                activeOpacity={0.5}
-                                style={styles.categorryButnTouchableOpacity} >
-                                <Text style={styles.categorryText} >Velocity</Text>
-                            </TouchableOpacity>
-                        </View>
-                    </View> */}
+                  
                     {/* <View style={styles.categorryButn} >
                         <TouchableOpacity onPress={this.selectConversationn.bind(this, "Pressure")}
                             activeOpacity={0.5} style={styles.categorryIconView}  >
