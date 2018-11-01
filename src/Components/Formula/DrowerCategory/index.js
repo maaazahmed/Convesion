@@ -321,34 +321,7 @@ class DrowerCategory extends Component {
 
 
 
-                    {/* <View style={styles.categorryButn} >
-                        <TouchableOpacity onPress={this.selectConversationn.bind(this, "Mass")} 
-                        activeOpacity={0.5} style={styles.categorryIconView}  >
-                            <Image source={require("./images/balance.png")}
-                                style={styles.categorryIcon} resizeMode="contain" />
-                        </TouchableOpacity>
-                        <View style={styles.categorryTextView}  >
-                            <TouchableOpacity onPress={this.selectConversationn.bind(this, "Mass")} activeOpacity={0.5}
-                                style={styles.categorryButnTouchableOpacity} >
-                                <Text style={styles.categorryText} >Mass</Text>
-                            </TouchableOpacity>
-                        </View>
-                    </View>
-                    <View style={styles.categorryButn} >
-                        <TouchableOpacity onPress={this.selectConversationn.bind(this, "Temperature")}
-                            activeOpacity={0.5} style={styles.categorryIconView}  >
-                            <Image source={require("./images/thermometer.png")}
-                                style={styles.categorryIcon} resizeMode="contain" />
-                        </TouchableOpacity>
-                        <View style={styles.categorryTextView}  >
-                            <TouchableOpacity onPress={this.selectConversationn.bind(this, "Temperature")}
-                                activeOpacity={0.5}
-                                style={styles.categorryButnTouchableOpacity} >
-                                <Text style={styles.categorryText} >Temperature</Text>
-                            </TouchableOpacity>
-                        </View>
-                    </View> */}
-
+                   
                     {/* <View style={styles.categorryButn} >
                         <TouchableOpacity onPress={this.selectConversationn.bind(this, "Time")}
                             activeOpacity={0.5} style={styles.categorryIconView}  >
