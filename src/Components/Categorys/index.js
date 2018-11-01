@@ -386,8 +386,8 @@ const styles = StyleSheet.create({
     alignContent: "center"
   },
   categorryButn: {
-    width: wp('30%'),
-    height: hp('17%'),
+    width: wp('32.5%'),
+    height: hp('20%'),
     margin: 1,
     // margin: 6,
     backgroundColor: "#fff",
@@ -404,7 +404,7 @@ const styles = StyleSheet.create({
     width: "50%"
   },
   categorryTextView: {
-    height: hp('4%'),
+    height: hp('3%'),
     borderTopWidth: 1,
     justifyContent: "center",
     alignItems: "center",
