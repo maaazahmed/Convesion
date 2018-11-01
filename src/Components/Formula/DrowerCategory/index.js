@@ -331,8 +331,6 @@ class DrowerCategory extends Component {
 
 const styles = StyleSheet.create({
     container: {
-        // width: wp('100%'),
-        // width: "100%",
         flex: 1,
         justifyContent: 'center',
         borderTopColor: "#fff",
@@ -389,7 +387,8 @@ const styles = StyleSheet.create({
     },
     categorryText: {
         color: "#312e3f",
-        fontSize: 20
+        fontSize: 18,
+        fontWeight:"400"
     },
 });
 
