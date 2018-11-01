@@ -334,7 +334,7 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         backgroundColor: "#fff",
         alignContent: "center",
-        width
+        width:"100%",        
     },
     categorryButn: {
         justifyContent: "space-around",

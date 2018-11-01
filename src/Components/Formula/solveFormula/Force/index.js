@@ -136,7 +136,7 @@ class Force extends Component {
             <Drawer
                 ref={(ref) => { this.drawer = ref; }}
                 closedDrawerOffset={0}
-                openDrawerOffset={.3}
+                openDrawerOffset={0}
                 content={<DrowerCategory navigation={this.props.navigation} />}
                 onClose={() => this.closeDrawer()} >
                 <Container style={{ backgroundColor: "#373447" }} >
