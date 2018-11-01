@@ -21,7 +21,7 @@ class Temperature extends Component {
 
     componentDidMount() {
         let conversionTypeName = this.props.conversionType.conversoinType;
-        console.log(conversionTypeName)
+        this.props.backtoSoveKey("Temperature")
         let type = conversionTypeName.split(" ")
         this.setState({
             placeholder1: type[0],
