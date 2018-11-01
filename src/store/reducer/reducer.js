@@ -3,6 +3,7 @@ import ActionTypes from '../constant/constant';
 const INITIAL_STATE = {
     formulas: [],
     routeKey: "",
+    backtoSolve: "",
     conversoinType: ""
 }
 
@@ -27,6 +28,11 @@ export default (state = INITIAL_STATE, action) => {
             return ({
                 ...state,
                 conversoinType: action.payload
+            })
+        case ActionTypes.BACK_TO_SOLVE:
+            return ({
+                ...state,
+                backtoSolve: action.payload
             })
         default:
             return state;

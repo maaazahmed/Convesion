@@ -3,6 +3,7 @@ import { TouchableOpacity, View, Dimensions, StyleSheet, TextInput, Image } from
 import { Container, Header, Icon, Drawer } from 'native-base';
 import { connect } from "react-redux"
 import DrowerCategory from "../../DrowerCategory/index"
+import { backtoSoveKey } from "../../../../store/action/action"
 
 
 
@@ -20,7 +21,7 @@ class Angle extends Component {
 
     componentDidMount() {
         let conversionTypeName = this.props.conversionType.conversoinType;
-        console.log(conversionTypeName)
+        "Angle"
         let type = conversionTypeName.split(" ")
         this.setState({
             placeholder1: type[0],
@@ -230,6 +231,9 @@ const mapStateToProp = (state) => {
 };
 const mapDispatchToProp = (dispatch) => {
     return {
+        backtoSoveKey: (data) => {
+            dispatch(backtoSoveKey(data))
+        }
     };
 };
 

@@ -150,8 +150,6 @@ class Volume extends Component {
             })
         }
     }
-
-
     render() {
         return (
             <Drawer

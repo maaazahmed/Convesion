@@ -34,4 +34,14 @@ export const conversoinType = (data) => {
 }
 
 
+export const backtoSoveKey = (data) => {
+    return dispatch => {
+        dispatch({
+            type: ActionTypes.BACK_TO_SOLVE,
+            payload: data
+        })
+    }
+}
+
+
 
