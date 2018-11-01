@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { TouchableOpacity, View, Dimensions, StyleSheet, TextInput, Image } from "react-native"
-import { Container, Header, Icon } from 'native-base';
+import { Container, Header, Icon, Drawer } from 'native-base';
 import { connect } from "react-redux"
+import DrowerCategory from "../../DrowerCategory/index"
 
 
 
@@ -26,6 +27,12 @@ class Angle extends Component {
             placeholder2: type[2],
         })
     }
+    closeDrawer = () => {
+        this.drawer._root.close()
+    };
+    openDrawer = () => {
+        this.drawer._root.open()
+    };
 
 
     valOneHeandler(ev) {
@@ -108,30 +115,30 @@ class Angle extends Component {
                 valOne: (numbeer / 63.662).toString(),
                 valTwo: ev
             })
-        }   
+        }
     }
     render() {
         return (
             <Container style={{ backgroundColor: "#373447" }} >
                 <Header style={styles.Header} >
-                        <View style={styles.heightIconCintainer} >
-                            <TouchableOpacity
-                                onPress={() => this.openDrawer()}
-                                style={{alignSelf:"flex-start"}}
-                                activeOpacity={0.6} >
-                                <Icon style={styles.heightIcon} name='menu' />
-                            </TouchableOpacity>
-                        </View>
-                        <View style={styles.heightIconCintainer} >
-                            <TouchableOpacity
-                                onPress={() => this.openDrawer()}
-                                style={{alignSelf:"flex-end"}}
-                                onPress={() => this.props.navigation.navigate("Categorry")}
-                                activeOpacity={0.6} >
-                                <Icon style={styles.heightIcon} name='home' />
-                            </TouchableOpacity>
-                        </View>
-                    </Header>
+                    <View style={styles.heightIconCintainer} >
+                        <TouchableOpacity
+                            onPress={() => this.openDrawer()}
+                            style={{ alignSelf: "flex-start" }}
+                            activeOpacity={0.6} >
+                            <Icon style={styles.heightIcon} name='menu' />
+                        </TouchableOpacity>
+                    </View>
+                    <View style={styles.heightIconCintainer} >
+                        <TouchableOpacity
+                            onPress={() => this.openDrawer()}
+                            style={{ alignSelf: "flex-end" }}
+                            onPress={() => this.props.navigation.navigate("Categorry")}
+                            activeOpacity={0.6} >
+                            <Icon style={styles.heightIcon} name='home' />
+                        </TouchableOpacity>
+                    </View>
+                </Header>
 
                 <View style={styles.solveContainer} >
                     <View style={styles.inputCiintainer} >
