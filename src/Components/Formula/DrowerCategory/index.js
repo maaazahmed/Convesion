@@ -328,20 +328,7 @@ class DrowerCategory extends Component {
                    
                   
                   
-                    {/* <View style={styles.categorryButn} >
-                        <TouchableOpacity onPress={this.selectConversationn.bind(this, "Force")}
-                            activeOpacity={0.5} style={styles.categorryIconView}  >
-                            <Image source={require("./images/force-meter.png")}
-                                style={styles.categorryIcon} resizeMode="contain" />
-                        </TouchableOpacity>
-                        <View style={styles.categorryTextView}  >
-                            <TouchableOpacity onPress={this.selectConversationn.bind(this, "Force")}
-                                activeOpacity={0.5}
-                                style={styles.categorryButnTouchableOpacity} >
-                                <Text style={styles.categorryText} >Force</Text>
-                            </TouchableOpacity>
-                        </View>
-                    </View> */}
+                   
                 </View>
             </View>
         );
