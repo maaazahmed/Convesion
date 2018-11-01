@@ -394,12 +394,12 @@ const styles = StyleSheet.create({
     width: "70%"
   },
   categorryTextView: {
-    height: "25%",
-    // height: hp('3%'),
-    borderTopColor: "red",
+    // height: "25%",
+    height: hp('1%'),
+    // borderTopColor: "red",
     borderTopWidth: 1,
     justifyContent: "center",
-    alignItems: "center"
+    alignItems: "center",
   },
   categorryText: {
     color: "#312e3f",
@@ -410,7 +410,7 @@ const styles = StyleSheet.create({
     height:"100%",
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor:"green",  
+    // backgroundColor:"green",  
   }
 });
 
