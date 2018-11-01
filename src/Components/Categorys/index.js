@@ -11,8 +11,6 @@ import { formulaList, routeKey, backtoSoveKey } from "../../store/action/action"
 import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
-  listenOrientationChange as loc,
-  removeOrientationListener as rol
 } from 'react-native-responsive-screen';
 
 
