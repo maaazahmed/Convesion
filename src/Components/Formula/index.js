@@ -18,7 +18,7 @@ class Formulas extends Component {
                 <Header style={styles.Header} >
                     <View style={styles.heightIconCintainer} >
                         <TouchableOpacity
-                            onPress={() => this.props.navigation.navigate("Categorry")}
+                            onPress={() => this.props.navigation.navigate(this.props.routKey.backtoSolve)}
                             activeOpacity={0.6} >
                             <Icon style={styles.heightIcon} name='arrow-back' />
                         </TouchableOpacity>
@@ -81,6 +81,7 @@ const mapStateToProp = (state) => {
     return ({
         formulaList: state.root,
         routKey: state.root,
+        backToSolve: state.root
     });
 };
 const mapDispatchToProp = (dispatch) => {
