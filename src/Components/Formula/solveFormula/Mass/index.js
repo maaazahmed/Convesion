@@ -262,7 +262,6 @@ class Mass extends Component {
                                     placeholderTextColor="#fff"
                                     style={styles.TextInput} />
                             </View>
-
                         </View>
                     </View>
                 </Container>
