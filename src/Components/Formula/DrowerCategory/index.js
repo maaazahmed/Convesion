@@ -203,7 +203,7 @@ class DrowerCategory extends Component {
                                 <Text style={styles.categorryText} >Length</Text>
                             </View>
                             <View style={styles.ImageView} >
-                                <Image source={require("./images/measure.png")}
+                                <Image source={require("../../Categorys/images/measure.png")}
                                     style={styles.categorryIcon} resizeMode="contain" />
                             </View>
                         </TouchableOpacity>
@@ -214,7 +214,7 @@ class DrowerCategory extends Component {
                                 <Text style={styles.categorryText} >Mass</Text>
                             </View>
                             <View style={styles.ImageView} >
-                                <Image source={require("./images/balance.png")}
+                                <Image source={require("../../Categorys/images/balance.png")}
                                     style={styles.categorryIcon} resizeMode="contain" />
                             </View>
                         </TouchableOpacity>
@@ -225,7 +225,7 @@ class DrowerCategory extends Component {
                                 <Text style={styles.categorryText} >Temperature</Text>
                             </View>
                             <View style={styles.ImageView} >
-                                <Image source={require("./images/thermometer.png")}
+                                <Image source={require("../../Categorys/images/thermometer.png")}
                                     style={styles.categorryIcon} resizeMode="contain" />
                             </View>
                         </TouchableOpacity>
@@ -236,7 +236,7 @@ class DrowerCategory extends Component {
                                 <Text style={styles.categorryText} >Time</Text>
                             </View>
                             <View style={styles.ImageView} >
-                                <Image source={require("./images/passage-of-time.png")}
+                                <Image source={require("../../Categorys/images/passage-of-time.png")}
                                     style={styles.categorryIcon} resizeMode="contain" />
                             </View>
                         </TouchableOpacity>
@@ -247,7 +247,7 @@ class DrowerCategory extends Component {
                                 <Text style={styles.categorryText} >Energy</Text>
                             </View>
                             <View style={styles.ImageView} >
-                                <Image source={require("./images/green-energy.png")}
+                                <Image source={require("../../Categorys/images/green-energy.png")}
                                     style={styles.categorryIcon} resizeMode="contain" />
                             </View>
                         </TouchableOpacity>
@@ -258,7 +258,7 @@ class DrowerCategory extends Component {
                                 <Text style={styles.categorryText} >Volume</Text>
                             </View>
                             <View style={styles.ImageView} >
-                                <Image source={require("./images/graduated-cylinder.png")}
+                                <Image source={require("../../Categorys/images/graduated-cylinder.png")}
                                     style={styles.categorryIcon} resizeMode="contain" />
                             </View>
                         </TouchableOpacity>
@@ -269,7 +269,7 @@ class DrowerCategory extends Component {
                                 <Text style={styles.categorryText} >Power</Text>
                             </View>
                             <View style={styles.ImageView} >
-                                <Image source={require("./images/innovation.png")}
+                                <Image source={require("../../Categorys/images/innovation.png")}
                                     style={styles.categorryIcon} resizeMode="contain" />
                             </View>
                         </TouchableOpacity>
@@ -280,7 +280,7 @@ class DrowerCategory extends Component {
                                 <Text style={styles.categorryText} >Angle</Text>
                             </View>
                             <View style={styles.ImageView} >
-                                <Image source={require("./images/protractor.png")}
+                                <Image source={require("../../Categorys/images/protractor.png")}
                                     style={styles.categorryIcon} resizeMode="contain" />
                             </View>
                         </TouchableOpacity>
@@ -291,7 +291,7 @@ class DrowerCategory extends Component {
                                 <Text style={styles.categorryText} >Velocity</Text>
                             </View>
                             <View style={styles.ImageView} >
-                                <Image source={require("./images/speedometer.png")}
+                                <Image source={require("../../Categorys/images/speedometer.png")}
                                     style={styles.categorryIcon} resizeMode="contain" />
                             </View>
                         </TouchableOpacity>
@@ -302,7 +302,7 @@ class DrowerCategory extends Component {
                                 <Text style={styles.categorryText} >Pressure</Text>
                             </View>
                             <View style={styles.ImageView} >
-                                <Image source={require("./images/gauge.png")}
+                                <Image source={require("../../Categorys/images/gauge.png")}
                                     style={styles.categorryIcon} resizeMode="contain" />
                             </View>
                         </TouchableOpacity>
@@ -313,7 +313,7 @@ class DrowerCategory extends Component {
                                 <Text style={styles.categorryText} >Force</Text>
                             </View>
                             <View style={styles.ImageView} >
-                                <Image source={require("./images/force-meter.png")}
+                                <Image source={require("../../Categorys/images/force-meter.png")}
                                     style={styles.categorryIcon} resizeMode="contain" />
                             </View>
                         </TouchableOpacity>
@@ -324,7 +324,7 @@ class DrowerCategory extends Component {
                                 <Text style={styles.categorryText} >Area</Text>
                             </View>
                             <View style={styles.ImageView} >
-                                <Image source={require("./images/shape.png")}
+                                <Image source={require("../../Categorys/images/shape.png")}
                                     style={styles.categorryIcon} resizeMode="contain" />
                             </View>
                         </TouchableOpacity>
