@@ -8,7 +8,6 @@ import DrowerCategory from "../../DrowerCategory/index"
 
 const { width } = Dimensions.get("window")
 class Mass extends Component {
-
     constructor() {
         super()
         this.state = {
@@ -21,7 +20,7 @@ class Mass extends Component {
 
     componentDidMount() {
         let conversionTypeName = this.props.conversionType.conversoinType;
-        console.log(conversionTypeName)
+        this.props.backtoSoveKey("Mass")
         let type = conversionTypeName.split(" ")
         this.setState({
             placeholder1: type[0],
