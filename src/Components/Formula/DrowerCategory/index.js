@@ -11,7 +11,7 @@ import { connect } from "react-redux"
 import { formulaList, routeKey } from "../../../store/action/action"
 
 
-const { width } = Dimensions.get("window")
+const { width, height } = Dimensions.get("window")
 class DrowerCategory extends Component {
     constructor() {
         super()
@@ -191,19 +191,25 @@ class DrowerCategory extends Component {
         return (
             <View style={[styles.container]}>
                 <View style={styles.gategoryContainer}>
-                 
-                 
-                    <View style={styles.categorryButn} >
-                        <TouchableOpacity onPress={this.selectConversationn.bind(this, "Length")} activeOpacity={0.5} style={styles.categorryIconView}  >
-                            <Image source={require("./images/measure.png")}
-                                style={styles.categorryIcon} resizeMode="contain" />
-                            <Text style={styles.categorryText} >Length</Text>
+
+
+                
+                        <TouchableOpacity onPress={this.selectConversationn.bind(this, "Length")}
+                            activeOpacity={0.5}
+                            style={[{ justifyContent: "space-around", backgroundColor:"red" ,flexDirection:"row",width:"100%", height:height/10}]}  >
+                            <View style={{flex:1, height:"100%", backgroundColor:"blue", justifyContent:"center"}} >
+                                <Text style={styles.categorryText} >Length</Text>
+                            </View>
+                            <View style={{width:"20%",  height:"100%", backgroundColor:"yellwo", justifyContent:"center",alignItems:"center"}} >
+                                <Image source={require("./images/measure.png")}
+                                    style={styles.categorryIcon} resizeMode="contain" />
+                            </View>
                         </TouchableOpacity>
-                    </View>
+                    
 
 
 
-                    <View style={styles.categorryButn} >
+                    {/* <View style={styles.categorryButn} >
                         <TouchableOpacity onPress={this.selectConversationn.bind(this, "Mass")} activeOpacity={0.5} style={styles.categorryIconView}  >
                             <Image source={require("./images/balance.png")}
                                 style={styles.categorryIcon} resizeMode="contain" />
@@ -228,9 +234,9 @@ class DrowerCategory extends Component {
                                 <Text style={styles.categorryText} >Temperature</Text>
                             </TouchableOpacity>
                         </View>
-                    </View>
+                    </View> */}
 
-                    <View style={styles.categorryButn} >
+                    {/* <View style={styles.categorryButn} >
                         <TouchableOpacity onPress={this.selectConversationn.bind(this, "Time")}
                             activeOpacity={0.5} style={styles.categorryIconView}  >
                             <Image source={require("./images/passage-of-time.png")}
@@ -257,8 +263,8 @@ class DrowerCategory extends Component {
                                 <Text style={styles.categorryText} >Energy</Text>
                             </TouchableOpacity>
                         </View>
-                    </View>
-                    <View style={styles.categorryButn} >
+                    </View> */}
+                    {/* <View style={styles.categorryButn} >
                         <TouchableOpacity onPress={this.selectConversationn.bind(this, "Volume")}
                             activeOpacity={0.5} style={styles.categorryIconView}  >
                             <Image source={require("./images/graduated-cylinder.png")}
@@ -285,8 +291,8 @@ class DrowerCategory extends Component {
                                 <Text style={styles.categorryText} >Power</Text>
                             </TouchableOpacity>
                         </View>
-                    </View>
-                    <View style={styles.categorryButn} >
+                    </View> */}
+                    {/* <View style={styles.categorryButn} >
                         <TouchableOpacity onPress={this.selectConversationn.bind(this, "Angle")}
                             activeOpacity={0.5} style={styles.categorryIconView}  >
                             <Image source={require("./images/protractor.png")}
@@ -313,8 +319,8 @@ class DrowerCategory extends Component {
                                 <Text style={styles.categorryText} >Velocity</Text>
                             </TouchableOpacity>
                         </View>
-                    </View>
-                    <View style={styles.categorryButn} >
+                    </View> */}
+                    {/* <View style={styles.categorryButn} >
                         <TouchableOpacity onPress={this.selectConversationn.bind(this, "Pressure")}
                             activeOpacity={0.5} style={styles.categorryIconView}  >
                             <Image source={require("./images/gauge.png")}
@@ -327,8 +333,8 @@ class DrowerCategory extends Component {
                                 <Text style={styles.categorryText} >Pressure</Text>
                             </TouchableOpacity>
                         </View>
-                    </View>
-                    <View style={styles.categorryButn} >
+                    </View> */}
+                    {/* <View style={styles.categorryButn} >
                         <TouchableOpacity onPress={this.selectConversationn.bind(this, "Force")}
                             activeOpacity={0.5} style={styles.categorryIconView}  >
                             <Image source={require("./images/force-meter.png")}
@@ -341,7 +347,7 @@ class DrowerCategory extends Component {
                                 <Text style={styles.categorryText} >Force</Text>
                             </TouchableOpacity>
                         </View>
-                    </View>
+                    </View> */}
                 </View>
             </View>
         );
@@ -370,20 +376,21 @@ const styles = StyleSheet.create({
         height: "10%",
         // // height: 150,
         // margin: 6,
-        // backgroundColor: "#fff",
+        backgroundColor: "#fff",
         // elevation: 5,
         // borderRadius: 2,
-        flexDirection: "row",
 
     },
     categorryIconView: {
-        height: "75%",
-        justifyContent: "center",
-        alignItems: "center",
+        height: "100%",
+        width,
+        // justifyContent: "center",
+        // alignItems: "center",
+        flexDirection: "row",
     },
     categorryIcon: {
-        height: "30%",
-        width: "30%"
+        height: "50%",
+        width: "50%"
     },
     categorryTextView: {
         height: "25%",
