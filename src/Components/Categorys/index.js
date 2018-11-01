@@ -390,13 +390,11 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   categorryIcon: {
-    height: "70%",
-    width: "70%"
+    height: "60%",
+    width: "50%"
   },
   categorryTextView: {
-    // height: "25%",
     height: hp('4%'),
-    // borderTopColor: "red",
     borderTopWidth: 1,
     justifyContent: "center",
     alignItems: "center",
