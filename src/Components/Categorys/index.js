@@ -380,10 +380,12 @@ const styles = StyleSheet.create({
     margin: 6,
     backgroundColor: "#fff",
     elevation: 2,
-    borderRadius: 2
+    borderRadius: 2,
+    justifyContent:"center"
   },
   categorryIconView: {
-    height: "75%",
+    // height: hp('12%'),
+    height:"70%",
     justifyContent: "center",
     alignItems: "center",
   },
@@ -393,7 +395,8 @@ const styles = StyleSheet.create({
   },
   categorryTextView: {
     height: "25%",
-    borderTopColor: "#312e3f",
+    // height: hp('3%'),
+    borderTopColor: "red",
     borderTopWidth: 1,
     justifyContent: "center",
     alignItems: "center"
@@ -403,9 +406,11 @@ const styles = StyleSheet.create({
     fontSize: 15
   },
   categorryButnTouchableOpacity: {
-    flex: 1,
+   width:"100%",
+    height:"100%",
     justifyContent: "center",
-    alignItems: "center"
+    alignItems: "center",
+    backgroundColor:"green",  
   }
 });
 
