@@ -212,20 +212,6 @@ class Categorry extends Component {
             </View>
           </View>
           <View style={styles.categorryButn} >
-            <TouchableOpacity onPress={this.selectConversationn.bind(this, "Mass")}
-              activeOpacity={0.5} style={styles.categorryIconView}  >
-              <Image source={require("./images/balance.png")}
-                style={styles.categorryIcon} resizeMode="contain" />
-            </TouchableOpacity>
-            <View style={styles.categorryTextView}  >
-              <TouchableOpacity onPress={this.selectConversationn.bind(this, "Mass")}
-                activeOpacity={0.5}
-                style={styles.categorryButnTouchableOpacity} >
-                <Text style={styles.categorryText} >Mass</Text>
-              </TouchableOpacity>
-            </View>
-          </View>
-          <View style={styles.categorryButn} >
             <TouchableOpacity onPress={this.selectConversationn.bind(this, "Temperature")}
               activeOpacity={0.5} style={styles.categorryIconView}  >
               <Image source={require("./images/thermometer.png")}
@@ -239,7 +225,48 @@ class Categorry extends Component {
               </TouchableOpacity>
             </View>
           </View>
-
+          <View style={styles.categorryButn} >
+            <TouchableOpacity onPress={this.selectConversationn.bind(this, "Area")}
+              activeOpacity={0.5} style={styles.categorryIconView}  >
+              <Image source={require("./images/shape.png")}
+                style={styles.categorryIcon} resizeMode="contain" />
+            </TouchableOpacity>
+            <View style={styles.categorryTextView}  >
+              <TouchableOpacity onPress={this.selectConversationn.bind(this, "Area")}
+                activeOpacity={0.5}
+                style={styles.categorryButnTouchableOpacity} >
+                <Text style={styles.categorryText} >Area</Text>
+              </TouchableOpacity>
+            </View>
+          </View>
+          <View style={styles.categorryButn} >
+            <TouchableOpacity onPress={this.selectConversationn.bind(this, "Volume")}
+              activeOpacity={0.5} style={styles.categorryIconView}  >
+              <Image source={require("./images/graduated-cylinder.png")}
+                style={styles.categorryIcon} resizeMode="contain" />
+            </TouchableOpacity>
+            <View style={styles.categorryTextView}  >
+              <TouchableOpacity onPress={this.selectConversationn.bind(this, "Volume")}
+                activeOpacity={0.5}
+                style={styles.categorryButnTouchableOpacity} >
+                <Text style={styles.categorryText} >Volume</Text>
+              </TouchableOpacity>
+            </View>
+          </View>
+          <View style={styles.categorryButn} >
+            <TouchableOpacity onPress={this.selectConversationn.bind(this, "Mass")}
+              activeOpacity={0.5} style={styles.categorryIconView}  >
+              <Image source={require("./images/balance.png")}
+                style={styles.categorryIcon} resizeMode="contain" />
+            </TouchableOpacity>
+            <View style={styles.categorryTextView}  >
+              <TouchableOpacity onPress={this.selectConversationn.bind(this, "Mass")}
+                activeOpacity={0.5}
+                style={styles.categorryButnTouchableOpacity} >
+                <Text style={styles.categorryText} >Mass</Text>
+              </TouchableOpacity>
+            </View>
+          </View>
           <View style={styles.categorryButn} >
             <TouchableOpacity onPress={this.selectConversationn.bind(this, "Time")}
               activeOpacity={0.5} style={styles.categorryIconView}  >
@@ -265,20 +292,6 @@ class Categorry extends Component {
                 activeOpacity={0.5}
                 style={styles.categorryButnTouchableOpacity} >
                 <Text style={styles.categorryText} >Energy</Text>
-              </TouchableOpacity>
-            </View>
-          </View>
-          <View style={styles.categorryButn} >
-            <TouchableOpacity onPress={this.selectConversationn.bind(this, "Volume")}
-              activeOpacity={0.5} style={styles.categorryIconView}  >
-              <Image source={require("./images/graduated-cylinder.png")}
-                style={styles.categorryIcon} resizeMode="contain" />
-            </TouchableOpacity>
-            <View style={styles.categorryTextView}  >
-              <TouchableOpacity onPress={this.selectConversationn.bind(this, "Volume")}
-                activeOpacity={0.5}
-                style={styles.categorryButnTouchableOpacity} >
-                <Text style={styles.categorryText} >Volume</Text>
               </TouchableOpacity>
             </View>
           </View>
@@ -377,10 +390,10 @@ const styles = StyleSheet.create({
   categorryButn: {
     width: wp('30%'),
     height: hp('17%'),
-    margin: 6,
+    margin: 1,
+    // margin: 6,
     backgroundColor: "#fff",
-    elevation: 2,
-    borderRadius: 2,
+    // borderRadius: 2,
     justifyContent: "center"
   },
   categorryIconView: {
