@@ -6,27 +6,7 @@
         return (
             <View style={styles.container}>
                 <View style={styles.responsiveBox}>
-                </View>
-                <View style={styles.responsiveBox}>
-                </View>
-                <View style={styles.responsiveBox}>
-                </View>
-                <View style={styles.responsiveBox}>
-                </View>
-                <View style={styles.responsiveBox}>
-                </View>
-                <View style={styles.responsiveBox}>
-                </View>
-                <View style={styles.responsiveBox}>
-                </View>
-                <View style={styles.responsiveBox}>
-                </View>
-                <View style={styles.responsiveBox}>
-                </View>
-                <View style={styles.responsiveBox}>
-                </View>
-                <View style={styles.responsiveBox}>
-                </View>
+          
             </View>
         );
     }
