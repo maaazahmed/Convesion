@@ -13,7 +13,6 @@ import {
     Formulas,
     Categorry,
     Temperature,
-    ResponsiveTest,
 } from "./Components"
 
 
@@ -33,9 +32,6 @@ const Routes = StackNavigator({
     },
     Angle: {
         screen: Angle
-    },
-    ResponsiveTest: {
-        screen: ResponsiveTest
     },
     Formulas: {
         screen: Formulas

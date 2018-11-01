@@ -7,7 +7,6 @@ import Time from "./Formula/solveFormula/Time/index"
 import Energy from "./Formula/solveFormula/Energy/index"
 import Volume from "./Formula/solveFormula/Volume/index"
 import Power from "./Formula/solveFormula/Power"
-import ResponsiveTest from "./Test/index"
 import Angle from "./Formula/solveFormula/Angle/index";
 import Velocity from ".//Formula/solveFormula/Velocity";
 import Pressure from "./Formula/solveFormula/Pressure/index";
@@ -28,5 +27,4 @@ export {
     Velocity,
     Categorry,
     Temperature,
-    ResponsiveTest,
 }
