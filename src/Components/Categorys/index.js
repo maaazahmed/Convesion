@@ -401,8 +401,8 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   categorryIcon: {
-    height: "50%",
-    width: "50%"
+    height: "55%",
+    width: "55%"
   },
   categorryTextView: {
     height: hp('5%'),
