@@ -404,8 +404,9 @@ const styles = StyleSheet.create({
     width: "50%"
   },
   categorryTextView: {
-    height: hp('3%'),
+    height: hp('5%'),
     borderTopWidth: 1,
+    borderTopColor:"#312e3f",
     justifyContent: "center",
     alignItems: "center",
   },
