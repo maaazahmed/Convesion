@@ -315,20 +315,6 @@ class DrowerCategory extends Component {
                                 style={styles.categorryIcon} resizeMode="contain" />
                         </View>
                     </TouchableOpacity>
-
-
-
-
-
-
-                   
-                
-                   
-                   
-                   
-                  
-                  
-                   
                 </View>
             </View>
         );
