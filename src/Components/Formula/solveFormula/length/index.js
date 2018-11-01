@@ -205,6 +205,12 @@ class Lenths extends Component {
 
     render() {
         return (
+            <Drawer
+            ref={(ref) => { this.drawer = ref; }}
+            closedDrawerOffset={0}
+            openDrawerOffset={0.3}
+            content={<DrowerCategory navigation={this.props.navigation} />}
+            onClose={() => this.closeDrawer()} >
             <Container style={{ backgroundColor: "#373447" }} >
                 <Header style={styles.Header} >
                     <View style={styles.heightIconCintainer} >
@@ -252,6 +258,7 @@ class Lenths extends Component {
                     </View>
                 </View>
             </Container>
+            </Drawer>
         );
     }
 }
