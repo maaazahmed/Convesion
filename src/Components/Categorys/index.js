@@ -8,6 +8,13 @@ import {
 } from 'react-native';
 import { connect } from "react-redux"
 import { formulaList, routeKey, backtoSoveKey } from "../../store/action/action"
+import {
+  widthPercentageToDP as wp,
+  heightPercentageToDP as hp,
+  listenOrientationChange as loc,
+  removeOrientationListener as rol
+} from 'react-native-responsive-screen';
+
 
 class Categorry extends Component {
   constructor() {
@@ -191,24 +198,28 @@ class Categorry extends Component {
       <View style={[styles.container]}>
         <View style={styles.gategoryContainer}>
           <View style={styles.categorryButn} >
-            <TouchableOpacity onPress={this.selectConversationn.bind(this, "Length")} activeOpacity={0.5} style={styles.categorryIconView}  >
+            <TouchableOpacity onPress={this.selectConversationn.bind(this, "Length")}
+              activeOpacity={0.5} style={styles.categorryIconView}  >
               <Image source={require("./images/measure.png")}
                 style={styles.categorryIcon} resizeMode="contain" />
             </TouchableOpacity>
             <View style={styles.categorryTextView}>
-              <TouchableOpacity onPress={this.selectConversationn.bind(this, "Length")} activeOpacity={0.5}
+              <TouchableOpacity onPress={this.selectConversationn.bind(this, "Length")}
+                activeOpacity={0.5}
                 style={styles.categorryButnTouchableOpacity} >
                 <Text style={styles.categorryText} >Length</Text>
               </TouchableOpacity>
             </View>
           </View>
           <View style={styles.categorryButn} >
-            <TouchableOpacity onPress={this.selectConversationn.bind(this, "Mass")} activeOpacity={0.5} style={styles.categorryIconView}  >
+            <TouchableOpacity onPress={this.selectConversationn.bind(this, "Mass")}
+              activeOpacity={0.5} style={styles.categorryIconView}  >
               <Image source={require("./images/balance.png")}
                 style={styles.categorryIcon} resizeMode="contain" />
             </TouchableOpacity>
             <View style={styles.categorryTextView}  >
-              <TouchableOpacity onPress={this.selectConversationn.bind(this, "Mass")} activeOpacity={0.5}
+              <TouchableOpacity onPress={this.selectConversationn.bind(this, "Mass")}
+                activeOpacity={0.5}
                 style={styles.categorryButnTouchableOpacity} >
                 <Text style={styles.categorryText} >Mass</Text>
               </TouchableOpacity>
@@ -364,12 +375,11 @@ const styles = StyleSheet.create({
     alignContent: "center"
   },
   categorryButn: {
-    width: "30%",
-    height: "18%",
-    height: 150,
+    width: wp('30%'),
+    height: hp('109%'),
     margin: 6,
     backgroundColor: "#fff",
-    elevation: 5,
+    elevation: 2,
     borderRadius: 2
   },
   categorryIconView: {
