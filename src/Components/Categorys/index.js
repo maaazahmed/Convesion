@@ -407,7 +407,7 @@ const styles = StyleSheet.create({
   },
   categorryText: {
     color: "#312e3f",
-    fontSize: 16
+    // fontSize: 16
   },
   categorryButnTouchableOpacity: {
     width: "100%",

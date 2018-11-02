@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
         padding: 10,
     },
     listText: {
-        fontSize: 15,
+        // fontSize: 15,
         color: "#312e3f"
     }
 })
