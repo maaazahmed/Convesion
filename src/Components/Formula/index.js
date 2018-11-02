@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
     listBtn: {
         flex: 1,
         justifyContent: "center",
-        padding: 15,
+        padding: 10,
     },
     listText: {
         fontSize: 15,
