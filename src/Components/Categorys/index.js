@@ -221,16 +221,16 @@ class Categorry extends Component {
             </View>
           </View>
           <View style={styles.categorryButn} >
-            <TouchableOpacity onPress={this.selectConversationn.bind(this, "Area")}
+            <TouchableOpacity onPress={this.selectConversationn.bind(this, "frequency")}
               activeOpacity={0.5} style={styles.categorryIconView}  >
               <Image source={require("./images/shape.png")}
                 style={styles.categorryIcon} resizeMode="contain" />
             </TouchableOpacity>
             <View style={styles.categorryTextView}  >
-              <TouchableOpacity onPress={this.selectConversationn.bind(this, "Area")}
+              <TouchableOpacity onPress={this.selectConversationn.bind(this, "frequency")}
                 activeOpacity={0.5}
                 style={styles.categorryButnTouchableOpacity} >
-                <Text style={styles.categorryText} >Area</Text>
+                <Text style={styles.categorryText} >frequency</Text>
               </TouchableOpacity>
             </View>
           </View>
