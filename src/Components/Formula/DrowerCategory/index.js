@@ -317,11 +317,11 @@ class DrowerCategory extends Component {
                                     style={styles.categorryIcon} resizeMode="contain" />
                             </View>
                         </TouchableOpacity>
-                        <TouchableOpacity onPress={this.selectConversationn.bind(this, "Area")}
+                        <TouchableOpacity onPress={this.selectConversationn.bind(this, "Frequency")}
                             activeOpacity={0.5}
                             style={styles.categorryButn}  >
                             <View style={styles.TextView} >
-                                <Text style={styles.categorryText} >Area</Text>
+                                <Text style={styles.categorryText} >Frequency</Text>
                             </View>
                             <View style={styles.ImageView} >
                                 <Image source={require("../../Categorys/images/shape.png")}
