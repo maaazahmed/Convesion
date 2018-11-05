@@ -48,7 +48,7 @@ class Frequency extends Component {
         else if (conversoinType === "Hertz to Megahertz") {
             this.setState({
                 valOne: ev,
-                valTwo: (numbeer * 1000).toString()
+                valTwo: (numbeer / 1000000).toString()
             })
         }
         else if (conversoinType === "Gram to Microgram") {
@@ -71,7 +71,7 @@ class Frequency extends Component {
         }
         else if (conversoinType === "Hertz to Megahertz") {
             this.setState({
-                valOne: (numbeer / 1000).toString(),
+                valOne: (numbeer * 1000000).toString(),
                 valTwo: ev
             })
         }
