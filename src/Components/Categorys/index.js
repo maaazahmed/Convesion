@@ -185,6 +185,16 @@ class Categorry extends Component {
       this.props.routeKey("Force")
       this.props.navigation.navigate("Formulas")
     }
+    else if (key === "Frequency") {
+      const formulas12 = [
+          "Hertz to kilohertz",
+          "Hertz to Megahertz",
+          "Hertz to Gigahertz",
+      ];
+      this.props.formulaList(formulas12)
+      this.props.routeKey("Frequency")
+      this.props.navigation.navigate("Formulas")
+  }
     this.props.backtoSoveKey("Categorry")
   }
 

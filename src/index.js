@@ -13,6 +13,7 @@ import {
     Formulas,
     Categorry,
     Temperature,
+    Frequency
 } from "./Components"
 
 
@@ -23,6 +24,9 @@ const Routes = StackNavigator({
     },
     Force: {
         screen: Force
+    },
+    Frequency: {
+        screen: Frequency
     },
     Pressure: {
         screen: Pressure

@@ -11,6 +11,7 @@ import Angle from "./Formula/solveFormula/Angle/index";
 import Velocity from ".//Formula/solveFormula/Velocity";
 import Pressure from "./Formula/solveFormula/Pressure/index";
 import Force from "./Formula/solveFormula/Force/index";
+import Frequency from "./Formula/solveFormula/Frequency/index"
 
 
 export {
@@ -26,5 +27,6 @@ export {
     Pressure,
     Velocity,
     Categorry,
+    Frequency,
     Temperature,
 }

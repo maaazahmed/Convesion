@@ -191,13 +191,10 @@ class DrowerCategory extends Component {
         }
         else if (key === "Frequency") {
             const formulas12 = [
-                "Newton to Kilo-Newton",
-                "Newton to Poundals",
-                "Newton to Ounces",
-                "Newton to Dyne",
-                "Newton to Gram-force(Pond)",
-                "Newton to Kilogram-force(Kilo Pond)",
-                "Newton to Ton-force",
+                "",
+                "Hertz to kilohertz",
+                "Hertz to Megahertz",
+                "Hertz to Gigahertz",
             ];
             this.props.formulaList(formulas12)
             this.props.routeKey("Frequency")
