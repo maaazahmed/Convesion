@@ -66,7 +66,6 @@ const styles = StyleSheet.create({
         height: height / 13,
         width,
         flexDirection: "row",
-        // borderBottomColor: "#312e3f",
         backgroundColor: "#fff",
         borderBottomColor: "#f2f2f2",
         borderBottomWidth: 3,
@@ -79,8 +78,7 @@ const styles = StyleSheet.create({
     lisIcon: {
         width: "10%",
         justifyContent: "center",
-        // padding: 5,
-        backgroundColor:"green"
+        alignItems:"center"
     },
     arrow_forward: {
         color: "#312e3f",
