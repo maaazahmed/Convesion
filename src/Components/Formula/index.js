@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
         height: height / 13,
         width,
         borderBottomColor: "#312e3f",
-        borderBottomWidth: 1
+        borderBottomWidth: 1,
     },
     listBtn: {
         flex: 1,
@@ -70,7 +70,8 @@ const styles = StyleSheet.create({
         padding: 5,
     },
     listText: {
-        color: "#312e3f"
+        color: "#312e3f",
+        fontSize: 15
     }
 })
 
