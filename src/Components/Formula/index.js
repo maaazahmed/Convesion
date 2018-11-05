@@ -35,6 +35,10 @@ class Formulas extends Component {
                                     style={styles.listBtn} >
                                     <Text style={styles.listText} >{val}</Text>
                                 </View>
+                                <View
+                                    style={styles.lisIcon} >
+                                    <Icon style={styles.arrow_forward} name='arrow-forward' />
+                                </View>
                             </TouchableOpacity>
                         )
                     })}
@@ -61,13 +65,26 @@ const styles = StyleSheet.create({
     listContainer: {
         height: height / 13,
         width,
-        borderBottomColor: "#312e3f",
-        borderBottomWidth: 1,
+        flexDirection: "row",
+        // borderBottomColor: "#312e3f",
+        backgroundColor: "#fff",
+        borderBottomColor: "#f2f2f2",
+        borderBottomWidth: 3,
     },
     listBtn: {
         flex: 1,
         justifyContent: "center",
         padding: 5,
+    },
+    lisIcon: {
+        width: "10%",
+        justifyContent: "center",
+        // padding: 5,
+        backgroundColor:"green"
+    },
+    arrow_forward: {
+        color: "#312e3f",
+        fontSize:22
     },
     listText: {
         color: "#312e3f",
