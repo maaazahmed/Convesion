@@ -77,7 +77,7 @@ class Frequency extends Component {
         }
         else if (conversoinType === "Hertz to Gigahertz") {
             this.setState({
-                valOne: (numbeer / 1000000000).toString(),
+                valOne: (numbeer * 1000000000).toString(),
                 valTwo: ev
             })
         }
