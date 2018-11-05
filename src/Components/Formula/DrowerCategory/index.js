@@ -136,7 +136,7 @@ class DrowerCategory extends Component {
             this.props.navigation.navigate("Formulas")
         }
         else if (key === "Angle") {
-            const formulas7 = [
+            const formulas8 = [
                 "Degree to Radian",
                 "Degree to Gradian",
                 "Degree to Miliradian",
@@ -144,13 +144,13 @@ class DrowerCategory extends Component {
                 "Degree to Second",
                 "Radian to Gradian",
             ];
-            this.props.formulaList(formulas7)
+            this.props.formulaList(formulas8)
             this.props.routeKey("Angle")
             this.props.navigation.navigate("Formulas")
         }
 
         else if (key === "Velocity") {
-            const formulas7 = [
+            const formulas9 = [
                 "Kilometer/Hour to Kilometer/Minute",
                 "Kilometer/Hour to Kilometer/Second",
                 "Kilometer/Minute to Kilometer/Second",
@@ -158,12 +158,12 @@ class DrowerCategory extends Component {
                 "Kilometer/Hour to Meter/Second",
                 "Kilometer/Minute to Meter/Second",
             ];
-            this.props.formulaList(formulas7)
+            this.props.formulaList(formulas9)
             this.props.routeKey("Velocity")
             this.props.navigation.navigate("Formulas")
         }
         else if (key === "Pressure") {
-            const formulas8 = [
+            const formulas10 = [
                 "Pascal to Atmosphere",
                 "Pascal to Bar",
                 "Pascal to Torr",
@@ -171,12 +171,12 @@ class DrowerCategory extends Component {
                 "Atmosphere to Bar",
                 "Torr to Atmosphere",
             ];
-            this.props.formulaList(formulas8)
+            this.props.formulaList(formulas10)
             this.props.routeKey("Pressure")
             this.props.navigation.navigate("Formulas")
         }
         else if (key === "Force") {
-            const formulas9 = [
+            const formulas11 = [
                 "Newton to Kilo-Newton",
                 "Newton to Poundals",
                 "Newton to Ounces",
@@ -185,8 +185,22 @@ class DrowerCategory extends Component {
                 "Newton to Kilogram-force(Kilo Pond)",
                 "Newton to Ton-force",
             ];
-            this.props.formulaList(formulas9)
+            this.props.formulaList(formulas11)
             this.props.routeKey("Force")
+            this.props.navigation.navigate("Formulas")
+        }
+        else if (key === "Frequency") {
+            const formulas12 = [
+                "Newton to Kilo-Newton",
+                "Newton to Poundals",
+                "Newton to Ounces",
+                "Newton to Dyne",
+                "Newton to Gram-force(Pond)",
+                "Newton to Kilogram-force(Kilo Pond)",
+                "Newton to Ton-force",
+            ];
+            this.props.formulaList(formulas12)
+            this.props.routeKey("Frequency")
             this.props.navigation.navigate("Formulas")
         }
     }
