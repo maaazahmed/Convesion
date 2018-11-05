@@ -191,7 +191,6 @@ class DrowerCategory extends Component {
         }
         else if (key === "Frequency") {
             const formulas12 = [
-                "",
                 "Hertz to kilohertz",
                 "Hertz to Megahertz",
                 "Hertz to Gigahertz",
